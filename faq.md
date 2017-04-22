@@ -1,0 +1,2 @@
+[Go Back](index)
+# FAQ
