@@ -1,3 +1,4 @@
+[Go Back](index)
 ```
 [6:47 PM] Michael VanOverbeek: I don't want to lose my only friends
 [6:47 PM] Michael VanOverbeek: and I don't want to lose ShiftOS
