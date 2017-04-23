@@ -9,3 +9,4 @@ Make sure to read the [FAQ](faq) before submitting anything to this repo!
 * [TTSC](ttsc)
 * [Sharkathan](sharkathan)
 * [Rainiskies](rainiskies)
+* [KomputerKid](komputerkid)
