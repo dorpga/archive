@@ -1,0 +1,825 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<title>techTalk &bull; View topic - How to make an OS, A tutorial series</title>
+
+<link rel="alternate" type="application/atom+xml" title="Feed - techTalk" href="https://archive.raytron.org/techtalk/feed.php" /><link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="https://archive.raytron.org/techtalk/feed.php?mode=topics" /><link rel="alternate" type="application/atom+xml" title="Feed - Forum - Programming" href="https://archive.raytron.org/techtalk/feed.php?f=28" /><link rel="alternate" type="application/atom+xml" title="Feed - Topic - How to make an OS, A tutorial series" href="https://archive.raytron.org/techtalk/feed.php?f=28&amp;t=550" />
+
+<!--
+	phpBB style name: MyInvision
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:	  Brad Veryard ( http://www.bradleyv.com/ )
+-->
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Enter the page number you wish to go to:';
+	var on_page = '1';
+	var per_page = '10';
+	var base_url = './viewtopic.php?f=28&amp;t=550&amp;sid=630e401588ec9eb68dd09bc2e546e922';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; domain=archive.raytron.org; secure';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript" src="./styles/prosilver/template/styleswitcher.js"></script>
+<script type="text/javascript" src="./styles/prosilver/template/forum_fn.js"></script>
+<script type="text/javascript" src="./styles/tech-talk/template/jquery.min.js"></script>
+<script type="text/javascript" src="./styles/tech-talk/template/jquery.cookie.js"></script>
+
+<link href="./styles/tech-talk/theme/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<link href="./style.php?id=7&amp;lang=en&amp;sid=630e401588ec9eb68dd09bc2e546e922" rel="stylesheet" type="text/css" media="screen, projection" />
+
+</head>
+
+<body id="phpbb" class="section-viewtopic ltr">
+<!--
+
+ Options: Yes | No
+ Options: Yes | No
+ Options: Yes | No
+
+-->
+<div class="above"></div>
+<div id="header">
+	<div class="main_width">
+		<a href="./index.php?sid=630e401588ec9eb68dd09bc2e546e922" title="Board index" id="logo"><img src="./styles/tech-talk/imageset/logo.png" width="358" height="64" alt="" title="" /></a>
+		
+				
+			<div id="search-box" class="searchback">
+				<form action="./search.php?sid=630e401588ec9eb68dd09bc2e546e922" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="text" maxlength="128" title="Search for keywords" class="inputbox search" value="Search…" onclick="if(this.value=='Search…')this.value='';" onblur="if(this.value=='')this.value='Search…';" />
+					<input class="button2" value="Search" type="submit" /><br />
+					<a href="./search.php?sid=630e401588ec9eb68dd09bc2e546e922" title="View the advanced search options">Advanced search</a> <input type="hidden" name="sid" value="630e401588ec9eb68dd09bc2e546e922" />
+
+				</fieldset>
+				</form>
+			</div>
+			
+	</div>
+</div>
+
+<div id="wrap">
+	<div class="navbar clearit">
+		<ul id="nav">
+			<li><a href="./index.php?sid=630e401588ec9eb68dd09bc2e546e922" accesskey="h"><img src="./styles/tech-talk/theme/images/globe.png" class="nicon" alt="Board index" />Board index</a></li>
+			<li><a href="./memberlist.php?sid=630e401588ec9eb68dd09bc2e546e922"><img src="./styles/tech-talk/theme/images/member.png" class="nicon" alt="Members" />Members</a></li>
+			<li><a href="./faq.php?sid=630e401588ec9eb68dd09bc2e546e922"><img src="./styles/tech-talk/theme/images/faq.png" class="nicon" alt="FAQ" />FAQ</a></li>
+			
+		</ul>
+	</div>
+	<a id="top" name="top" accesskey="t"></a>
+<div id="content">
+	<div id="page-header">
+
+		<div class="breadcrumbs">
+			<ul class="linklist navlinks">
+				<li class="icon-home"><a href="./index.php?sid=630e401588ec9eb68dd09bc2e546e922" accesskey="h">Board index</a>  <strong>&#8249;</strong> <a href="./viewforum.php?f=90&amp;sid=630e401588ec9eb68dd09bc2e546e922">Technology</a> <strong>&#8249;</strong> <a href="./viewforum.php?f=28&amp;sid=630e401588ec9eb68dd09bc2e546e922">Programming</a></li>
+				<li class="rightside"><a href="./viewtopic.php?f=28&amp;t=550&amp;sid=630e401588ec9eb68dd09bc2e546e922&amp;view=print" title="Print view" accesskey="p" class="print">Print view</a></li>
+			</ul>
+
+			
+
+			<ul class="linklist rightside">
+				
+					<li class="icon-logout"><a href="./ucp.php?mode=login&amp;sid=630e401588ec9eb68dd09bc2e546e922" title="Login" accesskey="x">Login</a></li>
+				
+			</ul>
+			<div class="clearit"></div>
+		</div>
+	</div>
+
+	<a name="start_here"></a>
+	<div id="page-body">
+		
+		
+ <div id="announcebar" class="rules">
+        <div class="inner"><span class="corners-top"><span></span></span>
+            This forum is an archive, hosted for reference purposes only. If you want to get involved with our current community, please visit <a href="https://talk.raytron.org" target="_blank">Raytron</a>.
+         <span class="corners-bottom"><span></span></span></div>
+     </div>
+<h2><a href="./viewtopic.php?f=28&amp;t=550&amp;sid=630e401588ec9eb68dd09bc2e546e922">How to make an OS, A tutorial series</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body --><div style="display: none !important;">Talk about Computer Programming here.<br /></div>
+
+<div class="topic-actions">
+
+	<div class="buttons">
+	
+		<div class="locked-icon"><a href="./posting.php?mode=reply&amp;f=28&amp;t=550&amp;sid=630e401588ec9eb68dd09bc2e546e922" title="This topic is locked, you cannot edit posts or make further replies."><span></span>Topic locked</a></div>
+	
+	</div>
+
+	
+		<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php?sid=630e401588ec9eb68dd09bc2e546e922">
+			<fieldset>
+				<input class="inputbox search tiny"  type="text" name="keywords" id="search_keywords" size="20" value="Search this topic…" onclick="if(this.value=='Search this topic…')this.value='';" onblur="if(this.value=='')this.value='Search this topic…';" />
+				<input class="button2" type="submit" value="Search" />
+				<input type="hidden" name="t" value="550" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="630e401588ec9eb68dd09bc2e546e922" />
+
+			</fieldset>
+			</form>
+		</div>
+	
+		<div class="pagination">
+			59 posts
+			 &bull; <a href="#" onclick="jumpto(); return false;" title="Click to jump to page…">Page <strong>1</strong> of <strong>6</strong></a> &bull; <span><strong>1</strong><span class="page-sep">, </span><a href="./viewtopic.php?f=28&amp;t=550&amp;sid=630e401588ec9eb68dd09bc2e546e922&amp;start=10">2</a><span class="page-sep">, </span><a href="./viewtopic.php?f=28&amp;t=550&amp;sid=630e401588ec9eb68dd09bc2e546e922&amp;start=20">3</a><span class="page-sep">, </span><a href="./viewtopic.php?f=28&amp;t=550&amp;sid=630e401588ec9eb68dd09bc2e546e922&amp;start=30">4</a><span class="page-sep">, </span><a href="./viewtopic.php?f=28&amp;t=550&amp;sid=630e401588ec9eb68dd09bc2e546e922&amp;start=40">5</a><span class="page-sep">, </span><a href="./viewtopic.php?f=28&amp;t=550&amp;sid=630e401588ec9eb68dd09bc2e546e922&amp;start=50">6</a></span>
+		</div>
+	
+
+</div>
+<div class="clear"></div>
+
+
+	<div class="pannels clearit">
+	<div id="p2967"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+
+			<h3 class="first"><a href="#p2967">How to make an OS, A tutorial series</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=2967&amp;sid=630e401588ec9eb68dd09bc2e546e922#p2967"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=250&amp;sid=630e401588ec9eb68dd09bc2e546e922">Member1221</a></strong> &raquo; Thu Jul 03, 2014 11:06 pm </p>
+
+			
+
+			<div class="content">So yeah, i have been thinking about making a tutorial, on how to make a simple kernel/OS. <img src="./images/smilies/icon_e_smile.gif" alt=":)" title="Smile" /><br />Here we go!<br /><br /><br /><span style="font-weight: bold"><div align="center"><span style="font-size: 200%; line-height: 116%;">Chapter 1 - The Theory</span></div></span><br /><br /><br /><span style="font-weight: bold">Part 1 - The basics on how it works:</span><br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="text-transform: uppercase; border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>show</a>'; }" /><b>Spoiler: </b><a href="#" onClick="return false;">show</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;"><span style="font-weight: bold">Part 1, The basics on how it works</span><br />An operating system, is the base program in a computer, but at the same time, a really complex piece of software. <br />The OS directs all the computers software and hardware, and makes the hardware able to share data, with the computer.<br /><br /><span style="font-style: italic">A modern OS is built up of these parts:</span><br /><br /><span style="font-weight: bold"># 1</span> The Kernel - the kernel is the central part of the Operating System. Its task is to control resources used by the system &#40;CPU usage, RAM, and Harddrive space usage&#41;, to the different programs on the on the computer.<br /><br /><span style="font-weight: bold"># 2</span> Drivers - Drivers make hardware able to &quot;talk&quot; with the Operating System, making software able to for example: Read data from the CD drive, and so forth<br /><br /><span style="font-weight: bold"># 3</span> The Shell - the shell is a piece of software which allows the user, to communicate, with the kernel, In most cases its a text based program. Where the user types program calls on a command line.<br /><br /><span style="font-weight: bold"># 4</span> The Boot Loader - A boot loader, is the first piece of executed code that loads/boots, the OS. The code is executed by the BIOS &#40;Basic Input/Output System&#41;, which on start checks all your drives for bootable media. It was named after this sentence: &quot;Starting a computer without it, is as hard as dragging yourself up in your bootstraps&quot;.<br /><br /><span style="font-style: italic">Heres how it works: </span><br /><img src="http://i.imgur.com/TUxrzk2.jpg" alt="Image" /><br /><br />The Boot Loader is loaded by the BIOS, which then loads the OS.<br /><br /><span style="font-style: italic">An basic explanation on how the input gets send back and forth:</span><br /><br /><span style="font-weight: bold"># 1</span> When the OS is loaded, it receives input from the user.<br /><span style="font-weight: bold"># 2</span> The input gets send to the current application.<br /><span style="font-weight: bold"># 3</span> Which then gets sent to the kernel, which then gets all the stuff needed to execute that command.<br /><span style="font-weight: bold"># 4</span> The command then goes to the hardware, which returns the result of the command back, to the kernel.<br /><span style="font-weight: bold"># 5</span> Which then tells the application the result, which then usually tells/shows the user it.<br /><br /><span style="font-style: italic">So, that&#39;s basicly it for now. Please send feedback, and say if i should continue this series thingy.. xD</span><br /><br />I hope to teach on how to make a simple kernel in C++, in this series of tutorials.</div>
+    </div>
+</div><br /><br /><br /><br /><span style="font-weight: bold">Part 2 - Differences in kernels:</span><br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="text-transform: uppercase; border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>show</a>'; }" /><b>Spoiler: </b><a href="#" onClick="return false;">show</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;"><span style="font-weight: bold"><span style="font-size: 150%; line-height: 116%;">Part 2, Differences in kernels</span></span><br /><br />--NOTICE: Will add pictures later. --<br /><br /><span style="font-style: italic">So, now you know the basics of how an OS works, let&#39;s get into the in-depth stuff.</span><br /><br />The different type of kernels.<br /><br />ATM there exists 3 types of kernels &#40;That i know of&#41;:<br />- Monolithic Kernels<br />- Micro Kernels<br />- Hybrid/Modular Kernels.<br /><br />In this episode, I&#39;m going to teach you the differences, between the different kernel structures.<br /><br /><span style="font-weight: bold"><span style="font-style: italic"><span style="font-size: 150%; line-height: 116%;">Monolithic Kernels: </span></span></span><br /><br />A Monolithic kernel, has the software running along with the main kernel thread, and also using the same memory area. This way makes accessing hardware more powerful.<br /><br />Pros:<br />+ Less software involved = faster speed<br />+ because its one piece of software, it should be smaller.<br />+ Less code, fewer bugs. And less security problems.<br /><br />Cons: <br />- if a driver crashes on a monolithic kernel, it might crash the entire system, and huge kernels gets hard to maintain.<br />- Coding in the kernel is harder, because it cannot use common libraries. <br />- Bugs in code, has large side effects, including damaging some data structure, of a totally unrelated part of the kernel.<br />- Kernels usually tends to get large quickly, which makes them hard to maintain.<br />- Hard to port to other CPU structures<br />- Harder to code software, as developers has to implement there own routines, which makes the software buggier.<br /><br />Monolithic kernels consists of core functions of the OS and the drivers. With the ability to load modules in runtime. which provides rich power over the hardware.<br /><br /><span style="font-weight: bold"><span style="font-style: italic"><span style="font-size: 150%; line-height: 116%;">Micro Kernels: </span></span></span><br /><br />Micro Kernels is an other approach, to making kernels.<br />Instead of running software beside the kernel as modules, it separates them out, and runs them in servers.<br />Those servers communicates with a mini-kernel. leaving as little as possible in the system space, and more in the user space &#40;i will explain what those are in next part&#41;.<br />Only stuff witch REALLY requires being in privileged mode, are in kernel space &#40;ICP -- Inter-Process Communication&#41;, witch is a basic version of the kernel functions.<br /><br />Pros:<br />+ Maintenance is generally easier.<br />+ Patches are easier to test.<br />+ Quick development time, and less reboots on software debugging.<br />+ More persistence, if something breaks, its easier to fix.<br /><br />Cons:<br />- More memory usage.<br />- More software interfacing = more performance loss.<br />- Messaging bugs can be harder to fix.<br />- Extremely Context based.<br />- Software will be more complex.<br /><br /><span style="font-weight: bold"><span style="font-style: italic"><span style="font-size: 150%; line-height: 116%;">Hybrid Kernels: </span></span></span><br /><br />Hybrid kernels, used in most commercial OSes.<br />They are similar to micro-kernels, except they have some extra code, to increase performance.<br />Basicly it&#39;s like if a modular and a micro kernel had a baby. xD<br />phillips1012 defines it as: &quot;A buzzword created by Microsoft to describe the <span style="font-style: italic">monolithic</span> kernel in the NT series of microsoft windows&quot;<br /><br /><br />Pros:<br />+ Faster Development time.<br />+ Faster build time.<br />+ Faster integration.<br /><br />Cons:<br />- More interfaces = possible more bugs.<br />- Maintaining can be confusing.<br /><br /><br /><span style="font-style: italic"> And that&#39;s the end of this part, hope you have learned something useful.</span></div>
+    </div>
+</div><br /><br /><br /><br /><span style="font-weight: bold">Part 2.5 - Quick Explaining: </span><br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="text-transform: uppercase; border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>show</a>'; }" /><b>Spoiler: </b><a href="#" onClick="return false;">show</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;"><span style="font-weight: bold"><span style="font-size: 150%; line-height: 116%;">Part 2.5, Quick Explaining.</span></span><br /><br /><span style="font-style: italic">Here&#39;s some extra small information. </span><br /><br /><br /><br /><span style="font-weight: bold"><span style="font-style: italic"><span style="font-size: 150%; line-height: 116%;">User Space and Userland: </span></span></span><br />Userspace is the name of code running outside the kernel, Userland is the name of the libraries and various programs that the OS interacts with the kernel with.<br /><br /><span style="font-weight: bold"><span style="font-style: italic"><span style="font-size: 150%; line-height: 116%;">Kernel Space: </span></span></span><br />Kernel space is reserved for running privileged kernel functions, and drivers. <br />Where, User Space is memory area where software and some drivers run.<br /><br /><span style="font-weight: bold"><span style="font-style: italic"><span style="font-size: 150%; line-height: 116%;">ICP &#40;Inter process communication&#41;: </span></span></span><br />ICP is, some methods, making the exchange of data between multiple threads, or in multiple processes possible.<br /><br /><span style="font-style: italic"> This was just some quick explaining, if you want more in-depth, explanations. Then wait for later parts, or look it up on Wikipedia <img src="./images/smilies/icon_e_smile.gif" alt=":&#41;" title="Smile" /></span></div>
+    </div>
+</div><br /><br /><span style="font-style: italic">I will add some more information about Kernels and operating systems here later...</span><br /><br /><span style="font-weight: bold"><div align="center"><span style="font-size: 200%; line-height: 116%;">Chapter 2 - Coding a basic kernel</span></div></span><br /><br /><br /><span style="font-weight: bold">Part 1 - Gathering the resources (For Windows):</span><br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="text-transform: uppercase; border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>show</a>'; }" /><b>Spoiler: </b><a href="#" onClick="return false;">show</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;"><span style="font-weight: bold">Part 1, Gathering the resources</span><br /><span style="font-style: italic"><br />Before coding an actual kernel, i advice you to get some pre-knowledge in C++, Assembly and C.<br />Now, i wont teach you how to make a 100% fully fletched UNIX clone, or something. In this tutorial. I&#39;m only going to teach the basics.<br />AKA, make something boot, and make it able to show something on the screen. You can then extend it on your own.<br /><br /><br /></span><br /><br /><span style="font-weight: bold"><span style="font-style: italic">Step 1 &#40;Optional, but a good idea.&#41;:<br />Get Codeblocks with MINGW</span></span><br /><br /><br /><img src="http://i.imgur.com/Nx1mPCG.png" alt="Image" /><br /><img src="http://i.imgur.com/ocGI7YR.png" alt="Image" /><br /><br /><br /><br /><br /><span style="font-weight: bold">Step 2:<br />Get Notepad++</span><br /><br /><img src="http://i.imgur.com/15jln52.png" alt="Image" /><br /><br /><br /><br /><br /><span style="font-weight: bold">Step 3:<br />Get Cygwin</span><br /><br /><!-- m --><a class="postlink" href="https://cygwin.com/setup-x86.exe">https://cygwin.com/setup-x86.exe</a><!-- m --><br /><br /><br /><br /><br /><span style="font-weight: bold">Step 4:<br />Get some virtualization software, i use Virtual Box, for this time.</span><br /><br /><img src="http://i.imgur.com/1E5Lvtx.png" alt="Image" /><br /><br /><br /><br /><br /><span style="font-weight: bold"><span style="font-size: 150%; line-height: 116%;"><span style="color: #FF0000">Install all of them, except Cygwin, next part we will go over installing, and setting up Cygwin, and GCC.</span></span></span></div>
+    </div>
+</div><br /><br /><br /><br /><span style="font-weight: bold">Part 2 - Well, it broke:</span><br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="text-transform: uppercase; border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>show</a>'; }" /><b>Spoiler: </b><a href="#" onClick="return false;">show</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;"><span style="font-weight: bold">Part 2, Redoing part one, and beginning to setup linux.</span><br /><span style="font-style: italic"><span style="font-weight: bold">Prenotes:</span> </span><br /><span style="font-style: italic"><br />So yeah, sorry for wait times... *INSERT EXCUSE HERE*<br />So, yeah. I have been quite busy with, trying to get this to work. &#40;Surprise, Surprise, it didnt ;_;&#41;<br />And.... ehh...<br /><img src="http://i.imgur.com/BqySLzll.png" alt="Image" /><br />Playing RUST.<br /></span><br /><br /><span style="font-weight: bold">So yeah. Back to making the tutorial i guess....</span><br /><br /><span style="font-style: italic">Because Cygwin didn&#39;t want me to compile it. I have decided, to go on this tutorial in linux. So from the part where the installation of linux software begins. Linux users can join in!</span><br /><br /><span style="font-size: 150%; line-height: 116%;"><span style="color: #FF0000"><span style="font-style: italic"><span style="font-weight: bold">What we need:</span></span></span></span><br /><blockquote class="uncited"><div><span style="font-weight: bold">- <a href="https://www.virtualbox.org/wiki/Downloads" class="postlink">Virtual Box</a>, or any <a href="http://en.wikipedia.org/wiki/Virtual_machine" class="postlink">Virtual Machine</a>.<br /><br />- A linux distro. &#40;If you still want to do this on Windows, install <a href="http://www.colinux.org/" class="postlink">coLinux</a>.&#41;</span></div></blockquote><br /><br /><span style="font-weight: bold"><span style="font-style: italic">When you have got these things, install them. For people who dont know how to install a distro &#40;If there even are people like that.&#41; i will go through it here:</span></span><br /><br /><span style="font-size: 150%; line-height: 116%;"><span style="font-weight: bold">Part 1, Downloading... again</span></span><br /><br /><br /><span style="font-weight: bold"><span style="font-style: italic">Step 1 - Download the virtual machine &#40;For this tutorial, i will be using Virtual Box&#41;:</span></span><br /><br /><img src="http://i.imgur.com/1E5Lvtx.png" alt="Image" /><br /><br /><span style="font-weight: bold"><span style="font-style: italic">Step 2 - Get a linux distro &#40;For this tutorial, i will be using the distro ElementaryOS&#41;:</span></span><br /><br /><img src="http://i.imgur.com/Ar0ycpxl.png" alt="Image" /><br /><br /><img src="http://i.imgur.com/07Gv0BHl.png" alt="Image" /><br /><span style="font-weight: bold"><span style="font-style: italic">Get the version that matches your CPU. My CPU is 64 bit. so i choose that.</span></span><br /><span style="color: #FF0000"><span style="font-weight: bold"><span style="font-style: italic">take note, where you have placed it.</span></span></span><br /><br /><span style="font-size: 150%; line-height: 116%;"><span style="font-weight: bold">Part 2, Setting it up</span></span><br />Ok, now that we have it downloaded. Let&#39;s set it up.<br /><br /><span style="font-weight: bold">*</span> First Install Virtual Box.<br /><br /><span style="font-weight: bold">*</span> Accept the diffrent dialogs comming up with a driver signature, if you get some.<br /><br /><span style="font-weight: bold">*</span> Now, Start Virtual Box, if starting the first time, it should guide you through creating a Virtual Box.<br /><br /><br /><span style="font-weight: bold">*</span> I Recommend:<br /><br /><span style="font-weight: bold">-  Name: Linux &#40;you can choose other names, but too keep it simple, call it that.&#41;</span><br /><br /><span style="font-weight: bold">-  Memory: 512 MB or more, i have put mine on 2 GB &#40;or 2042 MB&#41;</span><br /><br /><span style="font-weight: bold">-  Go through the steps of creating a virtual harddrive, just press next all the time.</span><br /><br /><span style="font-weight: bold"><span style="font-style: italic"><span style="text-decoration: underline">Your virtual machine should now be &#40;nearly&#41; ready.</span></span></span><br /><span style="font-weight: bold">To get a smooth experience, i recommend having atleast 4 CPU cores, and assigning them in the System settings for the virtual machine &#40;Wil go over how to do that later.&#41;</span><br />Now, To &quot;Part 3&quot;, Where we install the OS.<br /><br /><br /><span style="font-size: 150%; line-height: 116%;"><span style="font-weight: bold">Part 3, Acturely installing that darn thing, so we can begin.</span></span><br /><br />So, now your Virtual Machine is created, let&#39;s boot it up!<br />Select it in the sidebar, and press the green &quot;Start&quot; button.<br />&#40;I&#39;m Danish, and my language setup is also Danish, so don&#39;t worry about the different names. xD&#41;<br /><br /><img src="http://i.imgur.com/kC8FMS0l.png" alt="Image" /><br /><br /><br />When the virtual machine starts &#40;for the first time&#41;, you will be greeted with this:<br /><br /><img src="http://i.imgur.com/HRLhmt8l.png" alt="Image" /><br /><span style="font-weight: bold">Just click the yellow folder icon, and <span style="font-style: italic">Open the distro ISO</span></span><br /><br /><br /><br /><span style="font-weight: bold">It should then boot up, depending on configuartion, and computer. It might take a while.</span><br /><br /><img src="http://i.imgur.com/ZyH5JRJl.png" alt="Image" /><br /><br /><br /><br /><span style="font-weight: bold">When its loaded, press the &quot;Install elementaryOS&quot; button</span><br /><br /><img src="http://i.imgur.com/5lL0vxW.png" alt="Image" /><br /><br /><br /><span style="font-weight: bold">Then just complete the typical installation method of pressing next...</span><br /><br /><img src="http://i.imgur.com/Nv3PycH.png" alt="Image" /><br /><br /><br /><span style="font-weight: bold">When you finally have pressed Install now, there should be appearing a progress bar at the bottom of the screen. It shows you how long it is in the progress of installing.</span><br /><br /><img src="http://i.imgur.com/Q3tlYYY.png" alt="Image" /><br /><br /><br /><span style="font-weight: bold">Now, you set up date and time...</span><br /><br /><img src="http://i.imgur.com/My8AnI8.png" alt="Image" /><br /><br /><br /><span style="font-weight: bold">.. and your user account</span><br /><br /><img src="http://i.imgur.com/a2r7hbG.png" alt="Image" /><br /><br /><br /><span style="font-weight: bold">Then, its just waiting...</span><br /><br /><img src="http://i.imgur.com/GpfZl3W.png" alt="Image" /><br /><br /><br /><span style="font-weight: bold">And, Its done! <img src="./images/smilies/icon_e_smile.gif" alt=":&#41;" title="Smile" /> now just press the &quot;Restart Now&quot; button. You have sucessfully installed elementaryOS. <span style="font-style: italic">when restarted, feel free to play around with it.</span></span><br /><br /><img src="http://i.imgur.com/zXC1nV1.png" alt="Image" /><br /><br /><br /><br /><span style="font-weight: bold"><span style="font-style: italic"><span style="text-decoration: underline"><span style="color: #FF0000">In next part, we will install the GCC dependencies, and build it. c:</span></span></span></span><br /><br /><br /><span style="font-style: italic">If this part is confusing to read, sorry. I am writing this. at midnight. xD</span></div>
+    </div>
+</div><br /><br /><br /><br /><br /><span style="font-weight: bold">Links for part 1: </span><br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="text-transform: uppercase; border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>show</a>'; }" /><b>Spoiler: </b><a href="#" onClick="return false;">show</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;">Cygwin: <!-- m --><a class="postlink" href="https://cygwin.com/install.html">https://cygwin.com/install.html</a><!-- m --> [NOTICE: ] Version x86 will be used in the tutorial, so it&#39;s best that you download that.<br />Virtual Box: <!-- m --><a class="postlink" href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a><!-- m --><br />Notepad++: <!-- m --><a class="postlink" href="http://notepad-plus-plus.org/download/v6.6.7.html">http://notepad-plus-plus.org/download/v6.6.7.html</a><!-- m --><br />Codeblocks: <!-- m --><a class="postlink" href="http://www.codeblocks.org/downloads">http://www.codeblocks.org/downloads</a><!-- m --></div>
+    </div>
+</div><br /><br /><span style="font-size: 200%; line-height: 116%;"><span style="color: #FF0000"><span style="font-style: italic"><span style="font-weight: bold">Please put any questions, in the comments <img src="./images/smilies/icon_e_smile.gif" alt=":)" title="Smile" /></span></span></span></span><br />-- NOTE: English is not my native language, so sorry if theres spelling mistakes --</div>
+
+			
+				<div class="notice">Last edited by <a href="./memberlist.php?mode=viewprofile&amp;u=250&amp;sid=630e401588ec9eb68dd09bc2e546e922">Member1221</a> on Sat Aug 02, 2014 2:19 am, edited 12 times in total.
+					
+				</div>
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile2967">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=250&amp;sid=630e401588ec9eb68dd09bc2e546e922"><img src="./download/file.php?avatar=250_1404413072.jpg" width="96" height="96" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=250&amp;sid=630e401588ec9eb68dd09bc2e546e922">Member1221</a>
+			</dt>
+
+			<dd>Member<br /><img src="./images/ranks/1.png" alt="Member" title="Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 25</dd><dd><strong>Joined:</strong> Thu Jul 03, 2014 6:32 pm</dd>
+			<dd><strong>Favorite OS:</strong> Windows 8.1</dd>
+		
+			<dd><strong>Favorite Programming Language:</strong> C#</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p2971"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p2971">Re: How to make an OS (Part 1?) - The basics on how it works</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=2971&amp;sid=630e401588ec9eb68dd09bc2e546e922#p2971"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=132&amp;sid=630e401588ec9eb68dd09bc2e546e922">RainfallMuffin</a></strong> &raquo; Fri Jul 04, 2014 12:12 am </p>
+
+			
+
+			<div class="content">I like it. Your english is great. I can't wait until the next part.</div>
+
+			<div id="sig2971" class="signature"><span style="font-size: 85%; line-height: 116%;">Tumblr reminds you to <a href="http://i.imgur.com/LDGvxJW.jpg" class="postlink">check your privileges</a></span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile2971">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=132&amp;sid=630e401588ec9eb68dd09bc2e546e922"><img src="./download/file.php?avatar=132_1442950579.png" width="129" height="150" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=132&amp;sid=630e401588ec9eb68dd09bc2e546e922">RainfallMuffin</a>
+			</dt>
+
+			<dd>Ex-Staff<br /><img src="./images/ranks/3.png" alt="Ex-Staff" title="Ex-Staff" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 339</dd><dd><strong>Joined:</strong> Wed May 28, 2014 3:29 pm</dd><dd><strong>Location:</strong> The Multiverse</dd>
+			<dd><strong>Favorite OS:</strong> FreeBSD / Arch Linux</dd>
+		
+			<dd><strong>Favorite Programming Language:</strong> Javascript</dd>
+		
+			<dd><strong>Personal Text:</strong> fiminist revolutoin</dd>
+		
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://rainfallskies.com" title="WWW: http://rainfallskies.com"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p2972"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p2972">Re: How to make an OS (Part 1?) - The basics on how it works</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=2972&amp;sid=630e401588ec9eb68dd09bc2e546e922#p2972"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=250&amp;sid=630e401588ec9eb68dd09bc2e546e922">Member1221</a></strong> &raquo; Fri Jul 04, 2014 12:16 am </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>BetaSpace89 wrote:</cite>I like it. Your english is great. I can't wait until the next part.</div></blockquote><br />Thank you, i will make + post it asap <img src="./images/smilies/icon_e_smile.gif" alt=":)" title="Smile" /></div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile2972">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=250&amp;sid=630e401588ec9eb68dd09bc2e546e922"><img src="./download/file.php?avatar=250_1404413072.jpg" width="96" height="96" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=250&amp;sid=630e401588ec9eb68dd09bc2e546e922">Member1221</a>
+			</dt>
+
+			<dd>Member<br /><img src="./images/ranks/1.png" alt="Member" title="Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 25</dd><dd><strong>Joined:</strong> Thu Jul 03, 2014 6:32 pm</dd>
+			<dd><strong>Favorite OS:</strong> Windows 8.1</dd>
+		
+			<dd><strong>Favorite Programming Language:</strong> C#</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p2976"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p2976">Re: How to make an OS (Part 1?) - The basics on how it works</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=2976&amp;sid=630e401588ec9eb68dd09bc2e546e922#p2976"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=78&amp;sid=630e401588ec9eb68dd09bc2e546e922">Delracman</a></strong> &raquo; Fri Jul 04, 2014 1:16 am </p>
+
+			
+
+			<div class="content">Thanks! This series is really interesting and I'm learning a lot of stuff I didn't know before. Please write more!!! I really wish this forum had a &quot;kudos&quot; button.</div>
+
+			<div id="sig2976" class="signature">Inactive. Well, kinda active. I come on when I feel like it. I'm on IRC a lot more than I am here, so try IRC if you need me. If not, PM here.<br /><br />I start 8th grade soon. Kinda excited, not really. I have senioritis for middle school. Just want to be in high school already.<br /><br />Starting a YT channel soon. I'll post a link when I do. The name will be Lord Fundarbyrd.<br /><br />Where I've been: watching YouTube and Twitch.<br /><br />YouNow (I broadcast occasionally) : LordFundarbyrd.<br /><br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>FAQ: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>FAQ: </b><a href=\'#\' onClick=\'return false;\'>SHOW</a>'; }" /><b>FAQ: </b><a href="#" onClick="return false;">SHOW</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;"><span style="font-weight: bold">Next Google Hangout? </span> Not sure.<br /><br /><span style="font-weight: bold">Computer? </span> Check back in a few days and I&#39;ll tell you.<br /><br /><span style="font-weight: bold">Devices? </span> Tablet is iPad Air 2. Phone is S3 &#40;originally Lucid 2, but it broke&#41; Contract ends Sep. 5, so I&#39;m getting a new one soon.<br /><br /><span style="font-weight: bold">How old are you? </span> 13.<br /><br /><span style="font-weight: bold">Website? </span> Yes, but I never use it. My forum is down too. Check back in a few months.<br /><br /><span style="font-weight: bold">Are you a boy or a girl? </span> Check back in a few months. I want to give you one answer but it&#39;s not correct yet. <br /><br /><span style="font-weight: bold">Where are you from/where do you live? </span> Originally from Massachusetts. Currently in Maryland. Moving to California after high school.</div>
+    </div>
+</div></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile2976">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=78&amp;sid=630e401588ec9eb68dd09bc2e546e922">Delracman</a>
+			</dt>
+
+			<dd>Advanced Member<br /><img src="./images/ranks/3.png" alt="Advanced Member" title="Advanced Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 435</dd><dd><strong>Joined:</strong> Fri May 23, 2014 10:29 am</dd><dd><strong>Location:</strong> my room.</dd>
+			<dd><strong>Favorite OS:</strong> Windows 10 TP</dd>
+		
+			<dd><strong>Favorite Programming Language:</strong> None</dd>
+		
+			<dd><strong>Personal Text:</strong> Personal stuff happening, pm me if you wanna know</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p3010"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p3010">Re: How to make an OS, A tutorial series</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=3010&amp;sid=630e401588ec9eb68dd09bc2e546e922#p3010"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=82&amp;sid=630e401588ec9eb68dd09bc2e546e922">muhuwj</a></strong> &raquo; Fri Jul 04, 2014 9:15 am </p>
+
+			
+
+			<div class="content">Very nice tutorial! I've always wanted to create an operating system (or at least learn the theory).</div>
+
+			<div id="sig3010" class="signature"><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Current works: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Current works: </b><a href=\'#\' onClick=\'return false;\'>SHOW</a>'; }" /><b>Current works: </b><a href="#" onClick="return false;">SHOW</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;">Windows Customization - Awesome Rainmeter skins!<br /><a href="http://www.windowscustomization.tk" class="postlink">http://www.windowscustomization.tk</a></div>
+    </div>
+</div><br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Where to find me: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Where to find me: </b><a href=\'#\' onClick=\'return false;\'>SHOW</a>'; }" /><b>Where to find me: </b><a href="#" onClick="return false;">SHOW</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;">&#40;Some letters are censored due to Endejan. Should be easy to guess.&#41;<br />Email: <span style="text-decoration: underline"><a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="cdbaa0e7a5e7aebfe7abb98daaa0aca4a1e3aea2a0">[email&#160;protected]</a><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script></span><br />Minecraft: <span style="text-decoration: underline">muhuwj2</span></div>
+    </div>
+</div><br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Bio: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Bio: </b><a href=\'#\' onClick=\'return false;\'>SHOW</a>'; }" /><b>Bio: </b><a href="#" onClick="return false;">SHOW</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;">Hi! I&#39;m yet another computer geek who enjoys programming, browsing the internet, and reading. My favorite website is Lifehacker, favorite forum is techTalk, and my favorite webcomic is xkcd. I know 4 programming languages: Python, BASIC, C++, and Visual Basic. I also know some &quot;not so programming&quot; languages: HTML, CSS, and Batch. I use Windows 8 as my main operating system, but I&#39;ve also tried Ubuntu, Linux Mint, Arch Linux, and countless others. I also play on some Minecraft servers.</div>
+    </div>
+</div><br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>OS of the week: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>OS of the week: </b><a href=\'#\' onClick=\'return false;\'>SHOW</a>'; }" /><b>OS of the week: </b><a href="#" onClick="return false;">SHOW</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;"><a href="http://distro.ibiblio.org/tinycorelinux/welcome.html" class="postlink"><img src="http://i.imgur.com/s3MBmpY.png" alt="Image" /></a></div>
+    </div>
+</div><br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Awesome xkcd comics: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Awesome xkcd comics: </b><a href=\'#\' onClick=\'return false;\'>SHOW</a>'; }" /><b>Awesome xkcd comics: </b><a href="#" onClick="return false;">SHOW</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;"><img src="http://i.imgur.com/fz6nLns.png" alt="Image" /></div>
+    </div>
+</div><br /><img src="http://i.imgur.com/cAmSiyo.png" alt="Image" /></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile3010">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=82&amp;sid=630e401588ec9eb68dd09bc2e546e922"><img src="./download/file.php?avatar=82_1400947701.jpg" width="200" height="139" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=82&amp;sid=630e401588ec9eb68dd09bc2e546e922">muhuwj</a>
+			</dt>
+
+			<dd>Member<br /><img src="./images/ranks/2.png" alt="Member" title="Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 101</dd><dd><strong>Joined:</strong> Fri May 23, 2014 12:44 pm</dd><dd><strong>Location:</strong> The Internet</dd>
+			<dd><strong>Favorite OS:</strong> Win 7/8/Linux Mint</dd>
+		
+			<dd><strong>Favorite Programming Language:</strong> Python/C++</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p3013"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p3013">Re: How to make an OS, A tutorial series</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=3013&amp;sid=630e401588ec9eb68dd09bc2e546e922#p3013"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=250&amp;sid=630e401588ec9eb68dd09bc2e546e922">Member1221</a></strong> &raquo; Fri Jul 04, 2014 11:51 am </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>muhuwj wrote:</cite>Very nice tutorial! I've always wanted to create an operating system (or at least learn the theory).</div></blockquote><br />I will go over coding a simple kernel in C++ later <img src="./images/smilies/icon_e_smile.gif" alt=":)" title="Smile" /></div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile3013">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=250&amp;sid=630e401588ec9eb68dd09bc2e546e922"><img src="./download/file.php?avatar=250_1404413072.jpg" width="96" height="96" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=250&amp;sid=630e401588ec9eb68dd09bc2e546e922">Member1221</a>
+			</dt>
+
+			<dd>Member<br /><img src="./images/ranks/1.png" alt="Member" title="Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 25</dd><dd><strong>Joined:</strong> Thu Jul 03, 2014 6:32 pm</dd>
+			<dd><strong>Favorite OS:</strong> Windows 8.1</dd>
+		
+			<dd><strong>Favorite Programming Language:</strong> C#</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p3014"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p3014">Re: How to make an OS, A tutorial series</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=3014&amp;sid=630e401588ec9eb68dd09bc2e546e922#p3014"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=250&amp;sid=630e401588ec9eb68dd09bc2e546e922">Member1221</a></strong> &raquo; Fri Jul 04, 2014 12:36 pm </p>
+
+			
+
+			<div class="content">Part 2.5 is up. <img src="./images/smilies/icon_e_smile.gif" alt=":)" title="Smile" /></div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile3014">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=250&amp;sid=630e401588ec9eb68dd09bc2e546e922"><img src="./download/file.php?avatar=250_1404413072.jpg" width="96" height="96" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=250&amp;sid=630e401588ec9eb68dd09bc2e546e922">Member1221</a>
+			</dt>
+
+			<dd>Member<br /><img src="./images/ranks/1.png" alt="Member" title="Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 25</dd><dd><strong>Joined:</strong> Thu Jul 03, 2014 6:32 pm</dd>
+			<dd><strong>Favorite OS:</strong> Windows 8.1</dd>
+		
+			<dd><strong>Favorite Programming Language:</strong> C#</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p3072"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p3072">Re: How to make an OS, A tutorial series</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=3072&amp;sid=630e401588ec9eb68dd09bc2e546e922#p3072"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=97&amp;sid=630e401588ec9eb68dd09bc2e546e922">esc1010</a></strong> &raquo; Sat Jul 05, 2014 4:57 am </p>
+
+			
+
+			<div class="content">I can't get Notepad++, they haven't made a Linux version. I will now find other things..</div>
+
+			<div id="sig3072" class="signature"><span style="font-size: 150%; line-height: 116%;">In soviet Russia... hardware fix you!</span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile3072">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=97&amp;sid=630e401588ec9eb68dd09bc2e546e922"><img src="./download/file.php?avatar=97_1408539000.jpg" width="120" height="104" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=97&amp;sid=630e401588ec9eb68dd09bc2e546e922">esc1010</a>
+			</dt>
+
+			<dd>Advanced Member<br /><img src="./images/ranks/3.png" alt="Advanced Member" title="Advanced Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 531</dd><dd><strong>Joined:</strong> Fri May 23, 2014 9:43 pm</dd>
+			<dd><strong>Favorite OS:</strong> elementary OS Luna</dd>
+		
+			<dd><strong>Favorite Programming Language:</strong> HTML 5, C++</dd>
+		
+			<dd><strong>Personal Text:</strong> AMD Is Inside!</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p3074"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p3074">Re: How to make an OS, A tutorial series</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=3074&amp;sid=630e401588ec9eb68dd09bc2e546e922#p3074"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=132&amp;sid=630e401588ec9eb68dd09bc2e546e922">RainfallMuffin</a></strong> &raquo; Sat Jul 05, 2014 5:16 am </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>ethanc820 wrote:</cite>I can't get Notepad++, they haven't made a Linux version. I will now find other things..</div></blockquote><br />I loved Notepad++. That was back in the Batch days. Now I code in Python and C in Geany. It is a really good editor. another good one is Eclipse but you need some plugins for anything other than Java. But Geany is the way to go.</div>
+
+			<div id="sig3074" class="signature"><span style="font-size: 85%; line-height: 116%;">Tumblr reminds you to <a href="http://i.imgur.com/LDGvxJW.jpg" class="postlink">check your privileges</a></span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile3074">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=132&amp;sid=630e401588ec9eb68dd09bc2e546e922"><img src="./download/file.php?avatar=132_1442950579.png" width="129" height="150" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=132&amp;sid=630e401588ec9eb68dd09bc2e546e922">RainfallMuffin</a>
+			</dt>
+
+			<dd>Ex-Staff<br /><img src="./images/ranks/3.png" alt="Ex-Staff" title="Ex-Staff" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 339</dd><dd><strong>Joined:</strong> Wed May 28, 2014 3:29 pm</dd><dd><strong>Location:</strong> The Multiverse</dd>
+			<dd><strong>Favorite OS:</strong> FreeBSD / Arch Linux</dd>
+		
+			<dd><strong>Favorite Programming Language:</strong> Javascript</dd>
+		
+			<dd><strong>Personal Text:</strong> fiminist revolutoin</dd>
+		
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://rainfallskies.com" title="WWW: http://rainfallskies.com"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p3076"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p3076">Re: How to make an OS, A tutorial series</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=3076&amp;sid=630e401588ec9eb68dd09bc2e546e922#p3076"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=250&amp;sid=630e401588ec9eb68dd09bc2e546e922">Member1221</a></strong> &raquo; Sat Jul 05, 2014 10:20 am </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>BetaSpace89 wrote:</cite><blockquote><div><cite>ethanc820 wrote:</cite>I can't get Notepad++, they haven't made a Linux version. I will now find other things..</div></blockquote><br />I loved Notepad++. That was back in the Batch days. Now I code in Python and C in Geany. It is a really good editor. another good one is Eclipse but you need some plugins for anything other than Java. But Geany is the way to go.</div></blockquote><br />Well, i'm using Windows, and that's the best alternative for me than coding in notepad. xD<br />Also, the compiling part of the tutorial wont work on linux the way i intend, i will update the tutorial later, to work with linux <img src="./images/smilies/icon_e_smile.gif" alt=":)" title="Smile" /></div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile3076">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=250&amp;sid=630e401588ec9eb68dd09bc2e546e922"><img src="./download/file.php?avatar=250_1404413072.jpg" width="96" height="96" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=250&amp;sid=630e401588ec9eb68dd09bc2e546e922">Member1221</a>
+			</dt>
+
+			<dd>Member<br /><img src="./images/ranks/1.png" alt="Member" title="Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 25</dd><dd><strong>Joined:</strong> Thu Jul 03, 2014 6:32 pm</dd>
+			<dd><strong>Favorite OS:</strong> Windows 8.1</dd>
+		
+			<dd><strong>Favorite Programming Language:</strong> C#</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?f=28&amp;t=550&amp;sid=630e401588ec9eb68dd09bc2e546e922">
+
+	<fieldset class="display-options" style="margin-top: 0; ">
+		<a href="./viewtopic.php?f=28&amp;t=550&amp;sid=630e401588ec9eb68dd09bc2e546e922&amp;start=10" class="right-box right">Next</a>
+		<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select> <input type="submit" name="sort" value="Go" class="button2" /></label>
+		
+	</fieldset>
+
+	</form>
+	<hr />
+
+
+<div class="topic-actions">
+	<div class="buttons">
+	
+		<div class="locked-icon"><a href="./posting.php?mode=reply&amp;f=28&amp;t=550&amp;sid=630e401588ec9eb68dd09bc2e546e922" title="This topic is locked, you cannot edit posts or make further replies."><span></span>Topic locked</a></div>
+	
+	</div>
+
+	
+		<div class="pagination">
+			59 posts
+			 &bull; <a href="#" onclick="jumpto(); return false;" title="Click to jump to page…">Page <strong>1</strong> of <strong>6</strong></a> &bull; <span><strong>1</strong><span class="page-sep">, </span><a href="./viewtopic.php?f=28&amp;t=550&amp;sid=630e401588ec9eb68dd09bc2e546e922&amp;start=10">2</a><span class="page-sep">, </span><a href="./viewtopic.php?f=28&amp;t=550&amp;sid=630e401588ec9eb68dd09bc2e546e922&amp;start=20">3</a><span class="page-sep">, </span><a href="./viewtopic.php?f=28&amp;t=550&amp;sid=630e401588ec9eb68dd09bc2e546e922&amp;start=30">4</a><span class="page-sep">, </span><a href="./viewtopic.php?f=28&amp;t=550&amp;sid=630e401588ec9eb68dd09bc2e546e922&amp;start=40">5</a><span class="page-sep">, </span><a href="./viewtopic.php?f=28&amp;t=550&amp;sid=630e401588ec9eb68dd09bc2e546e922&amp;start=50">6</a></span>
+		</div>
+	
+</div>
+
+
+	<p></p><p><a href="./viewforum.php?f=28&amp;sid=630e401588ec9eb68dd09bc2e546e922" class="left-box left" accesskey="r">Return to Programming</a></p>
+
+	<form method="post" id="jumpbox" action="./viewforum.php?sid=630e401588ec9eb68dd09bc2e546e922" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Jump to:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+			
+				<option value="-1">Select a forum</option>
+			<option value="-1">------------------</option>
+				<option value="98">Raytron</option>
+			
+				<option value="99">&nbsp; &nbsp;Raytron</option>
+			
+				<option value="3">General Forum Discussion</option>
+			
+				<option value="4">&nbsp; &nbsp;Announcements</option>
+			
+				<option value="6">&nbsp; &nbsp;Introductions</option>
+			
+				<option value="92">&nbsp; &nbsp;Suggestions</option>
+			
+				<option value="90">Technology</option>
+			
+				<option value="10">&nbsp; &nbsp;General Tech Discussion</option>
+			
+				<option value="91">&nbsp; &nbsp;Technology News</option>
+			
+				<option value="18">&nbsp; &nbsp;Software / Operating Systems</option>
+			
+				<option value="11">&nbsp; &nbsp;Hardware</option>
+			
+				<option value="28" selected="selected">&nbsp; &nbsp;Programming</option>
+			
+				<option value="32">&nbsp; &nbsp;Gaming</option>
+			
+				<option value="57">Other</option>
+			
+				<option value="58">&nbsp; &nbsp;Off Topic</option>
+			
+			</select>
+			<input type="submit" value="Go" class="button2" />
+		</fieldset>
+	</form>
+
+
+	<h3><a href="./viewonline.php?sid=630e401588ec9eb68dd09bc2e546e922">Who is online</a></h3>
+	<p>Users browsing this forum: No registered users and 0 guests</p>
+</div>
+
+<div id="page-footer">
+
+	<div class="breadcrumbs">
+		<ul class="linklist">
+			<li class="icon-home"><a href="./index.php?sid=630e401588ec9eb68dd09bc2e546e922" accesskey="h">Board index</a></li>
+				
+			<li class="rightside"><a href="./memberlist.php?mode=leaders&amp;sid=630e401588ec9eb68dd09bc2e546e922">The team</a> &bull; <a href="./ucp.php?mode=delete_cookies&amp;sid=630e401588ec9eb68dd09bc2e546e922">Delete all board cookies</a> &bull; All times are UTC </li>
+		</ul>
+		<div class="copyright">
+		</div>
+	</div>
+</div>
+
+</div>
+</div>
+<div class="clearit"></div>
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51268407-1', 'tech-talk.ml');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

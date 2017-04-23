@@ -1,0 +1,853 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<title>techTalk &bull; View topic - Windows 10 - Development so far</title>
+
+<link rel="alternate" type="application/atom+xml" title="Feed - techTalk" href="https://archive.raytron.org/techtalk/feed.php" /><link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="https://archive.raytron.org/techtalk/feed.php?mode=topics" /><link rel="alternate" type="application/atom+xml" title="Feed - Forum - Software / Operating Systems" href="https://archive.raytron.org/techtalk/feed.php?f=18" /><link rel="alternate" type="application/atom+xml" title="Feed - Topic - Windows 10 - Development so far" href="https://archive.raytron.org/techtalk/feed.php?f=18&amp;t=873" />
+
+<!--
+	phpBB style name: MyInvision
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:	  Brad Veryard ( http://www.bradleyv.com/ )
+-->
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Enter the page number you wish to go to:';
+	var on_page = '1';
+	var per_page = '10';
+	var base_url = './viewtopic.php?f=18&amp;t=873&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; domain=archive.raytron.org; secure';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript" src="./styles/prosilver/template/styleswitcher.js"></script>
+<script type="text/javascript" src="./styles/prosilver/template/forum_fn.js"></script>
+<script type="text/javascript" src="./styles/tech-talk/template/jquery.min.js"></script>
+<script type="text/javascript" src="./styles/tech-talk/template/jquery.cookie.js"></script>
+
+<link href="./styles/tech-talk/theme/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<link href="./style.php?id=7&amp;lang=en&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c" rel="stylesheet" type="text/css" media="screen, projection" />
+
+</head>
+
+<body id="phpbb" class="section-viewtopic ltr">
+<!--
+
+ Options: Yes | No
+ Options: Yes | No
+ Options: Yes | No
+
+-->
+<div class="above"></div>
+<div id="header">
+	<div class="main_width">
+		<a href="./index.php?sid=58f8f9c19118bb362783ffefd0ee5a0c" title="Board index" id="logo"><img src="./styles/tech-talk/imageset/logo.png" width="358" height="64" alt="" title="" /></a>
+		
+				
+			<div id="search-box" class="searchback">
+				<form action="./search.php?sid=58f8f9c19118bb362783ffefd0ee5a0c" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="text" maxlength="128" title="Search for keywords" class="inputbox search" value="Search…" onclick="if(this.value=='Search…')this.value='';" onblur="if(this.value=='')this.value='Search…';" />
+					<input class="button2" value="Search" type="submit" /><br />
+					<a href="./search.php?sid=58f8f9c19118bb362783ffefd0ee5a0c" title="View the advanced search options">Advanced search</a> <input type="hidden" name="sid" value="58f8f9c19118bb362783ffefd0ee5a0c" />
+
+				</fieldset>
+				</form>
+			</div>
+			
+	</div>
+</div>
+
+<div id="wrap">
+	<div class="navbar clearit">
+		<ul id="nav">
+			<li><a href="./index.php?sid=58f8f9c19118bb362783ffefd0ee5a0c" accesskey="h"><img src="./styles/tech-talk/theme/images/globe.png" class="nicon" alt="Board index" />Board index</a></li>
+			<li><a href="./memberlist.php?sid=58f8f9c19118bb362783ffefd0ee5a0c"><img src="./styles/tech-talk/theme/images/member.png" class="nicon" alt="Members" />Members</a></li>
+			<li><a href="./faq.php?sid=58f8f9c19118bb362783ffefd0ee5a0c"><img src="./styles/tech-talk/theme/images/faq.png" class="nicon" alt="FAQ" />FAQ</a></li>
+			
+		</ul>
+	</div>
+	<a id="top" name="top" accesskey="t"></a>
+<div id="content">
+	<div id="page-header">
+
+		<div class="breadcrumbs">
+			<ul class="linklist navlinks">
+				<li class="icon-home"><a href="./index.php?sid=58f8f9c19118bb362783ffefd0ee5a0c" accesskey="h">Board index</a>  <strong>&#8249;</strong> <a href="./viewforum.php?f=90&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c">Technology</a> <strong>&#8249;</strong> <a href="./viewforum.php?f=18&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c">Software / Operating Systems</a></li>
+				<li class="rightside"><a href="./viewtopic.php?f=18&amp;t=873&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c&amp;view=print" title="Print view" accesskey="p" class="print">Print view</a></li>
+			</ul>
+
+			
+
+			<ul class="linklist rightside">
+				
+					<li class="icon-logout"><a href="./ucp.php?mode=login&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c" title="Login" accesskey="x">Login</a></li>
+				
+			</ul>
+			<div class="clearit"></div>
+		</div>
+	</div>
+
+	<a name="start_here"></a>
+	<div id="page-body">
+		
+		
+ <div id="announcebar" class="rules">
+        <div class="inner"><span class="corners-top"><span></span></span>
+            This forum is an archive, hosted for reference purposes only. If you want to get involved with our current community, please visit <a href="https://talk.raytron.org" target="_blank">Raytron</a>.
+         <span class="corners-bottom"><span></span></span></div>
+     </div>
+<h2><a href="./viewtopic.php?f=18&amp;t=873&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c">Windows 10 - Development so far</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body --><div style="display: none !important;">Talk about Software and Operating Systems here.<br /></div>
+
+<div class="topic-actions">
+
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=18&amp;t=873&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php?sid=58f8f9c19118bb362783ffefd0ee5a0c">
+			<fieldset>
+				<input class="inputbox search tiny"  type="text" name="keywords" id="search_keywords" size="20" value="Search this topic…" onclick="if(this.value=='Search this topic…')this.value='';" onblur="if(this.value=='')this.value='Search this topic…';" />
+				<input class="button2" type="submit" value="Search" />
+				<input type="hidden" name="t" value="873" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="58f8f9c19118bb362783ffefd0ee5a0c" />
+
+			</fieldset>
+			</form>
+		</div>
+	
+		<div class="pagination">
+			85 posts
+			 &bull; <a href="#" onclick="jumpto(); return false;" title="Click to jump to page…">Page <strong>1</strong> of <strong>9</strong></a> &bull; <span><strong>1</strong><span class="page-sep">, </span><a href="./viewtopic.php?f=18&amp;t=873&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c&amp;start=10">2</a><span class="page-sep">, </span><a href="./viewtopic.php?f=18&amp;t=873&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c&amp;start=20">3</a><span class="page-sep">, </span><a href="./viewtopic.php?f=18&amp;t=873&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c&amp;start=30">4</a><span class="page-sep">, </span><a href="./viewtopic.php?f=18&amp;t=873&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c&amp;start=40">5</a><span class="page-dots"> ... </span><a href="./viewtopic.php?f=18&amp;t=873&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c&amp;start=80">9</a></span>
+		</div>
+	
+
+</div>
+<div class="clear"></div>
+
+
+	<div class="pannels clearit">
+	<div id="p6721"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=18&amp;p=6721&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 class="first"><a href="#p6721">Windows 10 - Development so far</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=6721&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c#p6721"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=62&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c">allstarsnorks2</a></strong> &raquo; Sun Sep 21, 2014 5:35 am </p>
+
+			
+
+			<div class="content">Looks like the new builds of Windows 9 has been leaked. Today, I'll be talking about the next Windows, Windows 9. Build number in discussion is 9841.<br /><br />There has been a previous post regarding Windows 9 leaks. You can view the topic here: <!-- l --><a class="postlink-local" href="http://tech-talk.ml/viewtopic.php?f=35&amp;amp;t=632">viewtopic.php?f=35&amp;amp;t=632</a><!-- l -->. I'm making this as new features has been added since this post.<br /><span style="font-weight: bold"><span style="text-decoration: underline"><br />Start menu</span></span><br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="text-transform: uppercase; border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>show</a>'; }" /><b>Spoiler: </b><a href="#" onClick="return false;">show</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;"><img src="http://betanews.com/wp-content/uploads/2014/09/Start-menu.jpg" alt="Image" /></div>
+    </div>
+</div><br /><br />The Start menu, removed in Windows 8 in favour of the Start screen, has been brought back in Windows 9. A hybrid of both the Start screen (Windows 8) and the Start menu (Windows 7), it has gotten mixed opinions ever since Build 2014. You can unpin the Live Tiles to make the Start menu look Windows 7-ish. The power buttons have been moved to the top, and the username has been moved from the top left side. The quick links to the right side of the Start menu in Windows 7 has not been brought back, unfortunately.<br /><br /><span style="font-weight: bold"><span style="text-decoration: underline"><br />Multiple desktops</span></span><br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="text-transform: uppercase; border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>show</a>'; }" /><b>Spoiler: </b><a href="#" onClick="return false;">show</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;"><img src="http://winsupersite.com/site-files/winsupersite.com/files/imagecache/large_img/uploads/2014/09/wtp-hero.jpg" alt="Image" /></div>
+    </div>
+</div><br /><br />A feature already available in Linux and Mac OS X. Microsoft is now jumping on the bandwagon and is now offering multiple desktops. This new feature, for those not familiar with it, allows more programs to be open on different desktops. This feature can also clean the clutter on the desktops that Windows has been known for doing.<br /><br /><span style="font-weight: bold"><span style="text-decoration: underline"><br />Apps</span></span><br /><br />Applications will open in a window instead of taking up the full screen. This feature has been announced in the Build conference back in April. The windowed Modern apps will have an options button.<br /><br /><span style="font-weight: bold"><span style="text-decoration: underline"><br />Improvements on File Explorer</span></span><br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="text-transform: uppercase; border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>show</a>'; }" /><b>Spoiler: </b><a href="#" onClick="return false;">show</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;"><img src="http://winsupersite.com/site-files/winsupersite.com/files/uploads/2014/09/home-fx.jpg" alt="Image" /></div>
+    </div>
+</div><br /><br />A new &quot;Home&quot; location will give a peek of what files you've opened recently, favourite folders, and most recently used folders. This Home location is now the default view of File Explorer in Windows 9. Everything will stay the same, though.<br /><br /><span style="font-weight: bold"><span style="text-decoration: underline"><br />Notification Centre</span></span><br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="text-transform: uppercase; border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>show</a>'; }" /><b>Spoiler: </b><a href="#" onClick="return false;">show</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;"><img src="http://s3.amazonaws.com/digitaltrends-uploads-prod/2014/09/Windows-9-Notification-Center.jpg" alt="Image" /></div>
+    </div>
+</div><br /><br />Notification Centre will be available on Windows 9. Like Mac OS X, it gives a peek of what the apps have pushed out. Not much has been said about this feature.<br /><br /><span style="font-weight: bold"><span style="text-decoration: underline"><br />Cortana</span></span><br /><br />It has been said that Cortana, the personal assistant in Windows Phone 8.1, will make its debut to desktops and tablets in Windows 9. Again, not much has been said to confirm the claim.<br /><br />Microsoft will unveil the new operating system in Spetember 30. Be sure to check live blogs, as there will be no streams then.<br /><br />What do you think? Do you like the new features?</div>
+
+			<div id="sig6721" class="signature"><img src="http://i59.tinypic.com/212haoj.jpg" alt="Image" /><br />LATEST <span style="font-weight: bold">WINDOWS 10</span> NEWS:<br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="text-transform: uppercase; border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>show</a>'; }" /><b>Spoiler: </b><a href="#" onClick="return false;">show</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;">Next Windows 10 update &#40;10.0.1&#41; will be released in November, not October.</div>
+    </div>
+</div><br /><br />Latest <span style="font-weight: bold">BASIS</span> news:<br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="text-transform: uppercase; border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>show</a>'; }" /><b>Spoiler: </b><a href="#" onClick="return false;">show</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;">BASIS 6 Revival Build 4 is now available. Download link here: <!-- m --><a class="postlink" href="https://drive.google.com/file/d/0B7N5IpT3nm2wNjNkTUxOZVdDa0k/view">https://drive.google.com/file/d/0B7N5Ip ... dDa0k/view</a><!-- m --></div>
+    </div>
+</div><br /><br />Bitcoin address: <span style="font-style: italic">16cCXEWMb9jhh9UQQayzrYPJ2sD2KfVEry</span><br />Litecoin address: <span style="font-style: italic">LZStzz81bSd5R51w4NPC9Fq7kfQ75UK6Pw</span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile6721">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=62&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c"><img src="./download/file.php?avatar=62_1444844106.png" width="190" height="190" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=62&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c">allstarsnorks2</a>
+			</dt>
+
+			<dd>Ex-Staff<br /><img src="./images/ranks/3.png" alt="Ex-Staff" title="Ex-Staff" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 132</dd><dd><strong>Joined:</strong> Fri May 23, 2014 3:19 am</dd>
+			<dd><strong>Favorite OS:</strong> Windows 10</dd>
+		
+			<dd><strong>Favorite Programming Language:</strong> C++</dd>
+		
+			<dd><strong>Personal Text:</strong> Revival of BASIS. It's happening.</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p6722"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=18&amp;p=6722&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p6722">Re: Windows 9 - Development so far</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=6722&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c#p6722"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=52&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c">ntnick</a></strong> &raquo; Sun Sep 21, 2014 6:00 am </p>
+
+			
+
+			<div class="content"><iframe src="https://www.youtube.com/embed/8YBK2jaDmLo?theme=light" frameborder="0" width="575" height="350"></iframe></div>
+
+			<div id="sig6722" class="signature">If I go silent for a long long time again, I may or may not be gone...<br /><span style="font-weight: bold">#BringBackClarkson</span> - we want our orangutan back! BBC, give him another chance...<br /><br />Find me: ntnick on IRC<br /><br />[spoiler=GTA Online status updates!]<br /><span style="font-weight: bold">Sep 9 or 10 or 11, I forgot</span> - Bought some new cars (including a T20!) <img src="./images/smilies/icon_e_biggrin.gif" alt=":D" title="Very Happy" /><br />[/spoiler]</div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile6722">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=52&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c"><img src="./download/file.php?avatar=52_1407998321.png" width="75" height="75" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=52&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c">ntnick</a>
+			</dt>
+
+			<dd>Member<br /><img src="./images/ranks/2.png" alt="Member" title="Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 67</dd><dd><strong>Joined:</strong> Fri May 23, 2014 12:54 am</dd><dd><strong>Location:</strong> Del Perro Heights, Los Santos</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p6725"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=18&amp;p=6725&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p6725">Re: Windows 9 - Development so far</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=6725&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c#p6725"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=231&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c">djdeedahx</a></strong> &raquo; Sun Sep 21, 2014 11:38 am </p>
+
+			
+
+			<div class="content">Wow.<br /><br />I kinda liked the old Metro Start screen though... Is there a way to bring it back WITHOUT losing the Windows 9 Start Menu?</div>
+
+			<div id="sig6725" class="signature"><span style="font-size: 85%; line-height: 116%;"><a href="http://jerichoisdead.icyboards.net/" class="postlink">http://jerichoisdead.icyboards.net/</a><br />#jerichoisdead -- irc.rol.im</span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile6725">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=231&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c">djdeedahx</a>
+			</dt>
+
+			<dd>Advanced Member<br /><img src="./images/ranks/3.png" alt="Advanced Member" title="Advanced Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 832</dd><dd><strong>Joined:</strong> Thu Jun 19, 2014 8:39 pm</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="https://youtube.com/c/djdeedahxofficial" title="WWW: https://youtube.com/c/djdeedahxofficial"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p6731"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=18&amp;p=6731&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p6731">Re: Windows 9 - Development so far</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=6731&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c#p6731"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=62&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c">allstarsnorks2</a></strong> &raquo; Sun Sep 21, 2014 3:15 pm </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>XSerpentGotham83 wrote:</cite>Wow.<br /><br />I kinda liked the old Metro Start screen though... Is there a way to bring it back WITHOUT losing the Windows 9 Start Menu?</div></blockquote><br />None that I know of</div>
+
+			<div id="sig6731" class="signature"><img src="http://i59.tinypic.com/212haoj.jpg" alt="Image" /><br />LATEST <span style="font-weight: bold">WINDOWS 10</span> NEWS:<br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="text-transform: uppercase; border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>show</a>'; }" /><b>Spoiler: </b><a href="#" onClick="return false;">show</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;">Next Windows 10 update &#40;10.0.1&#41; will be released in November, not October.</div>
+    </div>
+</div><br /><br />Latest <span style="font-weight: bold">BASIS</span> news:<br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="text-transform: uppercase; border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>show</a>'; }" /><b>Spoiler: </b><a href="#" onClick="return false;">show</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;">BASIS 6 Revival Build 4 is now available. Download link here: <!-- m --><a class="postlink" href="https://drive.google.com/file/d/0B7N5IpT3nm2wNjNkTUxOZVdDa0k/view">https://drive.google.com/file/d/0B7N5Ip ... dDa0k/view</a><!-- m --></div>
+    </div>
+</div><br /><br />Bitcoin address: <span style="font-style: italic">16cCXEWMb9jhh9UQQayzrYPJ2sD2KfVEry</span><br />Litecoin address: <span style="font-style: italic">LZStzz81bSd5R51w4NPC9Fq7kfQ75UK6Pw</span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile6731">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=62&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c"><img src="./download/file.php?avatar=62_1444844106.png" width="190" height="190" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=62&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c">allstarsnorks2</a>
+			</dt>
+
+			<dd>Ex-Staff<br /><img src="./images/ranks/3.png" alt="Ex-Staff" title="Ex-Staff" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 132</dd><dd><strong>Joined:</strong> Fri May 23, 2014 3:19 am</dd>
+			<dd><strong>Favorite OS:</strong> Windows 10</dd>
+		
+			<dd><strong>Favorite Programming Language:</strong> C++</dd>
+		
+			<dd><strong>Personal Text:</strong> Revival of BASIS. It's happening.</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p6733"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=18&amp;p=6733&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p6733">Re: Windows 9 - Development so far</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=6733&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c#p6733"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=48&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c">KomputerKid</a></strong> &raquo; Sun Sep 21, 2014 5:25 pm </p>
+
+			
+
+			<div class="content">I've heard rumors that this will be a free update for Windows 8.1 users, and possibly even 7, Vista, and XP users. Anybody want to confirm this?<br /><br />(I do believe windows 8/8.1 users will get it free, but I highly doubt it'll be free for 7 users let alone vista and xp)<br /><br />And since I use arch as my primary os anyways, doesn't really matter to me. <img src="./images/smilies/icon_razz.gif" alt=":P" title="Razz" /></div>
+
+			<div id="sig6733" class="signature"><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Status: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Status: </b><a href=\'#\' onClick=\'return false;\'>SHOW</a>'; }" /><b>Status: </b><a href="#" onClick="return false;">SHOW</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;"><ul><li>Forums: <span style="color: #16BA1C">Active</span></li><li>IRC: <span style="color: #16BA1C">Active</span></li></ul></div>
+    </div>
+</div><br /><span style="font-weight: bold">Former <span style="color: #FF0000">Administrator</span></span><br /><span style="font-weight: bold">Former <span style="color: #008000">Moderator</span> on the <a href="http://osfirsttimer.freeforums.org" class="postlink">OSFirstTimer Forums</a></span><br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Other places to find me: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Other places to find me: </b><a href=\'#\' onClick=\'return false;\'>SHOW</a>'; }" /><b>Other places to find me: </b><a href="#" onClick="return false;">SHOW</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;"><ul><li>Steam: KomputerKid</li><li>YouTube: MrKomputerKid</li><li>Origin: MrKomputerKid</li><li>E-mail: <!-- e --><a href="/cdn-cgi/l/email-protection#f0938291999787958383959cc9b0979d91999cde939f9d"><span class="__cf_email__" data-cfemail="630011020a0414061010060f5a23040e020a0f4d000c0e">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script></a><!-- e --></li><li>IRC &#40;Rizon, EsperNet, Freenode, Alphachat, Corpsnet&#41; usually known as KK sometimes KomputerKid depending on the network. Most active on #techtalk &#40;AlphaChat&#41; and #retrobox &#40;Corpsnet&#41;. I <span style="font-weight: bold">AM</span> on other channels but quite inactive.</li><li>Other internet forums: KomputerKid, or MrKomputerKid depending on what&#39;s available. Also formerly on FedoraForums as FedoraLinuxKid &#40;Haven&#39;t been on there since 2012&#41; and Gentoo forums &#40;again haven&#39;t been on there since 2012, plus I was retarded because I thought I could install Gentoo. Woo hoo keeping my virginity all week long.&#41; as GentooLinuxKid.</li></ul></div>
+    </div>
+</div><br /><br /><div align="center"><a href="https://novabench.com/view/859532" class="postlink"><img src="https://novabench.com/image/859532.png" alt="Image" /></a></div></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile6733">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=48&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c">KomputerKid</a>
+			</dt>
+
+			<dd>Ex-Staff<br /><img src="./images/ranks/3.png" alt="Ex-Staff" title="Ex-Staff" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 569</dd><dd><strong>Joined:</strong> Wed May 21, 2014 12:25 am</dd><dd><strong>Location:</strong> Oregon</dd>
+			<dd><strong>Favorite OS:</strong> Windows 8.1/10</dd>
+		
+			<dd><strong>Personal Text:</strong> Google is your friend!</dd>
+		
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://mrkomputerkid.github.io" title="WWW: http://mrkomputerkid.github.io"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p6737"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=18&amp;p=6737&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p6737">Re: Windows 9 - Development so far</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=6737&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c#p6737"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=88&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c">rezedus</a></strong> &raquo; Sun Sep 21, 2014 6:02 pm </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>XSerpentGotham83 wrote:</cite>Wow.<br /><br />I kinda liked the old Metro Start screen though... Is there a way to bring it back WITHOUT losing the Windows 9 Start Menu?</div></blockquote><br />Taskbar settings from what I've catched in the videos.</div>
+
+			<div id="sig6737" class="signature"> <br /><img src="http://i.imgur.com/cMNW2Ws.png" alt="Image" /></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile6737">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=88&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c"><img src="http://dagobah.net/t200/Install_archlinux.jpg" width="200" height="112" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=88&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c">rezedus</a>
+			</dt>
+
+			<dd>Advanced Member<br /><img src="./images/ranks/3.png" alt="Advanced Member" title="Advanced Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 213</dd><dd><strong>Joined:</strong> Fri May 23, 2014 4:20 pm</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p6743"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=18&amp;p=6743&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p6743">Re: Windows 9 - Development so far</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=6743&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c#p6743"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=97&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c">esc1010</a></strong> &raquo; Sun Sep 21, 2014 8:08 pm </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>KomputerKid wrote:</cite>I've heard rumors that this will be a free update for Windows 8.1 users, and possibly even 7, Vista, and XP users. Anybody want to confirm this?<br /><br />(I do believe windows 8/8.1 users will get it free, but I highly doubt it'll be free for 7 users let alone vista and xp)<br /><br />And since I use arch as my primary os anyways, doesn't really matter to me. <img src="./images/smilies/icon_razz.gif" alt=":P" title="Razz" /></div></blockquote><br /><br /><br />I doubt it will be free to 8 users but maybe 8.1</div>
+
+			<div id="sig6743" class="signature"><span style="font-size: 150%; line-height: 116%;">In soviet Russia... hardware fix you!</span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile6743">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=97&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c"><img src="./download/file.php?avatar=97_1408539000.jpg" width="120" height="104" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=97&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c">esc1010</a>
+			</dt>
+
+			<dd>Advanced Member<br /><img src="./images/ranks/3.png" alt="Advanced Member" title="Advanced Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 531</dd><dd><strong>Joined:</strong> Fri May 23, 2014 9:43 pm</dd>
+			<dd><strong>Favorite OS:</strong> elementary OS Luna</dd>
+		
+			<dd><strong>Favorite Programming Language:</strong> HTML 5, C++</dd>
+		
+			<dd><strong>Personal Text:</strong> AMD Is Inside!</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p6760"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=18&amp;p=6760&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p6760">Re: Windows 9 - Development so far</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=6760&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c#p6760"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=231&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c">djdeedahx</a></strong> &raquo; Sun Sep 21, 2014 11:41 pm </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>esc1010 wrote:</cite><blockquote><div><cite>KomputerKid wrote:</cite>I've heard rumors that this will be a free update for Windows 8.1 users, and possibly even 7, Vista, and XP users. Anybody want to confirm this?<br /><br />(I do believe windows 8/8.1 users will get it free, but I highly doubt it'll be free for 7 users let alone vista and xp)<br /><br />And since I use arch as my primary os anyways, doesn't really matter to me. <img src="./images/smilies/icon_razz.gif" alt=":P" title="Razz" /></div></blockquote><br /><br /><br />I doubt it will be free to 8 users but maybe 8.1</div></blockquote><br /><br />Time to do a clean install of Windows 8.1 on my laptop.<br /><br />(Also, Ethan, why did you have your old username restored.)</div>
+
+			<div id="sig6760" class="signature"><span style="font-size: 85%; line-height: 116%;"><a href="http://jerichoisdead.icyboards.net/" class="postlink">http://jerichoisdead.icyboards.net/</a><br />#jerichoisdead -- irc.rol.im</span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile6760">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=231&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c">djdeedahx</a>
+			</dt>
+
+			<dd>Advanced Member<br /><img src="./images/ranks/3.png" alt="Advanced Member" title="Advanced Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 832</dd><dd><strong>Joined:</strong> Thu Jun 19, 2014 8:39 pm</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="https://youtube.com/c/djdeedahxofficial" title="WWW: https://youtube.com/c/djdeedahxofficial"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p6791"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=18&amp;p=6791&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p6791">Re: Windows 9 - Development so far</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=6791&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c#p6791"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=48&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c">KomputerKid</a></strong> &raquo; Mon Sep 22, 2014 4:56 pm </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>XSerpentGotham83 wrote:</cite>(Also, Ethan, why did you have your old username restored.)</div></blockquote><br /><br />His old username was restored along with Beta2.1Collectors usernames because we admins decided that they needed something to identify themselves with, and esc's prior username (AMDInside) is too offensive, and Beta2.1Collectors username (Whistler) didn't identify himself well enough.</div>
+
+			<div id="sig6791" class="signature"><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Status: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Status: </b><a href=\'#\' onClick=\'return false;\'>SHOW</a>'; }" /><b>Status: </b><a href="#" onClick="return false;">SHOW</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;"><ul><li>Forums: <span style="color: #16BA1C">Active</span></li><li>IRC: <span style="color: #16BA1C">Active</span></li></ul></div>
+    </div>
+</div><br /><span style="font-weight: bold">Former <span style="color: #FF0000">Administrator</span></span><br /><span style="font-weight: bold">Former <span style="color: #008000">Moderator</span> on the <a href="http://osfirsttimer.freeforums.org" class="postlink">OSFirstTimer Forums</a></span><br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Other places to find me: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Other places to find me: </b><a href=\'#\' onClick=\'return false;\'>SHOW</a>'; }" /><b>Other places to find me: </b><a href="#" onClick="return false;">SHOW</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;"><ul><li>Steam: KomputerKid</li><li>YouTube: MrKomputerKid</li><li>Origin: MrKomputerKid</li><li>E-mail: <!-- e --><a href="/cdn-cgi/l/email-protection#442736252d233321373721287d042329252d286a272b29"><span class="__cf_email__" data-cfemail="c3a0b1a2aaa4b4a6b0b0a6affa83a4aea2aaafeda0acae">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script></a><!-- e --></li><li>IRC &#40;Rizon, EsperNet, Freenode, Alphachat, Corpsnet&#41; usually known as KK sometimes KomputerKid depending on the network. Most active on #techtalk &#40;AlphaChat&#41; and #retrobox &#40;Corpsnet&#41;. I <span style="font-weight: bold">AM</span> on other channels but quite inactive.</li><li>Other internet forums: KomputerKid, or MrKomputerKid depending on what&#39;s available. Also formerly on FedoraForums as FedoraLinuxKid &#40;Haven&#39;t been on there since 2012&#41; and Gentoo forums &#40;again haven&#39;t been on there since 2012, plus I was retarded because I thought I could install Gentoo. Woo hoo keeping my virginity all week long.&#41; as GentooLinuxKid.</li></ul></div>
+    </div>
+</div><br /><br /><div align="center"><a href="https://novabench.com/view/859532" class="postlink"><img src="https://novabench.com/image/859532.png" alt="Image" /></a></div></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile6791">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=48&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c">KomputerKid</a>
+			</dt>
+
+			<dd>Ex-Staff<br /><img src="./images/ranks/3.png" alt="Ex-Staff" title="Ex-Staff" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 569</dd><dd><strong>Joined:</strong> Wed May 21, 2014 12:25 am</dd><dd><strong>Location:</strong> Oregon</dd>
+			<dd><strong>Favorite OS:</strong> Windows 8.1/10</dd>
+		
+			<dd><strong>Personal Text:</strong> Google is your friend!</dd>
+		
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://mrkomputerkid.github.io" title="WWW: http://mrkomputerkid.github.io"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p6806"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=18&amp;p=6806&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p6806">Re: Windows 9 - Development so far</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=6806&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c#p6806"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=231&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c">djdeedahx</a></strong> &raquo; Tue Sep 23, 2014 12:11 am </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>KomputerKid wrote:</cite><blockquote><div><cite>XSerpentGotham83 wrote:</cite><blockquote><div><cite>esc1010 wrote:</cite><blockquote><div><cite>KomputerKid wrote:</cite>I've heard rumors that this will be a free update for Windows 8.1 users, and possibly even 7, Vista, and XP users. Anybody want to confirm this?<br /><br />(I do believe windows 8/8.1 users will get it free, but I highly doubt it'll be free for 7 users let alone vista and xp)<br /><br />And since I use arch as my primary os anyways, doesn't really matter to me. <img src="./images/smilies/icon_razz.gif" alt=":P" title="Razz" /></div></blockquote><br /><br /><br />I doubt it will be free to 8 users but maybe 8.1</div></blockquote><br /><br />Time to do a clean install of Windows 8.1 on my laptop.<br /><br />(Also, Ethan, why did you have your old username restored.)</div></blockquote><br /><br />His old username was restored along with Beta2.1Collectors usernames because we admins decided that they needed something to identify themselves with, and esc's prior username (AMDInside) is too offensive, and Beta2.1Collectors username (Whistler) didn't identify himself well enough.</div></blockquote><br /><br />Oh ok thx, I understand. However I very well stated that I am the DJDeedahxOfficial everyone knew in OSTalk. But I wasn't an AMD hater back then.<br /><br />OK back to the topic.</div>
+
+			<div id="sig6806" class="signature"><span style="font-size: 85%; line-height: 116%;"><a href="http://jerichoisdead.icyboards.net/" class="postlink">http://jerichoisdead.icyboards.net/</a><br />#jerichoisdead -- irc.rol.im</span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile6806">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=231&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c">djdeedahx</a>
+			</dt>
+
+			<dd>Advanced Member<br /><img src="./images/ranks/3.png" alt="Advanced Member" title="Advanced Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 832</dd><dd><strong>Joined:</strong> Thu Jun 19, 2014 8:39 pm</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="https://youtube.com/c/djdeedahxofficial" title="WWW: https://youtube.com/c/djdeedahxofficial"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?f=18&amp;t=873&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c">
+
+	<fieldset class="display-options" style="margin-top: 0; ">
+		<a href="./viewtopic.php?f=18&amp;t=873&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c&amp;start=10" class="right-box right">Next</a>
+		<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select> <input type="submit" name="sort" value="Go" class="button2" /></label>
+		
+	</fieldset>
+
+	</form>
+	<hr />
+
+
+<div class="topic-actions">
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=18&amp;t=873&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="pagination">
+			85 posts
+			 &bull; <a href="#" onclick="jumpto(); return false;" title="Click to jump to page…">Page <strong>1</strong> of <strong>9</strong></a> &bull; <span><strong>1</strong><span class="page-sep">, </span><a href="./viewtopic.php?f=18&amp;t=873&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c&amp;start=10">2</a><span class="page-sep">, </span><a href="./viewtopic.php?f=18&amp;t=873&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c&amp;start=20">3</a><span class="page-sep">, </span><a href="./viewtopic.php?f=18&amp;t=873&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c&amp;start=30">4</a><span class="page-sep">, </span><a href="./viewtopic.php?f=18&amp;t=873&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c&amp;start=40">5</a><span class="page-dots"> ... </span><a href="./viewtopic.php?f=18&amp;t=873&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c&amp;start=80">9</a></span>
+		</div>
+	
+</div>
+
+
+	<p></p><p><a href="./viewforum.php?f=18&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c" class="left-box left" accesskey="r">Return to Software / Operating Systems</a></p>
+
+	<form method="post" id="jumpbox" action="./viewforum.php?sid=58f8f9c19118bb362783ffefd0ee5a0c" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Jump to:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+			
+				<option value="-1">Select a forum</option>
+			<option value="-1">------------------</option>
+				<option value="98">Raytron</option>
+			
+				<option value="99">&nbsp; &nbsp;Raytron</option>
+			
+				<option value="3">General Forum Discussion</option>
+			
+				<option value="4">&nbsp; &nbsp;Announcements</option>
+			
+				<option value="6">&nbsp; &nbsp;Introductions</option>
+			
+				<option value="92">&nbsp; &nbsp;Suggestions</option>
+			
+				<option value="90">Technology</option>
+			
+				<option value="10">&nbsp; &nbsp;General Tech Discussion</option>
+			
+				<option value="91">&nbsp; &nbsp;Technology News</option>
+			
+				<option value="18" selected="selected">&nbsp; &nbsp;Software / Operating Systems</option>
+			
+				<option value="11">&nbsp; &nbsp;Hardware</option>
+			
+				<option value="28">&nbsp; &nbsp;Programming</option>
+			
+				<option value="32">&nbsp; &nbsp;Gaming</option>
+			
+				<option value="57">Other</option>
+			
+				<option value="58">&nbsp; &nbsp;Off Topic</option>
+			
+			</select>
+			<input type="submit" value="Go" class="button2" />
+		</fieldset>
+	</form>
+
+
+	<h3><a href="./viewonline.php?sid=58f8f9c19118bb362783ffefd0ee5a0c">Who is online</a></h3>
+	<p>Users browsing this forum: No registered users and 0 guests</p>
+</div>
+
+<div id="page-footer">
+
+	<div class="breadcrumbs">
+		<ul class="linklist">
+			<li class="icon-home"><a href="./index.php?sid=58f8f9c19118bb362783ffefd0ee5a0c" accesskey="h">Board index</a></li>
+				
+			<li class="rightside"><a href="./memberlist.php?mode=leaders&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c">The team</a> &bull; <a href="./ucp.php?mode=delete_cookies&amp;sid=58f8f9c19118bb362783ffefd0ee5a0c">Delete all board cookies</a> &bull; All times are UTC </li>
+		</ul>
+		<div class="copyright">
+		</div>
+	</div>
+</div>
+
+</div>
+</div>
+<div class="clearit"></div>
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51268407-1', 'tech-talk.ml');
+  ga('send', 'pageview');
+
+</script>
+<script>/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/\>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script></body>
+</html>

@@ -1,0 +1,758 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<title>techTalk &bull; View topic - VMware Player slows down my computer</title>
+
+<link rel="alternate" type="application/atom+xml" title="Feed - techTalk" href="https://archive.raytron.org/techtalk/feed.php" /><link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="https://archive.raytron.org/techtalk/feed.php?mode=topics" /><link rel="alternate" type="application/atom+xml" title="Feed - Forum - Software / Operating Systems" href="https://archive.raytron.org/techtalk/feed.php?f=18" /><link rel="alternate" type="application/atom+xml" title="Feed - Topic - VMware Player slows down my computer" href="https://archive.raytron.org/techtalk/feed.php?f=18&amp;t=734" />
+
+<!--
+	phpBB style name: MyInvision
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:	  Brad Veryard ( http://www.bradleyv.com/ )
+-->
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Enter the page number you wish to go to:';
+	var on_page = '1';
+	var per_page = '';
+	var base_url = '';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; domain=archive.raytron.org; secure';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript" src="./styles/prosilver/template/styleswitcher.js"></script>
+<script type="text/javascript" src="./styles/prosilver/template/forum_fn.js"></script>
+<script type="text/javascript" src="./styles/tech-talk/template/jquery.min.js"></script>
+<script type="text/javascript" src="./styles/tech-talk/template/jquery.cookie.js"></script>
+
+<link href="./styles/tech-talk/theme/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<link href="./style.php?id=7&amp;lang=en&amp;sid=5d98f4eac7e82f8d2979845e27ef2083" rel="stylesheet" type="text/css" media="screen, projection" />
+
+</head>
+
+<body id="phpbb" class="section-viewtopic ltr">
+<!--
+
+ Options: Yes | No
+ Options: Yes | No
+ Options: Yes | No
+
+-->
+<div class="above"></div>
+<div id="header">
+	<div class="main_width">
+		<a href="./index.php?sid=5d98f4eac7e82f8d2979845e27ef2083" title="Board index" id="logo"><img src="./styles/tech-talk/imageset/logo.png" width="358" height="64" alt="" title="" /></a>
+		
+				
+			<div id="search-box" class="searchback">
+				<form action="./search.php?sid=5d98f4eac7e82f8d2979845e27ef2083" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="text" maxlength="128" title="Search for keywords" class="inputbox search" value="Search…" onclick="if(this.value=='Search…')this.value='';" onblur="if(this.value=='')this.value='Search…';" />
+					<input class="button2" value="Search" type="submit" /><br />
+					<a href="./search.php?sid=5d98f4eac7e82f8d2979845e27ef2083" title="View the advanced search options">Advanced search</a> <input type="hidden" name="sid" value="5d98f4eac7e82f8d2979845e27ef2083" />
+
+				</fieldset>
+				</form>
+			</div>
+			
+	</div>
+</div>
+
+<div id="wrap">
+	<div class="navbar clearit">
+		<ul id="nav">
+			<li><a href="./index.php?sid=5d98f4eac7e82f8d2979845e27ef2083" accesskey="h"><img src="./styles/tech-talk/theme/images/globe.png" class="nicon" alt="Board index" />Board index</a></li>
+			<li><a href="./memberlist.php?sid=5d98f4eac7e82f8d2979845e27ef2083"><img src="./styles/tech-talk/theme/images/member.png" class="nicon" alt="Members" />Members</a></li>
+			<li><a href="./faq.php?sid=5d98f4eac7e82f8d2979845e27ef2083"><img src="./styles/tech-talk/theme/images/faq.png" class="nicon" alt="FAQ" />FAQ</a></li>
+			
+		</ul>
+	</div>
+	<a id="top" name="top" accesskey="t"></a>
+<div id="content">
+	<div id="page-header">
+
+		<div class="breadcrumbs">
+			<ul class="linklist navlinks">
+				<li class="icon-home"><a href="./index.php?sid=5d98f4eac7e82f8d2979845e27ef2083" accesskey="h">Board index</a>  <strong>&#8249;</strong> <a href="./viewforum.php?f=90&amp;sid=5d98f4eac7e82f8d2979845e27ef2083">Technology</a> <strong>&#8249;</strong> <a href="./viewforum.php?f=18&amp;sid=5d98f4eac7e82f8d2979845e27ef2083">Software / Operating Systems</a></li>
+				<li class="rightside"><a href="./viewtopic.php?f=18&amp;t=734&amp;sid=5d98f4eac7e82f8d2979845e27ef2083&amp;view=print" title="Print view" accesskey="p" class="print">Print view</a></li>
+			</ul>
+
+			
+
+			<ul class="linklist rightside">
+				
+					<li class="icon-logout"><a href="./ucp.php?mode=login&amp;sid=5d98f4eac7e82f8d2979845e27ef2083" title="Login" accesskey="x">Login</a></li>
+				
+			</ul>
+			<div class="clearit"></div>
+		</div>
+	</div>
+
+	<a name="start_here"></a>
+	<div id="page-body">
+		
+		
+ <div id="announcebar" class="rules">
+        <div class="inner"><span class="corners-top"><span></span></span>
+            This forum is an archive, hosted for reference purposes only. If you want to get involved with our current community, please visit <a href="https://talk.raytron.org" target="_blank">Raytron</a>.
+         <span class="corners-bottom"><span></span></span></div>
+     </div>
+<h2><a href="./viewtopic.php?f=18&amp;t=734&amp;sid=5d98f4eac7e82f8d2979845e27ef2083">VMware Player slows down my computer</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body --><div style="display: none !important;">Talk about Software and Operating Systems here.<br /></div>
+
+<div class="topic-actions">
+
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=18&amp;t=734&amp;sid=5d98f4eac7e82f8d2979845e27ef2083" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php?sid=5d98f4eac7e82f8d2979845e27ef2083">
+			<fieldset>
+				<input class="inputbox search tiny"  type="text" name="keywords" id="search_keywords" size="20" value="Search this topic…" onclick="if(this.value=='Search this topic…')this.value='';" onblur="if(this.value=='')this.value='Search this topic…';" />
+				<input class="button2" type="submit" value="Search" />
+				<input type="hidden" name="t" value="734" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="5d98f4eac7e82f8d2979845e27ef2083" />
+
+			</fieldset>
+			</form>
+		</div>
+	
+		<div class="pagination">
+			10 posts
+			 &bull; Page <strong>1</strong> of <strong>1</strong>
+		</div>
+	
+
+</div>
+<div class="clear"></div>
+
+
+	<div class="pannels clearit">
+	<div id="p5140"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=18&amp;p=5140&amp;sid=5d98f4eac7e82f8d2979845e27ef2083" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 class="first"><a href="#p5140">VMware Player slows down my computer</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=5140&amp;sid=5d98f4eac7e82f8d2979845e27ef2083#p5140"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=73&amp;sid=5d98f4eac7e82f8d2979845e27ef2083">Vas709</a></strong> &raquo; Tue Aug 12, 2014 10:33 am </p>
+
+			
+
+			<div class="content">Hello,<br /><br />I have some kind of problem with VMware Player. Whenever I run Windows XP in virtual machine it just takes up a high memory and slows down my PC. Running Windows 98 is okay and fast for me. I have Windows 8.1 on my main computer. I also did in Windows 7 even though I lost it. The version of VMware Player is 6.0.2.<br /><br />Here are the hardware:<br /><br />Processor: Pentium(R) Dual-Core CPU E5700 @ 3.00GHz<br />Memory: 2.00 GB<br /><br />Does this problem come from my hardware or something else? Thank you.<br /><br />Vasja Stojkovic</div>
+
+			<div id="sig5140" class="signature">Vasja Stojkovic</div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile5140">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=73&amp;sid=5d98f4eac7e82f8d2979845e27ef2083"><img src="./download/file.php?avatar=73_1406575559.jpg" width="45" height="45" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=73&amp;sid=5d98f4eac7e82f8d2979845e27ef2083">Vas709</a>
+			</dt>
+
+			<dd>Member<br /><img src="./images/ranks/2.png" alt="Member" title="Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 104</dd><dd><strong>Joined:</strong> Fri May 23, 2014 8:29 am</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p5143"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=18&amp;p=5143&amp;sid=5d98f4eac7e82f8d2979845e27ef2083" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p5143">Re: VMware Player slows down my computer</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=5143&amp;sid=5d98f4eac7e82f8d2979845e27ef2083#p5143"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=97&amp;sid=5d98f4eac7e82f8d2979845e27ef2083">esc1010</a></strong> &raquo; Tue Aug 12, 2014 12:31 pm </p>
+
+			
+
+			<div class="content">I *had this same problem on my now broken Windows 8.1 laptop.</div>
+
+			
+				<div class="notice">Last edited by <a href="./memberlist.php?mode=viewprofile&amp;u=97&amp;sid=5d98f4eac7e82f8d2979845e27ef2083">esc1010</a> on Wed Aug 13, 2014 12:33 pm, edited 1 time in total.
+					
+				</div>
+			<div id="sig5143" class="signature"><span style="font-size: 150%; line-height: 116%;">In soviet Russia... hardware fix you!</span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile5143">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=97&amp;sid=5d98f4eac7e82f8d2979845e27ef2083"><img src="./download/file.php?avatar=97_1408539000.jpg" width="120" height="104" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=97&amp;sid=5d98f4eac7e82f8d2979845e27ef2083">esc1010</a>
+			</dt>
+
+			<dd>Advanced Member<br /><img src="./images/ranks/3.png" alt="Advanced Member" title="Advanced Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 531</dd><dd><strong>Joined:</strong> Fri May 23, 2014 9:43 pm</dd>
+			<dd><strong>Favorite OS:</strong> elementary OS Luna</dd>
+		
+			<dd><strong>Favorite Programming Language:</strong> HTML 5, C++</dd>
+		
+			<dd><strong>Personal Text:</strong> AMD Is Inside!</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p5149"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=18&amp;p=5149&amp;sid=5d98f4eac7e82f8d2979845e27ef2083" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p5149">Re: VMware Player slows down my computer</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=5149&amp;sid=5d98f4eac7e82f8d2979845e27ef2083#p5149"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=55&amp;sid=5d98f4eac7e82f8d2979845e27ef2083">maxell</a></strong> &raquo; Tue Aug 12, 2014 4:17 pm </p>
+
+			
+
+			<div class="content">I would never run a VM on anything under 4GB if I were you but maybe try allocating less RAM to the VM itself. WinXP's default RAM usage in VMware may be more than half your system RAM!<br /><br />Also, if you're using Linux you can pretty much just delete your swap partition from the fstab and the kernel will only use your faster system memory. Maybe your system is abusing the swap partition/file?</div>
+
+			<div id="sig5149" class="signature"><a href="http://maxell.ml" class="postlink">Check out my website!</a><br /><span style="font-size: 150%; line-height: 116%;">I've moved to <a href="https://bbs.techdom.ml" class="postlink">techdom</a></span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile5149">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=55&amp;sid=5d98f4eac7e82f8d2979845e27ef2083"><img src="./download/file.php?avatar=55_1443076984.png" width="60" height="34" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=55&amp;sid=5d98f4eac7e82f8d2979845e27ef2083">maxell</a>
+			</dt>
+
+			<dd>Advanced Member<br /><img src="./images/ranks/3.png" alt="Advanced Member" title="Advanced Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 621</dd><dd><strong>Joined:</strong> Fri May 23, 2014 1:06 am</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p5151"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=18&amp;p=5151&amp;sid=5d98f4eac7e82f8d2979845e27ef2083" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p5151">Re: VMware Player slows down my computer</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=5151&amp;sid=5d98f4eac7e82f8d2979845e27ef2083#p5151"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=73&amp;sid=5d98f4eac7e82f8d2979845e27ef2083">Vas709</a></strong> &raquo; Tue Aug 12, 2014 6:39 pm </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>JacobGuy7800 wrote:</cite>I would never run a VM on anything under 4GB if I were you but maybe try allocating less RAM to the VM itself. WinXP's default RAM usage in VMware may be more than half your system RAM!<br /><br />Also, if you're using Linux you can pretty much just delete your swap partition from the fstab and the kernel will only use your faster system memory. Maybe your system is abusing the swap partition/file?</div></blockquote><br /><br />Maybe I need to upgrade my RAM. I also have Windows XP on my main computer so if I want to play something like Need For Speed III: Hot Pursuit then I can run it from the alternative Windows XP in virtual machine. Or I can go and surf the internet with Microsoft Agent. Does Windows XP support 4-8 GB of RAM? Also I don't use Linux. I tried Ubuntu but I uninstalled it.<br /><br />Vasja Stojkovic</div>
+
+			<div id="sig5151" class="signature">Vasja Stojkovic</div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile5151">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=73&amp;sid=5d98f4eac7e82f8d2979845e27ef2083"><img src="./download/file.php?avatar=73_1406575559.jpg" width="45" height="45" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=73&amp;sid=5d98f4eac7e82f8d2979845e27ef2083">Vas709</a>
+			</dt>
+
+			<dd>Member<br /><img src="./images/ranks/2.png" alt="Member" title="Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 104</dd><dd><strong>Joined:</strong> Fri May 23, 2014 8:29 am</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p5153"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=18&amp;p=5153&amp;sid=5d98f4eac7e82f8d2979845e27ef2083" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p5153">Re: VMware Player slows down my computer</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=5153&amp;sid=5d98f4eac7e82f8d2979845e27ef2083#p5153"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=55&amp;sid=5d98f4eac7e82f8d2979845e27ef2083">maxell</a></strong> &raquo; Tue Aug 12, 2014 8:25 pm </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>Vas709 wrote:</cite><blockquote><div><cite>JacobGuy7800 wrote:</cite>I would never run a VM on anything under 4GB if I were you but maybe try allocating less RAM to the VM itself. WinXP's default RAM usage in VMware may be more than half your system RAM!<br /><br />Also, if you're using Linux you can pretty much just delete your swap partition from the fstab and the kernel will only use your faster system memory. Maybe your system is abusing the swap partition/file?</div></blockquote><br /><br />Maybe I need to upgrade my RAM. I also have Windows XP on my main computer so if I want to play something like Need For Speed III: Hot Pursuit then I can run it from the alternative Windows XP in virtual machine. Or I can go and surf the internet with Microsoft Agent. Does Windows XP support 4-8 GB of RAM? Also I don't use Linux. I tried Ubuntu but I uninstalled it.<br /><br />Vasja Stojkovic</div></blockquote><br /><br />Windows XP 32-bit supports up to 3.2GB of RAM and more with a PAE patch.</div>
+
+			<div id="sig5153" class="signature"><a href="http://maxell.ml" class="postlink">Check out my website!</a><br /><span style="font-size: 150%; line-height: 116%;">I've moved to <a href="https://bbs.techdom.ml" class="postlink">techdom</a></span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile5153">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=55&amp;sid=5d98f4eac7e82f8d2979845e27ef2083"><img src="./download/file.php?avatar=55_1443076984.png" width="60" height="34" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=55&amp;sid=5d98f4eac7e82f8d2979845e27ef2083">maxell</a>
+			</dt>
+
+			<dd>Advanced Member<br /><img src="./images/ranks/3.png" alt="Advanced Member" title="Advanced Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 621</dd><dd><strong>Joined:</strong> Fri May 23, 2014 1:06 am</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p5159"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=18&amp;p=5159&amp;sid=5d98f4eac7e82f8d2979845e27ef2083" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p5159">Re: VMware Player slows down my computer</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=5159&amp;sid=5d98f4eac7e82f8d2979845e27ef2083#p5159"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=73&amp;sid=5d98f4eac7e82f8d2979845e27ef2083">Vas709</a></strong> &raquo; Wed Aug 13, 2014 8:27 am </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>JacobGuy7800 wrote:</cite>Windows XP 32-bit supports up to 3.2GB of RAM and more with a PAE patch.</div></blockquote><br /><br />That's too bad. Maybe I can edit the system.ini file where Windows XP can support more than 4 GB of RAM and higher. But first I need to upgrade my RAM. Thank you for the answer.<br /><br />Vasja Stojkovic</div>
+
+			<div id="sig5159" class="signature">Vasja Stojkovic</div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile5159">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=73&amp;sid=5d98f4eac7e82f8d2979845e27ef2083"><img src="./download/file.php?avatar=73_1406575559.jpg" width="45" height="45" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=73&amp;sid=5d98f4eac7e82f8d2979845e27ef2083">Vas709</a>
+			</dt>
+
+			<dd>Member<br /><img src="./images/ranks/2.png" alt="Member" title="Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 104</dd><dd><strong>Joined:</strong> Fri May 23, 2014 8:29 am</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p5164"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=18&amp;p=5164&amp;sid=5d98f4eac7e82f8d2979845e27ef2083" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p5164">Re: VMware Player slows down my computer</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=5164&amp;sid=5d98f4eac7e82f8d2979845e27ef2083#p5164"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=97&amp;sid=5d98f4eac7e82f8d2979845e27ef2083">esc1010</a></strong> &raquo; Wed Aug 13, 2014 12:35 pm </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>Vas709 wrote:</cite><blockquote><div><cite>JacobGuy7800 wrote:</cite>Windows XP 32-bit supports up to 3.2GB of RAM and more with a PAE patch.</div></blockquote><br /><br />That's too bad. Maybe I can edit the system.ini file where Windows XP can support more than 4 GB of RAM and higher. But first I need to upgrade my RAM. Thank you for the answer.<br /><br />Vasja Stojkovic</div></blockquote><br />No, XP 64-Bit supports more than 3.2 GB of RAM. Up to 128 GB.<br />Also you seem to not know that 32-Bit only supports up to 4 GB unless using a PAE.<br />Here is a video to get you up to speed on bits <br /><iframe src="https://www.youtube.com/embed/KgiMzKb8dD0?theme=light" frameborder="0" width="575" height="350"></iframe></div>
+
+			<div id="sig5164" class="signature"><span style="font-size: 150%; line-height: 116%;">In soviet Russia... hardware fix you!</span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile5164">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=97&amp;sid=5d98f4eac7e82f8d2979845e27ef2083"><img src="./download/file.php?avatar=97_1408539000.jpg" width="120" height="104" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=97&amp;sid=5d98f4eac7e82f8d2979845e27ef2083">esc1010</a>
+			</dt>
+
+			<dd>Advanced Member<br /><img src="./images/ranks/3.png" alt="Advanced Member" title="Advanced Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 531</dd><dd><strong>Joined:</strong> Fri May 23, 2014 9:43 pm</dd>
+			<dd><strong>Favorite OS:</strong> elementary OS Luna</dd>
+		
+			<dd><strong>Favorite Programming Language:</strong> HTML 5, C++</dd>
+		
+			<dd><strong>Personal Text:</strong> AMD Is Inside!</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p5165"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=18&amp;p=5165&amp;sid=5d98f4eac7e82f8d2979845e27ef2083" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p5165">Re: VMware Player slows down my computer</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=5165&amp;sid=5d98f4eac7e82f8d2979845e27ef2083#p5165"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=73&amp;sid=5d98f4eac7e82f8d2979845e27ef2083">Vas709</a></strong> &raquo; Wed Aug 13, 2014 2:20 pm </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>esc1010 wrote:</cite>No, XP 64-Bit supports more than 3.2 GB of RAM. Up to 128 GB.<br />Also you seem to not know that 32-Bit only supports up to 4 GB unless using a PAE.<br />Here is a video to get you up to speed on bits <br /><iframe src="https://www.youtube.com/embed/KgiMzKb8dD0?theme=light" frameborder="0" width="575" height="350"></iframe></div></blockquote><br /><br />Okay, thank you for the answer.<br /><br />Vasja Stojkovic</div>
+
+			<div id="sig5165" class="signature">Vasja Stojkovic</div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile5165">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=73&amp;sid=5d98f4eac7e82f8d2979845e27ef2083"><img src="./download/file.php?avatar=73_1406575559.jpg" width="45" height="45" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=73&amp;sid=5d98f4eac7e82f8d2979845e27ef2083">Vas709</a>
+			</dt>
+
+			<dd>Member<br /><img src="./images/ranks/2.png" alt="Member" title="Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 104</dd><dd><strong>Joined:</strong> Fri May 23, 2014 8:29 am</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p5166"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=18&amp;p=5166&amp;sid=5d98f4eac7e82f8d2979845e27ef2083" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p5166">Re: VMware Player slows down my computer</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=5166&amp;sid=5d98f4eac7e82f8d2979845e27ef2083#p5166"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=88&amp;sid=5d98f4eac7e82f8d2979845e27ef2083">rezedus</a></strong> &raquo; Wed Aug 13, 2014 2:25 pm </p>
+
+			
+
+			<div class="content">I suggest to upgrade to a modern OS, like Windows 7, if it's possible.</div>
+
+			<div id="sig5166" class="signature"> <br /><img src="http://i.imgur.com/cMNW2Ws.png" alt="Image" /></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile5166">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=88&amp;sid=5d98f4eac7e82f8d2979845e27ef2083"><img src="http://dagobah.net/t200/Install_archlinux.jpg" width="200" height="112" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=88&amp;sid=5d98f4eac7e82f8d2979845e27ef2083">rezedus</a>
+			</dt>
+
+			<dd>Advanced Member<br /><img src="./images/ranks/3.png" alt="Advanced Member" title="Advanced Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 213</dd><dd><strong>Joined:</strong> Fri May 23, 2014 4:20 pm</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p5169"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=18&amp;p=5169&amp;sid=5d98f4eac7e82f8d2979845e27ef2083" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p5169">Re: VMware Player slows down my computer</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=5169&amp;sid=5d98f4eac7e82f8d2979845e27ef2083#p5169"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=73&amp;sid=5d98f4eac7e82f8d2979845e27ef2083">Vas709</a></strong> &raquo; Wed Aug 13, 2014 2:33 pm </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>AlphaBeta wrote:</cite>I suggest to upgrade to a modern OS, like Windows 7, if it's possible.</div></blockquote><br /><br />Thanks for the suggestion but I already have Windows 8.1 on my computer so that I can boot into this operating system or Windows XP.<br /><br />Vasja Stojkovic</div>
+
+			<div id="sig5169" class="signature">Vasja Stojkovic</div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile5169">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=73&amp;sid=5d98f4eac7e82f8d2979845e27ef2083"><img src="./download/file.php?avatar=73_1406575559.jpg" width="45" height="45" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=73&amp;sid=5d98f4eac7e82f8d2979845e27ef2083">Vas709</a>
+			</dt>
+
+			<dd>Member<br /><img src="./images/ranks/2.png" alt="Member" title="Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 104</dd><dd><strong>Joined:</strong> Fri May 23, 2014 8:29 am</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?f=18&amp;t=734&amp;sid=5d98f4eac7e82f8d2979845e27ef2083">
+
+	<fieldset class="display-options" style="margin-top: 0; ">
+		
+		<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select> <input type="submit" name="sort" value="Go" class="button2" /></label>
+		
+	</fieldset>
+
+	</form>
+	<hr />
+
+
+<div class="topic-actions">
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=18&amp;t=734&amp;sid=5d98f4eac7e82f8d2979845e27ef2083" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="pagination">
+			10 posts
+			 &bull; Page <strong>1</strong> of <strong>1</strong>
+		</div>
+	
+</div>
+
+
+	<p></p><p><a href="./viewforum.php?f=18&amp;sid=5d98f4eac7e82f8d2979845e27ef2083" class="left-box left" accesskey="r">Return to Software / Operating Systems</a></p>
+
+	<form method="post" id="jumpbox" action="./viewforum.php?sid=5d98f4eac7e82f8d2979845e27ef2083" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Jump to:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+			
+				<option value="-1">Select a forum</option>
+			<option value="-1">------------------</option>
+				<option value="98">Raytron</option>
+			
+				<option value="99">&nbsp; &nbsp;Raytron</option>
+			
+				<option value="3">General Forum Discussion</option>
+			
+				<option value="4">&nbsp; &nbsp;Announcements</option>
+			
+				<option value="6">&nbsp; &nbsp;Introductions</option>
+			
+				<option value="92">&nbsp; &nbsp;Suggestions</option>
+			
+				<option value="90">Technology</option>
+			
+				<option value="10">&nbsp; &nbsp;General Tech Discussion</option>
+			
+				<option value="91">&nbsp; &nbsp;Technology News</option>
+			
+				<option value="18" selected="selected">&nbsp; &nbsp;Software / Operating Systems</option>
+			
+				<option value="11">&nbsp; &nbsp;Hardware</option>
+			
+				<option value="28">&nbsp; &nbsp;Programming</option>
+			
+				<option value="32">&nbsp; &nbsp;Gaming</option>
+			
+				<option value="57">Other</option>
+			
+				<option value="58">&nbsp; &nbsp;Off Topic</option>
+			
+			</select>
+			<input type="submit" value="Go" class="button2" />
+		</fieldset>
+	</form>
+
+
+	<h3><a href="./viewonline.php?sid=5d98f4eac7e82f8d2979845e27ef2083">Who is online</a></h3>
+	<p>Users browsing this forum: No registered users and 0 guests</p>
+</div>
+
+<div id="page-footer">
+
+	<div class="breadcrumbs">
+		<ul class="linklist">
+			<li class="icon-home"><a href="./index.php?sid=5d98f4eac7e82f8d2979845e27ef2083" accesskey="h">Board index</a></li>
+				
+			<li class="rightside"><a href="./memberlist.php?mode=leaders&amp;sid=5d98f4eac7e82f8d2979845e27ef2083">The team</a> &bull; <a href="./ucp.php?mode=delete_cookies&amp;sid=5d98f4eac7e82f8d2979845e27ef2083">Delete all board cookies</a> &bull; All times are UTC </li>
+		</ul>
+		<div class="copyright">
+		</div>
+	</div>
+</div>
+
+</div>
+</div>
+<div class="clearit"></div>
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51268407-1', 'tech-talk.ml');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

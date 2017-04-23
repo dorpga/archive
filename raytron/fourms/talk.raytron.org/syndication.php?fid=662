@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title><![CDATA[Raytron - Gaming]]></title>
+		<link>https://talk.raytron.org/</link>
+		<description><![CDATA[Raytron - https://talk.raytron.org]]></description>
+		<pubDate>Sun, 23 Apr 2017 06:34:43 +0000</pubDate>
+		<generator>MyBB</generator>
+		<item>
+			<title><![CDATA[Games you're currently playing?]]></title>
+			<link>https://talk.raytron.org/Thread-Gaming-General-Games-you-re-currently-playing</link>
+			<pubDate>Sat, 29 Oct 2016 02:22:42 +0000</pubDate>
+			<guid isPermaLink="false">https://talk.raytron.org/Thread-Gaming-General-Games-you-re-currently-playing</guid>
+			<description><![CDATA[Share which games you're currently playing.]]></description>
+			<content:encoded><![CDATA[Share which games you're currently playing.]]></content:encoded>
+		</item>
+		<item>
+			<title><![CDATA[Your favorite gaming platform?]]></title>
+			<link>https://talk.raytron.org/Thread-Gaming-General-Your-favorite-gaming-platform</link>
+			<pubDate>Sat, 29 Oct 2016 02:16:10 +0000</pubDate>
+			<guid isPermaLink="false">https://talk.raytron.org/Thread-Gaming-General-Your-favorite-gaming-platform</guid>
+			<description><![CDATA[What is your favorite gaming platform?]]></description>
+			<content:encoded><![CDATA[What is your favorite gaming platform?]]></content:encoded>
+		</item>
+		<item>
+			<title><![CDATA[Your favorite games?]]></title>
+			<link>https://talk.raytron.org/Thread-Gaming-General-Your-favorite-games</link>
+			<pubDate>Sat, 29 Oct 2016 02:00:41 +0000</pubDate>
+			<guid isPermaLink="false">https://talk.raytron.org/Thread-Gaming-General-Your-favorite-games</guid>
+			<description><![CDATA[Share your favorite games. Platform doesn't matter.]]></description>
+			<content:encoded><![CDATA[Share your favorite games. Platform doesn't matter.]]></content:encoded>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><!-- start: printthread -->
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>No prefix FirstTimerOS (unofficial OSFirstTimer OS) - Printable Version</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style type="text/css">
+body { font-family: Verdana, Arial, sans-serif; font-size: 13px; }
+.largetext { font-family: Verdana, Arial, sans-serif; font-size: medium; font-weight: bold; }
+</style>
+
+<meta name="description" content="Since OSFirstTimer is all about operating systems, it should have it's own. FirstTimerOS is a MikeOS-based operating system, so it uses x86 assembly language. It will be community-based and the plan i" />
+<link rel="canonical" href="https://talk.raytron.org/Thread-No-prefix-FirstTimerOS-unofficial-OSFirstTimer-OS" />
+</head>
+<body>
+
+    <!-- Tapatalk smart banner body start --> 
+<script type="text/javascript">
+    if(typeof(app_ios_id) != "undefined") {
+        tapatalkDetect();
+    }
+    </script>
+
+    <!-- Tapatalk smart banner body end --> 
+<table width="98%" align="center">
+<tr>
+<td valign="top"><a href="index.php"><img src="https://talk.raytron.org/images/logo.png" alt="Raytron" title="Raytron" border="0" /></a></td>
+</tr>
+<tr>
+<td>
+<span class="largetext"><span class="rtprefix">No prefix</span> <a href="Thread-No-prefix-FirstTimerOS-unofficial-OSFirstTimer-OS">FirstTimerOS (unofficial OSFirstTimer OS)</a> - Printable Version</span><br />
+<br />
++- Raytron (<em>https://talk.raytron.org</em>)<br />
+<!-- start: printthread_nav -->
++-- Forum: Main category (<i>https://talk.raytron.org/Forum-Main-category</i>)<br />
+<!-- end: printthread_nav --><!-- start: printthread_nav -->
++--- Forum: Archived Topics (<i>https://talk.raytron.org/Forum-Archived-Topics</i>)<br />
+<!-- end: printthread_nav -->
++--- Thread: <span class="rtprefix">No prefix</span> FirstTimerOS (unofficial OSFirstTimer OS) (<em>/Thread-No-prefix-FirstTimerOS-unofficial-OSFirstTimer-OS</em>)<br />
+<br />
+<!-- start: printthread_multipage -->
+<div class="multipage">Pages: <strong></strong> <!-- start: printthread_multipage_page_current -->
+<strong>1</strong>
+<!-- end: printthread_multipage_page_current --><!-- start: printthread_multipage_page -->
+<a href="printthread.php?tid=3916&amp;page=2">2</a>
+<!-- end: printthread_multipage_page --><!-- start: printthread_multipage_page -->
+<a href="printthread.php?tid=3916&amp;page=3">3</a>
+<!-- end: printthread_multipage_page --><!-- start: printthread_multipage_page -->
+<a href="printthread.php?tid=3916&amp;page=4">4</a>
+<!-- end: printthread_multipage_page --><!-- start: printthread_multipage_page -->
+<a href="printthread.php?tid=3916&amp;page=5">5</a>
+<!-- end: printthread_multipage_page --><!-- start: printthread_multipage_page -->
+<a href="printthread.php?tid=3916&amp;page=6">6</a>
+<!-- end: printthread_multipage_page --><!-- start: printthread_multipage_page -->
+<a href="printthread.php?tid=3916&amp;page=7">7</a>
+<!-- end: printthread_multipage_page --><!-- start: printthread_multipage_page -->
+<a href="printthread.php?tid=3916&amp;page=8">8</a>
+<!-- end: printthread_multipage_page --></div>
+<!-- end: printthread_multipage --></td>
+</tr>
+<tr>
+<td><br /><hr size="1" /><!-- start: printthread_post -->
+<strong>FirstTimerOS (unofficial OSFirstTimer OS)</strong> - <a href="https://talk.raytron.org/User-phillips1012">phillips1012</a> -  <strong>05-28-2013</strong>
+<br />
+<br />
+Since OSFirstTimer is all about operating systems, it should have it's own. FirstTimerOS is a MikeOS-based operating system, so it uses x86 assembly language. It will be community-based and the plan is to have most of the code submitted by you. At the moment none of the kernel code is changed apart from "mikeos" being changed to firsttimeros, but it will improve (I'll probably learn how to do assembly some time). It is completely open-source, too.<br />
+<br />
+<span style="font-weight: bold;" class="mycode_b"><span style="font-size: 50pt;" class="mycode_size">How to compile</span></span><br />
+If you know a bit of assembly or BASIC or just want to experiment, you may want to try and rebuild the operating system. This usually only takes one second since assembly is such a low level operating system. First, download NASM. On Linux, use your package management system to install the "nasm" package. If on OS X, copy the "nasm" file from <a href="http://www.nasm.us/pub/nasm/releasebuilds/2.10rc15/macosx/nasm-2.10rc15-macosx.zip" target="_blank" class="mycode_url">this</a> and place in /usr/bin. If on Windows, get the installer <a href="http://www.nasm.us/pub/nasm/releasebuilds/2.10rc15/win32/nasm-2.10rc15-installer.exe" target="_blank" class="mycode_url">here</a>. To compile, just extract the source and run the script for your OS. If you are using linux/mac/bsd, you need to run it as root.<br />
+<br />
+Remember, if your code improves the OS, please submit it here and I'll add it to the next version.<br />
+<br />
+<span style="font-weight: bold;" class="mycode_b"><span style="font-size: 50pt;" class="mycode_size">How to flash the OS onto a hard drive (or virtual hd/flash drive/floppy disk)</span></span><br />
+This will make it act as a real OS that you can read/write files to it. There is already a virtualbox image if you want this, but if you want to change it or do a full install onto a flash/hard drive, then read.<br />
+<span style="font-weight: bold;" class="mycode_b">Virtualbox instructions</span><br />
+First, download a small lightweight linux distro. I recommend <a href="http://iweb.dl.sourceforge.net/project/gparted/gparted-live-stable/0.16.1-1/gparted-live-0.16.1-1-i486.iso" target="_blank" class="mycode_url">gparted live</a> since it lets you double check if a FAT partition has been made. If you decide to use "Damn Small Linux" (yes that's a thing), download it from a mirror since the main site is extremely slow.<br />
+<br />
+Next, move the firsttimeros.flp file somewhere else like your desktop, and rename it firsttimeros.iso. Now, add this and the OS of your choice as new disk drives under the IDE controller of virtualbox. Boot into the OS, open a terminal and type "sudo dd if=/dev/cdrom of=/dev/sda". It should wait a little bit and say something like "1.8mb copied". The OS is now on the drive and so you can remove the disks and boot to the hard drive.<br />
+<br />
+<span style="font-weight: bold;" class="mycode_b">Real physical hardware instructions</span><br />
+You would probably want to do this on a flash drive, but it works on anything, really. You can use the dd command in linux if you know what you're doing, but I recommend you download a utility like <a href="https://launchpad.net/gdiskdump/+download" target="_blank" class="mycode_url">gdiskdump</a> (linux) or <a href="http://sourceforge.net/projects/win32diskimager/" target="_blank" class="mycode_url">Win32 Disk Imager</a> (windows). Use one of those to flash it and you now have a bootable flash/hard drive.<br />
+<br />
+<span style="font-weight: bold;" class="mycode_b"><span style="font-size: 50pt;" class="mycode_size">What you can do to improve it (you should!)</span></span><br />
+If you know assembly or know how to make useful basic programs, then submit your code here! All code is welcome if it improves the OS and makes it unique.<br />
+<br />
+<span style="font-weight: bold;" class="mycode_b"><span style="font-size: 50pt;" class="mycode_size">Downloads</span></span><br />
+<br />
+&lt;!-- m --&gt;&lt;a class="postlink" href="https://www.dropbox.com/sh/c6hjfsl5fhi2o6h/RP8JOocx0L" onclick="window.open(this.href);return false;this.target='_blank';" rel="nofollow"&gt;https://www.dropbox.com/sh/c6hjfsl5fhi2o6h/RP8JOocx0L&lt;/a&gt;&lt;!-- m --&gt; has all the versions of the OS and their source code.
+<br />
+<br />
+<hr size="1" />
+<!-- end: printthread_post --><!-- start: printthread_post -->
+<strong>FirstTimerOS (unofficial OSFirstTimer OS)</strong> - <a href="https://talk.raytron.org/User-Uber">Uber</a> -  <strong>05-29-2013</strong>
+<br />
+<br />
+I find it amusing how one little idea I had for an episode turned into the official osfirstimer os...<br />
+PS: I would recommend magiciso also for iso extraction
+<br />
+<br />
+<hr size="1" />
+<!-- end: printthread_post --><!-- start: printthread_post -->
+<strong>FirstTimerOS (unofficial OSFirstTimer OS)</strong> - <a href="https://talk.raytron.org/User-OSFirstTimer">OSFirstTimer</a> -  <strong>05-29-2013</strong>
+<br />
+<br />
+Wait a second? What's this? I have no idea about it. It can't be official if I don't know about it... lol <img src="https://talk.raytron.org/images/smilies/biggrin.png" alt="Big Grin" title="Big Grin" class="smilie smilie_4" /><br />
+<br />
+Anyway feel free to do something like this but low level languages are really hard in my opinion. The problem I feel is that mikeos is not meant for daily use and why would you work on developing an os based off it when it won't be used for daily use?
+<br />
+<br />
+<hr size="1" />
+<!-- end: printthread_post --><!-- start: printthread_post -->
+<strong>FirstTimerOS (unofficial OSFirstTimer OS)</strong> - <a href="https://talk.raytron.org/User-phillips1012">phillips1012</a> -  <strong>05-29-2013</strong>
+<br />
+<br />
+Basically it's what your mum said at the end of the MikeOS episode. I'm gonna put it on dropbox then share it with you so you can make changes and stuff.
+<br />
+<br />
+<hr size="1" />
+<!-- end: printthread_post --><!-- start: printthread_post -->
+<strong>FirstTimerOS (unofficial OSFirstTimer OS)</strong> - <a href="https://talk.raytron.org/User-Uber">Uber</a> -  <strong>05-29-2013</strong>
+<br />
+<br />
+<blockquote class="mycode_quote"><cite>phillips1012 Wrote:</cite>Basically it's what your mum said at the end of the MikeOS episode. I'm gonna put it on dropbox then share it with you so you can make changes and stuff.</blockquote>Im working on a kernel.bin 2.0 for the next update, Ill have the link messaged to you for you to compile because on Windows XP I have no idea how to compile it into an image...
+<br />
+<br />
+<hr size="1" />
+<!-- end: printthread_post --><!-- start: printthread_post -->
+<strong>FirstTimerOS (unofficial OSFirstTimer OS)</strong> - <a href="https://talk.raytron.org/User-yellowwinner">yellowwinner</a> -  <strong>05-29-2013</strong>
+<br />
+<br />
+Here is a video of me trying out it(veraion 1.0 alpha)<br />
+&lt;div style="margin:20px; margin-top:5px"&gt;&lt;div class="quotetitle"&gt;&lt;b&gt;Spoiler:&lt;/b&gt; &lt;input type="button" value="Show" style="width:45px;font-size:10px;margin:0px;padding:0px;" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = '';        this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Show'; }" /&gt;&lt;/div&gt;&lt;div class="quotecontent"&gt;&lt;div style="display: none;"&gt;&lt;object type="application/x-shockwave-flash" data="http://www.youtube.com/v/RwOZzTDA4-8?theme=light&amp;color=red" width="640" height="360"&gt;&lt;param name="movie" value="http://www.youtube.com/v/RwOZzTDA4-8?theme=light&amp;color=red" /&gt;&lt;param name="wmode" value="transparent" /&gt;&lt;/object&gt;<br />
+My opinion good.better than a  :cookie: <br />
+<span style="color: #FF0000;" class="mycode_color"><span style="font-weight: bold;" class="mycode_b"><span style="text-decoration: underline;" class="mycode_u">YES I KNOW I AM YOUNG</span></span></span><br />
+Pease check out my YouTube channel thanks  <img src="https://talk.raytron.org/images/smilies/biggrin.png" alt="Big Grin" title="Big Grin" class="smilie smilie_4" />&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;<br />
+<br />
+Version 1.1 alpha<br />
+&lt;div style="margin:20px; margin-top:5px"&gt;&lt;div class="quotetitle"&gt;&lt;b&gt;Spoiler:&lt;/b&gt; &lt;input type="button" value="Show" style="width:45px;font-size:10px;margin:0px;padding:0px;" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = '';        this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Show'; }" /&gt;&lt;/div&gt;&lt;div class="quotecontent"&gt;&lt;div style="display: none;"&gt;&lt;object type="application/x-shockwave-flash" data="http://www.youtube.com/v/xUTtixdAfh0?theme=light&amp;color=red" width="640" height="360"&gt;&lt;param name="movie" value="http://www.youtube.com/v/xUTtixdAfh0?theme=light&amp;color=red" /&gt;&lt;param name="wmode" value="transparent" /&gt;&lt;/object&gt;<br />
+I think it is good but lots of apps do not work and need to be repaired.<br />
+<span style="color: #FF0000;" class="mycode_color"><span style="font-weight: bold;" class="mycode_b"><span style="text-decoration: underline;" class="mycode_u">YES I KNOW I AM YOUNG</span></span></span><br />
+Pease check out my YouTube channel thanks  <img src="https://talk.raytron.org/images/smilies/biggrin.png" alt="Big Grin" title="Big Grin" class="smilie smilie_4" />&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+<br />
+<br />
+<hr size="1" />
+<!-- end: printthread_post --><!-- start: printthread_post -->
+<strong>FirstTimerOS (unofficial OSFirstTimer OS)</strong> - <a href="https://talk.raytron.org/User-Uber">Uber</a> -  <strong>05-29-2013</strong>
+<br />
+<br />
+<blockquote class="mycode_quote"><cite>yellowwinner Wrote:</cite>Here is a video of me trying out it:<br />
+&lt;object type="application/x-shockwave-flash" data="http://www.youtube.com/v/RwOZzTDA4-8?theme=light&amp;color=red" width="640" height="360"&gt;&lt;param name="movie" value="http://www.youtube.com/v/RwOZzTDA4-8?theme=light&amp;color=red" /&gt;&lt;param name="wmode" value="transparent" /&gt;&lt;/object&gt;<br />
+My opinion good.better than a  :cookie: <br />
+<span style="color: #FF0000;" class="mycode_color"><span style="font-weight: bold;" class="mycode_b"><span style="text-decoration: underline;" class="mycode_u">YES I KNOW I AM YOUNG</span></span></span></blockquote>I am young too!<br />
+BTW It wont be exactly like MikeOS for now,<br />
+I released a new build and sent it to phillips1012 to compile!
+<br />
+<br />
+<hr size="1" />
+<!-- end: printthread_post --><!-- start: printthread_post -->
+<strong>FirstTimerOS (unofficial OSFirstTimer OS)</strong> - <a href="https://talk.raytron.org/User-yellowwinner">yellowwinner</a> -  <strong>05-29-2013</strong>
+<br />
+<br />
+<blockquote class="mycode_quote"><cite>Ryanbeltz Wrote:</cite><blockquote class="mycode_quote"><cite>yellowwinner Wrote:</cite>Here is a video of me trying out it:<br />
+&lt;object type="application/x-shockwave-flash" data="http://www.youtube.com/v/RwOZzTDA4-8?theme=light&amp;color=red" width="640" height="360"&gt;&lt;param name="movie" value="http://www.youtube.com/v/RwOZzTDA4-8?theme=light&amp;color=red" /&gt;&lt;param name="wmode" value="transparent" /&gt;&lt;/object&gt;<br />
+My opinion good.better than a  :cookie: <br />
+<span style="color: #FF0000;" class="mycode_color"><span style="font-weight: bold;" class="mycode_b"><span style="text-decoration: underline;" class="mycode_u">YES I KNOW I AM YOUNG</span></span></span></blockquote>I am young too!<br />
+BTW It wont be exactly like MikeOS for now,<br />
+I released a new build and sent it to phillips1012 to compile!</blockquote><br />
+When Will it be ready for public also is it ok if on later updates(major releases) I could do more videos on them or no?
+<br />
+<br />
+<hr size="1" />
+<!-- end: printthread_post --><!-- start: printthread_post -->
+<strong>FirstTimerOS (unofficial OSFirstTimer OS)</strong> - <a href="https://talk.raytron.org/User-phillips1012">phillips1012</a> -  <strong>05-29-2013</strong>
+<br />
+<br />
+You can certainly do more videos when it comes out. Right now I'm adding a C library so people can make programs in C. I'm not sure when it will come out, though.
+<br />
+<br />
+<hr size="1" />
+<!-- end: printthread_post --><!-- start: printthread_post -->
+<strong>FirstTimerOS (unofficial OSFirstTimer OS)</strong> - <a href="https://talk.raytron.org/User-yellowwinner">yellowwinner</a> -  <strong>05-29-2013</strong>
+<br />
+<br />
+ok thanks
+<br />
+<br />
+<hr size="1" />
+<!-- end: printthread_post --></td>
+</tr>
+</table>
+</body>
+</html>
+<!-- end: printthread -->

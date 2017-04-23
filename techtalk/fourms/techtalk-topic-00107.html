@@ -1,0 +1,765 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<title>techTalk &bull; View topic - Why PHP is a horrible language</title>
+
+<link rel="alternate" type="application/atom+xml" title="Feed - techTalk" href="https://archive.raytron.org/techtalk/feed.php" /><link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="https://archive.raytron.org/techtalk/feed.php?mode=topics" /><link rel="alternate" type="application/atom+xml" title="Feed - Forum - Programming" href="https://archive.raytron.org/techtalk/feed.php?f=28" /><link rel="alternate" type="application/atom+xml" title="Feed - Topic - Why PHP is a horrible language" href="https://archive.raytron.org/techtalk/feed.php?f=28&amp;t=107" />
+
+<!--
+	phpBB style name: MyInvision
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:	  Brad Veryard ( http://www.bradleyv.com/ )
+-->
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Enter the page number you wish to go to:';
+	var on_page = '1';
+	var per_page = '';
+	var base_url = '';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; domain=archive.raytron.org; secure';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript" src="./styles/prosilver/template/styleswitcher.js"></script>
+<script type="text/javascript" src="./styles/prosilver/template/forum_fn.js"></script>
+<script type="text/javascript" src="./styles/tech-talk/template/jquery.min.js"></script>
+<script type="text/javascript" src="./styles/tech-talk/template/jquery.cookie.js"></script>
+
+<link href="./styles/tech-talk/theme/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<link href="./style.php?id=7&amp;lang=en&amp;sid=e60657baad6143183b5343430cd119df" rel="stylesheet" type="text/css" media="screen, projection" />
+
+</head>
+
+<body id="phpbb" class="section-viewtopic ltr">
+<!--
+
+ Options: Yes | No
+ Options: Yes | No
+ Options: Yes | No
+
+-->
+<div class="above"></div>
+<div id="header">
+	<div class="main_width">
+		<a href="./index.php?sid=e60657baad6143183b5343430cd119df" title="Board index" id="logo"><img src="./styles/tech-talk/imageset/logo.png" width="358" height="64" alt="" title="" /></a>
+		
+				
+			<div id="search-box" class="searchback">
+				<form action="./search.php?sid=e60657baad6143183b5343430cd119df" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="text" maxlength="128" title="Search for keywords" class="inputbox search" value="Search…" onclick="if(this.value=='Search…')this.value='';" onblur="if(this.value=='')this.value='Search…';" />
+					<input class="button2" value="Search" type="submit" /><br />
+					<a href="./search.php?sid=e60657baad6143183b5343430cd119df" title="View the advanced search options">Advanced search</a> <input type="hidden" name="sid" value="e60657baad6143183b5343430cd119df" />
+
+				</fieldset>
+				</form>
+			</div>
+			
+	</div>
+</div>
+
+<div id="wrap">
+	<div class="navbar clearit">
+		<ul id="nav">
+			<li><a href="./index.php?sid=e60657baad6143183b5343430cd119df" accesskey="h"><img src="./styles/tech-talk/theme/images/globe.png" class="nicon" alt="Board index" />Board index</a></li>
+			<li><a href="./memberlist.php?sid=e60657baad6143183b5343430cd119df"><img src="./styles/tech-talk/theme/images/member.png" class="nicon" alt="Members" />Members</a></li>
+			<li><a href="./faq.php?sid=e60657baad6143183b5343430cd119df"><img src="./styles/tech-talk/theme/images/faq.png" class="nicon" alt="FAQ" />FAQ</a></li>
+			
+		</ul>
+	</div>
+	<a id="top" name="top" accesskey="t"></a>
+<div id="content">
+	<div id="page-header">
+
+		<div class="breadcrumbs">
+			<ul class="linklist navlinks">
+				<li class="icon-home"><a href="./index.php?sid=e60657baad6143183b5343430cd119df" accesskey="h">Board index</a>  <strong>&#8249;</strong> <a href="./viewforum.php?f=90&amp;sid=e60657baad6143183b5343430cd119df">Technology</a> <strong>&#8249;</strong> <a href="./viewforum.php?f=28&amp;sid=e60657baad6143183b5343430cd119df">Programming</a></li>
+				<li class="rightside"><a href="./viewtopic.php?f=28&amp;t=107&amp;sid=e60657baad6143183b5343430cd119df&amp;view=print" title="Print view" accesskey="p" class="print">Print view</a></li>
+			</ul>
+
+			
+
+			<ul class="linklist rightside">
+				
+					<li class="icon-logout"><a href="./ucp.php?mode=login&amp;sid=e60657baad6143183b5343430cd119df" title="Login" accesskey="x">Login</a></li>
+				
+			</ul>
+			<div class="clearit"></div>
+		</div>
+	</div>
+
+	<a name="start_here"></a>
+	<div id="page-body">
+		
+		
+ <div id="announcebar" class="rules">
+        <div class="inner"><span class="corners-top"><span></span></span>
+            This forum is an archive, hosted for reference purposes only. If you want to get involved with our current community, please visit <a href="https://talk.raytron.org" target="_blank">Raytron</a>.
+         <span class="corners-bottom"><span></span></span></div>
+     </div>
+<h2><a href="./viewtopic.php?f=28&amp;t=107&amp;sid=e60657baad6143183b5343430cd119df">Why PHP is a horrible language</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body --><div style="display: none !important;">Talk about Computer Programming here.<br /></div>
+
+<div class="topic-actions">
+
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=28&amp;t=107&amp;sid=e60657baad6143183b5343430cd119df" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php?sid=e60657baad6143183b5343430cd119df">
+			<fieldset>
+				<input class="inputbox search tiny"  type="text" name="keywords" id="search_keywords" size="20" value="Search this topic…" onclick="if(this.value=='Search this topic…')this.value='';" onblur="if(this.value=='')this.value='Search this topic…';" />
+				<input class="button2" type="submit" value="Search" />
+				<input type="hidden" name="t" value="107" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="e60657baad6143183b5343430cd119df" />
+
+			</fieldset>
+			</form>
+		</div>
+	
+		<div class="pagination">
+			9 posts
+			 &bull; Page <strong>1</strong> of <strong>1</strong>
+		</div>
+	
+
+</div>
+<div class="clear"></div>
+
+
+	<div class="pannels clearit">
+	<div id="p337"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=28&amp;p=337&amp;sid=e60657baad6143183b5343430cd119df" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 class="first"><a href="#p337">Why PHP is a horrible language</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=337&amp;sid=e60657baad6143183b5343430cd119df#p337"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=2&amp;sid=e60657baad6143183b5343430cd119df">phillips1012</a></strong> &raquo; Sun May 25, 2014 5:01 am </p>
+
+			
+
+			<div class="content">PHP is terrible. Here are the reasons I personally hate php:<br /><br /><ul><li> Weak typing: PHP doesn't give a fuck about types. The == operator is pretty much a &quot;similar&quot; operator, not an equality operator.</li><li> PHP is extremely hard to debug. Fatal errors do not return a stack trace and you cannot catch them at runtime. Many things that should throw errors fail silently.</li><li> One of the good things about php is that the concatenation operator is seperate from the addition operator. However, someone thought using a period &quot;.&quot; for concatenation was a great idea. Why is this bad? You have to use &quot;-&gt;&quot; to access functions from instances of classes. Wonderful design right there.</li><li> PHP tries to stay extremely backwards compatible and has hundreds of built-in functions, such as &quot;mysql_real_escape_string&quot;. It's pretty much the equivelant of hoarding in programming language design.</li><li> It's extremely insecure and the design of it doesn't help developers write secure applications at all.</li><li> It sucks at being object oriented. Most functions to operate on objects are in the form of built-in functions that are tied to the global namespace</li><li> <!-- m --><a class="postlink" href="http://www.php.net/manual/en/language.types.array.php..">http://www.php.net/manual/en/language.types.array.php..</a><!-- m -->. &quot;This type is optimized for several different uses; it can be treated as an array, list (vector), hash table (an implementation of a map), dictionary, collection, stack, queue, and probably more.&quot; They're saying this as if it's a good thing...</li><li> Syntax. Did you know php, a curly-braced language, has an `endif;` statement? <!-- m --><a class="postlink" href="http://www.php.net/manual/en/control-structures.alternative-syntax.php">http://www.php.net/manual/en/control-st ... syntax.php</a><!-- m --></li><li> We should not be mixing logic and static files in 2014. `.php` files shouldn't be served, they should serve.</li></ul><br />There are many more reasons php pisses me off, but these are the ones that piss me off the most.</div>
+
+			<div id="sig337" class="signature"><img src="https://i.imgur.com/wpiSc1g.png" alt="Image" /></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile337">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=2&amp;sid=e60657baad6143183b5343430cd119df"><img src="./download/file.php?avatar=2_1415672334.png" width="200" height="200" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=2&amp;sid=e60657baad6143183b5343430cd119df">phillips1012</a>
+			</dt>
+
+			<dd>Ex-Staff<br /><img src="./images/ranks/3.png" alt="Ex-Staff" title="Ex-Staff" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 114</dd><dd><strong>Joined:</strong> Wed May 21, 2014 12:19 am</dd><dd><strong>Location:</strong> 'MURICA</dd>
+			<dd><strong>Favorite OS:</strong> Archlinux</dd>
+		
+			<dd><strong>Favorite Programming Language:</strong> Javascript and Scala</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p1287"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=28&amp;p=1287&amp;sid=e60657baad6143183b5343430cd119df" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p1287">Re: Why PHP is a horrible language</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=1287&amp;sid=e60657baad6143183b5343430cd119df#p1287"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=159&amp;sid=e60657baad6143183b5343430cd119df">cirno</a></strong> &raquo; Thu Jun 05, 2014 12:55 am </p>
+
+			
+
+			<div class="content">I love PHP. As the overlord of this website, you are now PERMANENTLY BANNED and sent to hell forever. Now you will have to lick jacob rolwes' feet and hair.</div>
+
+			<div id="sig1287" class="signature"><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&lt;?php echo 'lol epic codeing xDDdadsedsdDSSDSDDsd'; ?&gt;</code></dd></dl><br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="text-transform: uppercase; border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>show</a>'; }" /><b>Spoiler: </b><a href="#" onClick="return false;">show</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;">hlol im an epic! but u cant se me info, bczu endejan might steal it!! :OOOO<br />i am a *******************************************************************<br /><span style="font-size: 200%; line-height: 116%;">now here r my opinusn xDD</span><br /><span style="color: #FF80FF"><div align="center"><div align="left"><div align="right"><del><span style="font-weight: bold"><span style="font-style: italic"><span style="text-decoration: underline"><ul>I Like Window XP<br />ur a faget<br />cirno is great<br />bender is great<br />cool windows xp</ul></span></span></span></del></div></div></div></span><br /><span style="font-size: 200%; line-height: 116%;">if u dnt like them then ur WRONG HAHAHAHAHAHHAHAHAHAHAHA</span></div>
+    </div>
+</div></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile1287">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=159&amp;sid=e60657baad6143183b5343430cd119df">cirno</a>
+			</dt>
+
+			<dd>Member<br /><img src="./images/ranks/1.png" alt="Member" title="Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 39</dd><dd><strong>Joined:</strong> Sat May 31, 2014 2:39 pm</dd>
+			<dd><strong>Favorite OS:</strong> Windows 10</dd>
+		
+			<dd><strong>Favorite Programming Language:</strong> C#</dd>
+		
+			<dd><strong>Personal Text:</strong> i am god</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p1360"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=28&amp;p=1360&amp;sid=e60657baad6143183b5343430cd119df" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p1360">Re: Why PHP is a horrible language</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=1360&amp;sid=e60657baad6143183b5343430cd119df#p1360"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=58&amp;sid=e60657baad6143183b5343430cd119df">MetroHaterx54x2</a></strong> &raquo; Fri Jun 06, 2014 12:06 am </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>cirno wrote:</cite>I love PHP. As the overlord of this website, you are now PERMANENTLY BANNED and sent to hell forever. Now you will have to lick jacob rolwes' feet and hair.</div></blockquote><br /><br />Cirno, STFU.<br />Phillips1012 didn't write PHPBB, someone else did.</div>
+
+			<div id="sig1360" class="signature"><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Anti-intel stuff, joke: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Anti-intel stuff, joke: </b><a href=\'#\' onClick=\'return false;\'>SHOW</a>'; }" /><b>Anti-intel stuff, joke: </b><a href="#" onClick="return false;">SHOW</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;">If your son has requested a new &quot;processor&quot; from a company called &quot;Intel&quot;, this is genuine cause for alarm. Intel is a third-world based company who make inferior, &quot;knock-off&quot; copies of <a href="http://www.amd.com" class="postlink">American processor chips</a>. They use child labor  extensively in their third world sweatshops, and they deliberately disable the security features that American processor makers, such as AMD, use to prevent hacking. Intel chips are never sold in stores, and you will most likely be told  that you have to order them from internet sites. Do not buy this chip! This is one request that you must refuse your son, if you are to have any hope of raising him well.</div>
+    </div>
+</div><br /><br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>AMD Fanboy song: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>AMD Fanboy song: </b><a href=\'#\' onClick=\'return false;\'>SHOW</a>'; }" /><b>AMD Fanboy song: </b><a href="#" onClick="return false;">SHOW</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;">I love AMD, My Blood runs red and true<br />Don&#39;t Care for Intel products, I don&#39;t look good in Blue<br />Look inside my case the colors Red and Black<br />Don&#39;t want my PC Green, Cuz man that shit is whack<br /><br />Chorus<br /><br />AMD<br />Harder, Faster, better<br />AMD<br />And Its Cheaper<br />AMD<br />That Shit can Overclock<br />AMD<br />Intel is a cock-block<br />AMD<br />60 Percent of the time, my Athlon Is faster every time<br />AMD<br />Save yourself some money<br />AMD<br />By Switching to AMD<br /><br />I love AMD they always got my back<br />I love their lower prices, they keep me coming back<br />I know they may run hotter, but thats okay with me<br />&#40;Brace Yourself&#41; Winter is coming, with this I shall not freeze &#40;Game of thrones reference&#41;<br /><br />AMD<br />Harder, Faster, better<br />AMD<br />And Its Cheaper<br />AMD<br />That Shit can Overclock<br />AMD<br />Intel is a cock-block<br />AMD<br />60 Percent of the time, my Athlon Is faster every time<br />AMD<br />Save yourself some money<br />AMD<br />By Switching to AMD</div>
+    </div>
+</div><br /><br /><br />NOTE: I may be unavailable for a week.</div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile1360">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=58&amp;sid=e60657baad6143183b5343430cd119df"><img src="./download/file.php?avatar=58_1401162464.png" width="198" height="199" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=58&amp;sid=e60657baad6143183b5343430cd119df">MetroHaterx54x2</a>
+			</dt>
+
+			<dd>Advanced Member<br /><img src="./images/ranks/3.png" alt="Advanced Member" title="Advanced Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 179</dd><dd><strong>Joined:</strong> Fri May 23, 2014 1:28 am</dd><dd><strong>Location:</strong> A house in colorado</dd>
+			<dd><strong>Favorite OS:</strong> Windows 7</dd>
+		
+			<dd><strong>Personal Text:</strong> WTF was I thinking?</dd>
+		
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://dontask.dont.do.not" title="WWW: http://dontask.dont.do.not"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p1506"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=28&amp;p=1506&amp;sid=e60657baad6143183b5343430cd119df" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p1506">Re: Why PHP is a horrible language</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=1506&amp;sid=e60657baad6143183b5343430cd119df#p1506"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=48&amp;sid=e60657baad6143183b5343430cd119df">KomputerKid</a></strong> &raquo; Tue Jun 10, 2014 3:12 pm </p>
+
+			
+
+			<div class="content">A lot of the Web Developers at my school also hate PHP. They think it is buggy, flawed, and terrible all together. They primarily use Javascript or Python for web apps. I myself also hate PHP, due to the reasons they hate it, and because I agree with your statements. I'm forced to learn PHP as part of a high school coding class though. <img src="./images/smilies/icon_e_sad.gif" alt=":(" title="Sad" /></div>
+
+			<div id="sig1506" class="signature"><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Status: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Status: </b><a href=\'#\' onClick=\'return false;\'>SHOW</a>'; }" /><b>Status: </b><a href="#" onClick="return false;">SHOW</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;"><ul><li>Forums: <span style="color: #16BA1C">Active</span></li><li>IRC: <span style="color: #16BA1C">Active</span></li></ul></div>
+    </div>
+</div><br /><span style="font-weight: bold">Former <span style="color: #FF0000">Administrator</span></span><br /><span style="font-weight: bold">Former <span style="color: #008000">Moderator</span> on the <a href="http://osfirsttimer.freeforums.org" class="postlink">OSFirstTimer Forums</a></span><br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Other places to find me: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Other places to find me: </b><a href=\'#\' onClick=\'return false;\'>SHOW</a>'; }" /><b>Other places to find me: </b><a href="#" onClick="return false;">SHOW</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;"><ul><li>Steam: KomputerKid</li><li>YouTube: MrKomputerKid</li><li>Origin: MrKomputerKid</li><li>E-mail: <!-- e --><a href="/cdn-cgi/l/email-protection#cba8b9aaa2acbcaeb8b8aea7f28baca6aaa2a7e5a8a4a6"><span class="__cf_email__" data-cfemail="93f0e1f2faf4e4f6e0e0f6ffaad3f4fef2faffbdf0fcfe">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script></a><!-- e --></li><li>IRC &#40;Rizon, EsperNet, Freenode, Alphachat, Corpsnet&#41; usually known as KK sometimes KomputerKid depending on the network. Most active on #techtalk &#40;AlphaChat&#41; and #retrobox &#40;Corpsnet&#41;. I <span style="font-weight: bold">AM</span> on other channels but quite inactive.</li><li>Other internet forums: KomputerKid, or MrKomputerKid depending on what&#39;s available. Also formerly on FedoraForums as FedoraLinuxKid &#40;Haven&#39;t been on there since 2012&#41; and Gentoo forums &#40;again haven&#39;t been on there since 2012, plus I was retarded because I thought I could install Gentoo. Woo hoo keeping my virginity all week long.&#41; as GentooLinuxKid.</li></ul></div>
+    </div>
+</div><br /><br /><div align="center"><a href="https://novabench.com/view/859532" class="postlink"><img src="https://novabench.com/image/859532.png" alt="Image" /></a></div></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile1506">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=48&amp;sid=e60657baad6143183b5343430cd119df">KomputerKid</a>
+			</dt>
+
+			<dd>Ex-Staff<br /><img src="./images/ranks/3.png" alt="Ex-Staff" title="Ex-Staff" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 569</dd><dd><strong>Joined:</strong> Wed May 21, 2014 12:25 am</dd><dd><strong>Location:</strong> Oregon</dd>
+			<dd><strong>Favorite OS:</strong> Windows 8.1/10</dd>
+		
+			<dd><strong>Personal Text:</strong> Google is your friend!</dd>
+		
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://mrkomputerkid.github.io" title="WWW: http://mrkomputerkid.github.io"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p2022"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=28&amp;p=2022&amp;sid=e60657baad6143183b5343430cd119df" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p2022">Re: Why PHP is a horrible language</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=2022&amp;sid=e60657baad6143183b5343430cd119df#p2022"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=97&amp;sid=e60657baad6143183b5343430cd119df">esc1010</a></strong> &raquo; Sat Jun 21, 2014 11:38 am </p>
+
+			
+
+			<div class="content">I have to learm Visual Basic 2010 at my school. Ha!</div>
+
+			<div id="sig2022" class="signature"><span style="font-size: 150%; line-height: 116%;">In soviet Russia... hardware fix you!</span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile2022">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=97&amp;sid=e60657baad6143183b5343430cd119df"><img src="./download/file.php?avatar=97_1408539000.jpg" width="120" height="104" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=97&amp;sid=e60657baad6143183b5343430cd119df">esc1010</a>
+			</dt>
+
+			<dd>Advanced Member<br /><img src="./images/ranks/3.png" alt="Advanced Member" title="Advanced Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 531</dd><dd><strong>Joined:</strong> Fri May 23, 2014 9:43 pm</dd>
+			<dd><strong>Favorite OS:</strong> elementary OS Luna</dd>
+		
+			<dd><strong>Favorite Programming Language:</strong> HTML 5, C++</dd>
+		
+			<dd><strong>Personal Text:</strong> AMD Is Inside!</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p2176"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=28&amp;p=2176&amp;sid=e60657baad6143183b5343430cd119df" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p2176">Re: Why PHP is a horrible language</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=2176&amp;sid=e60657baad6143183b5343430cd119df#p2176"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=55&amp;sid=e60657baad6143183b5343430cd119df">maxell</a></strong> &raquo; Mon Jun 23, 2014 5:11 am </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>esc1010 wrote:</cite>I have to learm Visual Basic 2010 at my school. Ha!</div></blockquote><br /><br />Ha? What?<br />BTW Visual Basic should never be taught in school.</div>
+
+			<div id="sig2176" class="signature"><a href="http://maxell.ml" class="postlink">Check out my website!</a><br /><span style="font-size: 150%; line-height: 116%;">I've moved to <a href="https://bbs.techdom.ml" class="postlink">techdom</a></span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile2176">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=55&amp;sid=e60657baad6143183b5343430cd119df"><img src="./download/file.php?avatar=55_1443076984.png" width="60" height="34" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=55&amp;sid=e60657baad6143183b5343430cd119df">maxell</a>
+			</dt>
+
+			<dd>Advanced Member<br /><img src="./images/ranks/3.png" alt="Advanced Member" title="Advanced Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 621</dd><dd><strong>Joined:</strong> Fri May 23, 2014 1:06 am</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p2177"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=28&amp;p=2177&amp;sid=e60657baad6143183b5343430cd119df" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p2177">Re: Why PHP is a horrible language</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=2177&amp;sid=e60657baad6143183b5343430cd119df#p2177"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=54&amp;sid=e60657baad6143183b5343430cd119df">Baltic</a></strong> &raquo; Mon Jun 23, 2014 5:21 am </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>JacobGuy7800 wrote:</cite><blockquote><div><cite>esc1010 wrote:</cite>I have to learm Visual Basic 2010 at my school. Ha!</div></blockquote><br /><br />Ha? What?<br />BTW Visual Basic should never be taught in school.</div></blockquote><br /><br />Eh, it's more for basic learning of coding. Which everyone should start on their then move onto the C family, then onto anything else. I know VB 6-2010 like the back of my hand. (I don't consider Visual Basic a language, it's way to simple and doesn't really help you unless you are a total newbie.)</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile2177">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=54&amp;sid=e60657baad6143183b5343430cd119df">Baltic</a>
+			</dt>
+
+			<dd>Advanced Member<br /><img src="./images/ranks/3.png" alt="Advanced Member" title="Advanced Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 377</dd><dd><strong>Joined:</strong> Fri May 23, 2014 12:55 am</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p2226"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=28&amp;p=2226&amp;sid=e60657baad6143183b5343430cd119df" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p2226">Re: Why PHP is a horrible language</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=2226&amp;sid=e60657baad6143183b5343430cd119df#p2226"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=97&amp;sid=e60657baad6143183b5343430cd119df">esc1010</a></strong> &raquo; Tue Jun 24, 2014 12:19 am </p>
+
+			
+
+			<div class="content">At our school they say that in 11th Grade we learn Visual Basic and then C/C++ in 12 Grade. We had to pass a Visual Basic exam as part of our final grade. We were all like  <img src="./images/smilies/icon_rolleyes.gif" alt=":roll:" title="Rolling Eyes" /></div>
+
+			<div id="sig2226" class="signature"><span style="font-size: 150%; line-height: 116%;">In soviet Russia... hardware fix you!</span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile2226">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=97&amp;sid=e60657baad6143183b5343430cd119df"><img src="./download/file.php?avatar=97_1408539000.jpg" width="120" height="104" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=97&amp;sid=e60657baad6143183b5343430cd119df">esc1010</a>
+			</dt>
+
+			<dd>Advanced Member<br /><img src="./images/ranks/3.png" alt="Advanced Member" title="Advanced Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 531</dd><dd><strong>Joined:</strong> Fri May 23, 2014 9:43 pm</dd>
+			<dd><strong>Favorite OS:</strong> elementary OS Luna</dd>
+		
+			<dd><strong>Favorite Programming Language:</strong> HTML 5, C++</dd>
+		
+			<dd><strong>Personal Text:</strong> AMD Is Inside!</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p2329"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=28&amp;p=2329&amp;sid=e60657baad6143183b5343430cd119df" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p2329">Re: Why PHP is a horrible language</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=2329&amp;sid=e60657baad6143183b5343430cd119df#p2329"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=100&amp;sid=e60657baad6143183b5343430cd119df">rp4k</a></strong> &raquo; Tue Jun 24, 2014 9:01 pm </p>
+
+			
+
+			<div class="content">Hour of Code means &quot;introduce children to creating programs that are dumb as possible*, not *introduce children to code*<br /><br />PHP is horrible. I just wished I didn't have to use it to make the future Talx social network.</div>
+
+			<div id="sig2329" class="signature">RIP The Pirate Bay 2003 - 2014<br /><span style="font-size: 50%; line-height: 116%;">Well, not that I <span style="font-style: italic">liked</span> it. But still.</span><br />irc username: rp4k</div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile2329">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=100&amp;sid=e60657baad6143183b5343430cd119df"><img src="./download/file.php?avatar=100_1419745097.png" width="144" height="144" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=100&amp;sid=e60657baad6143183b5343430cd119df">rp4k</a>
+			</dt>
+
+			<dd>Member<br /><img src="./images/ranks/2.png" alt="Member" title="Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 73</dd><dd><strong>Joined:</strong> Sat May 24, 2014 5:38 am</dd><dd><strong>Location:</strong> la-la land</dd>
+			<dd><strong>Favorite OS:</strong> Arch Linux</dd>
+		
+			<dd><strong>Favorite Programming Language:</strong> Python/JS/Ruby</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?f=28&amp;t=107&amp;sid=e60657baad6143183b5343430cd119df">
+
+	<fieldset class="display-options" style="margin-top: 0; ">
+		
+		<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select> <input type="submit" name="sort" value="Go" class="button2" /></label>
+		
+	</fieldset>
+
+	</form>
+	<hr />
+
+
+<div class="topic-actions">
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=28&amp;t=107&amp;sid=e60657baad6143183b5343430cd119df" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="pagination">
+			9 posts
+			 &bull; Page <strong>1</strong> of <strong>1</strong>
+		</div>
+	
+</div>
+
+
+	<p></p><p><a href="./viewforum.php?f=28&amp;sid=e60657baad6143183b5343430cd119df" class="left-box left" accesskey="r">Return to Programming</a></p>
+
+	<form method="post" id="jumpbox" action="./viewforum.php?sid=e60657baad6143183b5343430cd119df" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Jump to:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+			
+				<option value="-1">Select a forum</option>
+			<option value="-1">------------------</option>
+				<option value="98">Raytron</option>
+			
+				<option value="99">&nbsp; &nbsp;Raytron</option>
+			
+				<option value="3">General Forum Discussion</option>
+			
+				<option value="4">&nbsp; &nbsp;Announcements</option>
+			
+				<option value="6">&nbsp; &nbsp;Introductions</option>
+			
+				<option value="92">&nbsp; &nbsp;Suggestions</option>
+			
+				<option value="90">Technology</option>
+			
+				<option value="10">&nbsp; &nbsp;General Tech Discussion</option>
+			
+				<option value="91">&nbsp; &nbsp;Technology News</option>
+			
+				<option value="18">&nbsp; &nbsp;Software / Operating Systems</option>
+			
+				<option value="11">&nbsp; &nbsp;Hardware</option>
+			
+				<option value="28" selected="selected">&nbsp; &nbsp;Programming</option>
+			
+				<option value="32">&nbsp; &nbsp;Gaming</option>
+			
+				<option value="57">Other</option>
+			
+				<option value="58">&nbsp; &nbsp;Off Topic</option>
+			
+			</select>
+			<input type="submit" value="Go" class="button2" />
+		</fieldset>
+	</form>
+
+
+	<h3><a href="./viewonline.php?sid=e60657baad6143183b5343430cd119df">Who is online</a></h3>
+	<p>Users browsing this forum: No registered users and 0 guests</p>
+</div>
+
+<div id="page-footer">
+
+	<div class="breadcrumbs">
+		<ul class="linklist">
+			<li class="icon-home"><a href="./index.php?sid=e60657baad6143183b5343430cd119df" accesskey="h">Board index</a></li>
+				
+			<li class="rightside"><a href="./memberlist.php?mode=leaders&amp;sid=e60657baad6143183b5343430cd119df">The team</a> &bull; <a href="./ucp.php?mode=delete_cookies&amp;sid=e60657baad6143183b5343430cd119df">Delete all board cookies</a> &bull; All times are UTC </li>
+		</ul>
+		<div class="copyright">
+		</div>
+	</div>
+</div>
+
+</div>
+</div>
+<div class="clearit"></div>
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51268407-1', 'tech-talk.ml');
+  ga('send', 'pageview');
+
+</script>
+<script>/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/\>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script></body>
+</html>

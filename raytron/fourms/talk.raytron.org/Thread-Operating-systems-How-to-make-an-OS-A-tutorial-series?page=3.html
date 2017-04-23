@@ -1,0 +1,1446 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><!-- start: showthread -->
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Raytron - Operating systems&nbsp;: How to make an OS, A tutorial series</title>
+<!-- start: headerinclude -->
+<link rel="icon" type="image/png" href="/favicon.png" />
+<link rel="alternate" type="application/rss+xml" title="Latest Threads (RSS 2.0)" href="https://talk.raytron.org/syndication.php" />
+<link rel="alternate" type="application/atom+xml" title="Latest Threads (Atom 1.0)" href="https://talk.raytron.org/syndication.php?type=atom1.0" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<script type="text/javascript" src="https://talk.raytron.org/jscripts/jquery.js?ver=1806"></script>
+<script type="text/javascript" src="https://talk.raytron.org/jscripts/jquery.plugins.min.js?ver=1806"></script>
+<script type="text/javascript" src="https://talk.raytron.org/jscripts/general.js?ver=1807"></script>
+
+<script language="javascript" type="text/javascript" src="https://talk.raytron.org/jscripts/myadvertisements.js"></script>
+<link type="text/css" rel="stylesheet" href="https://talk.raytron.org/cache/themes/theme3/global.min.css" />
+<link type="text/css" rel="stylesheet" href="https://talk.raytron.org/cache/themes/theme1/star_ratings.min.css" />
+<link type="text/css" rel="stylesheet" href="https://talk.raytron.org/cache/themes/theme1/showthread.min.css" />
+<link type="text/css" rel="stylesheet" href="https://talk.raytron.org/cache/themes/theme1/css3.min.css" />
+<link type="text/css" rel="stylesheet" href="https://talk.raytron.org/cache/themes/theme1/alerts.min.css" />
+
+<link href='//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+<script type="text/javascript">
+<!--
+	lang.unknown_error = "An unknown error has occurred.";
+
+	lang.select2_match = "One result is available, press enter to select it.";
+	lang.select2_matches = "{1} results are available, use up and down arrow keys to navigate.";
+	lang.select2_nomatches = "No matches found";
+	lang.select2_inputtooshort_single = "Please enter one or more character";
+	lang.select2_inputtooshort_plural = "Please enter {1} or more characters";
+	lang.select2_inputtoolong_single = "Please delete one character";
+	lang.select2_inputtoolong_plural = "Please delete {1} characters";
+	lang.select2_selectiontoobig_single = "You can only select one item";
+	lang.select2_selectiontoobig_plural = "You can only select {1} items";
+	lang.select2_loadmore = "Loading more results…";
+	lang.select2_searching = "Searching…";
+
+	var cookieDomain = ".raytron.org";
+	var cookiePath = "/";
+	var cookiePrefix = "";
+	var deleteevent_confirm = "Are you sure you want to delete this event?";
+	var removeattach_confirm = "Are you sure you want to remove the selected attachment from this post?";
+	var loading_text = 'Loading. <br />Please Wait..';
+	var saving_changes = 'Saving changes..';
+	var use_xmlhttprequest = "1";
+	var my_post_key = "ca7acb9a9c5497e06fa3820172885d56";
+	var rootpath = "https://talk.raytron.org";
+	var imagepath = "https://talk.raytron.org/images";
+  	var yes_confirm = "Yes";
+	var no_confirm = "No";
+	var MyBBEditor = null;
+	var spinner_image = "https://talk.raytron.org/images/spinner.gif";
+	var spinner = "<img src='" + spinner_image +"' alt='' />";
+	var modal_zindex = 9999;
+// -->
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74806000-1', 'auto');
+  ga('send', 'pageview');
+
+</script><!-- start: myalerts_js_popup -->
+<script type="text/javascript">
+    var unreadAlerts = '';
+</script>
+<script type="text/javascript" src="https://talk.raytron.org/jscripts/myalerts.js"></script>
+
+<!-- end: myalerts_js_popup --><script language="javascript" type="text/javascript" src="https://talk.raytron.org/jscripts/myadvertisements.js"></script>
+<link type="text/css" rel="stylesheet" href="https://talk.raytron.org/cache/themes/theme3/global.min.css" />
+<link type="text/css" rel="stylesheet" href="https://talk.raytron.org/cache/themes/theme1/star_ratings.min.css" />
+<link type="text/css" rel="stylesheet" href="https://talk.raytron.org/cache/themes/theme1/showthread.min.css" />
+<link type="text/css" rel="stylesheet" href="https://talk.raytron.org/cache/themes/theme1/css3.min.css" />
+<link type="text/css" rel="stylesheet" href="https://talk.raytron.org/cache/themes/theme1/alerts.min.css" />
+<script language="javascript" type="text/javascript" src="https://talk.raytron.org/jscripts/myadvertisements.js"></script>
+<link type="text/css" rel="stylesheet" href="https://talk.raytron.org/cache/themes/theme3/global.min.css" />
+<link type="text/css" rel="stylesheet" href="https://talk.raytron.org/cache/themes/theme1/star_ratings.min.css" />
+<link type="text/css" rel="stylesheet" href="https://talk.raytron.org/cache/themes/theme1/showthread.min.css" />
+<link type="text/css" rel="stylesheet" href="https://talk.raytron.org/cache/themes/theme1/css3.min.css" />
+<link type="text/css" rel="stylesheet" href="https://talk.raytron.org/cache/themes/theme1/alerts.min.css" />
+
+<!-- end: headerinclude -->
+<script type="text/javascript">
+<!--
+	var quickdelete_confirm = "Are you sure you want to delete this post?";
+	var quickrestore_confirm = "Are you sure you want to restore this post?";
+	var allowEditReason = "1";
+	lang.save_changes = "Save Changes";
+	lang.cancel_edit = "Cancel Edit";
+	lang.quick_edit_update_error = "There was an error editing your reply:";
+	lang.quick_reply_post_error = "There was an error posting your reply:";
+	lang.quick_delete_error = "There was an error deleting your reply:";
+	lang.quick_delete_success = "The post was deleted successfully.";
+	lang.quick_delete_thread_success = "The thread was deleted successfully.";
+	lang.quick_restore_error = "There was an error restoring your reply:";
+	lang.quick_restore_success = "The post was restored successfully.";
+	lang.editreason = "Edit Reason";
+// -->
+</script>
+<!-- jeditable (jquery) -->
+<script type="text/javascript" src="https://talk.raytron.org/jscripts/report.js?ver=1804"></script>
+<script src="https://talk.raytron.org/jscripts/jeditable/jeditable.min.js"></script>
+<script type="text/javascript" src="https://talk.raytron.org/jscripts/thread.js?ver=1808"></script>
+<script type="text/javascript" src="https://talk.raytron.org/jscripts/thankyoulike.min.js"></script>
+<script type="text/javascript">
+<!--
+	var tylEnabled = "";
+	var tylDisplayGrowl = "";
+	var tylCollapsible = "";
+	var tylUser = "0";
+	var tylSend = "";
+	var tylRemove = "";
+// -->
+</script>
+
+        <!-- App Indexing for Google Search -->
+        <link href="android-app://com.quoord.tapatalkpro.activity/tapatalk/talk.raytron.org/?location=topic&amp;tid=5881&amp;page=3&amp;perpage=10&amp;fid=666&amp;channel=google-indexing" rel="alternate" />
+        <link href="ios-app://307880732/tapatalk/talk.raytron.org/?location=topic&amp;tid=5881&amp;page=3&amp;perpage=10&amp;fid=666&amp;channel=google-indexing" rel="alternate" />
+        
+        <meta property="al:android:package" content="com.quoord.tapatalkpro.activity" />
+        <meta property="al:android:url" content="tapatalk://talk.raytron.org/?location=topic&amp;tid=5881&amp;page=3&amp;perpage=10&amp;fid=666&amp;channel=facebook-indexing" />
+        <meta property="al:android:app_name" content="Tapatalk" />
+        <meta property="al:ios:url" content="tapatalk://talk.raytron.org/?location=topic&amp;tid=5881&amp;page=3&amp;perpage=10&amp;fid=666&amp;channel=facebook-indexing" />
+        <meta property="al:ios:app_store_id" content="307880732" />
+        <meta property="al:ios:app_name" content="Tapatalk" />
+        
+        <!-- twitter app card start-->
+        <!-- https://dev.twitter.com/docs/cards/types/app-card -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@tapatalk" />
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:description" content="Raytron" />
+        <meta name="twitter:image" content="https://talk.raytron.org/mobiquo/smartbanner/images/tapatalk-banner-logo.png" />
+        <meta name="twitter:app:id:iphone" content="307880732" />
+        <meta name="twitter:app:url:iphone" content="tapatalk://talk.raytron.org/?location=topic&amp;tid=5881&amp;page=3&amp;perpage=10&amp;fid=666&amp;channel=twitter-indexing" />
+        <meta name="twitter:app:id:ipad" content="307880732" />
+        <meta name="twitter:app:url:ipad" content="tapatalk://talk.raytron.org/?location=topic&amp;tid=5881&amp;page=3&amp;perpage=10&amp;fid=666&amp;channel=twitter-indexing" />
+        <meta name="twitter:app:id:googleplay" content="com.quoord.tapatalkpro.activity" />
+        <meta name="twitter:app:url:googleplay" content="tapatalk://talk.raytron.org/?location=topic&amp;tid=5881&amp;page=3&amp;perpage=10&amp;fid=666&amp;channel=twitter-indexing" />
+        <!-- twitter app card -->
+        
+<meta name="description" content="When will the next part come out?" />
+<link rel="canonical" href="https://talk.raytron.org/Thread-Operating-systems-How-to-make-an-OS-A-tutorial-series?page=3" />
+</head>
+<body>
+
+    <!-- Tapatalk smart banner body start --> 
+<script type="text/javascript">
+    if(typeof(app_ios_id) != "undefined") {
+        tapatalkDetect();
+    }
+    </script>
+
+    <!-- Tapatalk smart banner body end --> 
+	<!-- start: header -->
+<div id="container">
+		<a name="top" id="top"></a>
+		<div id="header">
+			<div id="logo">
+				<div class="wrapper">
+					<center><a href="https://talk.raytron.org"><img src="https://talk.raytron.org/images/logo.png" width="400" height="125" alt="Raytron" title="Raytron" /></a></center>
+					<ul class="menu top_links">
+						
+						
+						
+						
+                                                <li><a href="https://talk.raytron.org/rules.php" class="rules">Rules & Guidelines</a></li>
+						<li><a href="https://archive.raytron.org" class="archive">Archives</a></li>
+<li><a href="https://discord.gg/eCAu8QH">
+                                                <img src="https://talk.raytron.org/images/discord.png" title="Join our official Discord room!"></a></li>
+                                                                                           	</ul>
+				</div>
+			</div>
+			<div id="panel">
+				<div class="upper">
+					<div class="wrapper">
+						
+						<!-- start: header_welcomeblock_guest -->
+						<!-- Continuation of div(class="upper") as opened in the header template -->
+						<span class="welcome">Hello There, Guest! <a href="https://talk.raytron.org/member.php?action=login" onclick="$('#quick_login').modal({ fadeDuration: 250, keepelement: true, zIndex: (typeof modal_zindex !== 'undefined' ? modal_zindex : 9999) }); return false;" class="login">Login</a> <a href="https://talk.raytron.org/member.php?action=register" class="register">Register</a> Register now to remove advertisements and gain access to additional forum features.</span>
+					</div>
+				</div>
+				<div class="modal" id="quick_login" style="display: none;">
+					<form method="post" action="https://talk.raytron.org/member.php">
+						<input name="action" type="hidden" value="do_login" />
+						<input name="url" type="hidden" value="" />
+						<input name="quick_login" type="hidden" value="1" />
+						<table width="100%" cellspacing="0" cellpadding="5" border="0" class="tborder">
+							<tr>
+								<td class="thead" colspan="2"><strong>Login</strong></td>
+							</tr>
+							<tr>
+								<td class="trow1" width="25%"><strong>Username:</strong></td>
+								<td class="trow1"><input name="quick_username" id="quick_login_username" type="text" value="" class="textbox initial_focus" /></td>
+							</tr>
+							<tr>
+								<td class="trow2"><strong>Password:</strong></td>
+								<td class="trow2">
+									<input name="quick_password" id="quick_login_password" type="password" value="" class="textbox" /> <a href="https://talk.raytron.org/member.php?action=lostpw" class="lost_password">Lost Password?</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="trow1">&nbsp;</td>
+								<td class="trow1 remember_me">
+									<input name="quick_remember" id="quick_login_remember" type="checkbox" value="yes" class="checkbox" checked="checked" />
+									<label for="quick_login_remember">Remember me</label>
+								</td>
+							</tr>
+							<tr>
+								<td class="trow2" colspan="2">
+									<div align="center"><input name="submit" type="submit" class="button" value="Login" /></div>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+				<script type="text/javascript">
+					$("#quick_login input[name='url']").val($(location).attr('href'));
+				</script>
+<!-- end: header_welcomeblock_guest -->
+					<!-- </div> in header_welcomeblock_member and header_welcomeblock_guest -->
+				<!-- </div> in header_welcomeblock_member and header_welcomeblock_guest -->
+			</div>
+		</div>
+		<div id="content">
+			<div class="wrapper">
+				
+				
+				
+				
+				
+				 <!-- BAM --><!-- start: bam_announcement_container -->
+<style>
+	.bam_announcement.yellow {
+		background: #FFF6BF;
+		border: 1px solid #FFD324;
+	}
+
+	.bam_announcement.green {
+		background: #D6ECA6;
+		border: 1px solid #8DC93E;
+	}
+
+	.bam_announcement.blue {
+		background: #ADCBE7;
+		border: 1px solid #0F5C8E;
+	}
+
+	.bam_announcement.red {
+		background: #FBE3E4;
+		border: 1px solid #A5161A;
+	}
+
+	.bam_announcement.raytron {
+		background: #efefef;
+		border: 1px solid #212121;
+	}
+
+	.bam_announcement {
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px; 
+		text-align: center;
+		margin: 10px auto;
+		padding: 8px 12px;
+		background: #EBEBEB;
+		color: #000000;
+		border: 1px solid #ADADAD;
+	}
+
+	.bam_date {
+		color: #636161;
+		font-size: 0.78em;
+		margin-left: 6px;
+	}	
+
+	/* Insert Custom CSS Here */
+</style>
+<div class="bam_announcements"></div>
+<!-- end: bam_announcement_container --><!-- /BAM -->
+				<!-- start: nav -->
+
+<div class="navigation">
+<!-- start: nav_bit -->
+<a href="https://talk.raytron.org/index.php">Raytron</a><!-- start: nav_sep -->
+&rsaquo;
+<!-- end: nav_sep -->
+<!-- end: nav_bit --><!-- start: nav_bit -->
+<a href="Forum-Main-category">Main category</a><!-- start: nav_sep -->
+&rsaquo;
+<!-- end: nav_sep -->
+<!-- end: nav_bit --><!-- start: nav_bit -->
+<a href="Forum-Archived-Topics?page=2">Archived Topics</a><!-- start: nav_dropdown -->
+ <img src="https://talk.raytron.org/images/arrow_down.png" alt="v" title="" class="pagination_breadcrumb_link" id="breadcrumb_multipage" /><!-- start: multipage_breadcrumb -->
+<div id="breadcrumb_multipage_popup" class="pagination pagination_breadcrumb" style="display: none;">
+<!-- start: multipage_prevpage -->
+<a href="forum-666.html" class="pagination_previous">&laquo; Previous</a>
+<!-- end: multipage_prevpage --><!-- start: multipage_page -->
+<a href="forum-666.html" class="pagination_page">1</a>
+<!-- end: multipage_page --><!-- start: multipage_page_link_current -->
+ <a href="forum-666-page-2.html" class="pagination_current">2</a>
+<!-- end: multipage_page_link_current --><!-- start: multipage_page -->
+<a href="forum-666-page-3.html" class="pagination_page">3</a>
+<!-- end: multipage_page --><!-- start: multipage_page -->
+<a href="forum-666-page-4.html" class="pagination_page">4</a>
+<!-- end: multipage_page --><!-- start: multipage_page -->
+<a href="forum-666-page-5.html" class="pagination_page">5</a>
+<!-- end: multipage_page --><!-- start: multipage_end -->
+ <a href="forum-666-page-144.html" class="pagination_last">144</a>
+<!-- end: multipage_end --><!-- start: multipage_nextpage -->
+<a href="forum-666-page-3.html" class="pagination_next">Next &raquo;</a>
+<!-- end: multipage_nextpage -->
+</div>
+<script type="text/javascript">
+// <!--
+	if(use_xmlhttprequest == "1")
+	{
+		$("#breadcrumb_multipage").popupMenu();
+	}
+// -->
+</script>
+<!-- end: multipage_breadcrumb -->
+<!-- end: nav_dropdown -->
+<!-- end: nav_bit --><!-- start: nav_sep_active -->
+<br /><img src="https://talk.raytron.org/images/nav_bit.png" alt="" />
+<!-- end: nav_sep_active --><!-- start: nav_bit_active -->
+<span class="active"><span class="rtprefix">Operating systems</span>&nbsp;How to make an OS, A tutorial series</span>
+<!-- end: nav_bit_active -->
+</div>
+<!-- end: nav -->
+				<br />
+<!-- end: header --><script type="text/javascript"><!--
+try { jQuery.fn.editable.defaults.placeholder=""; } catch(x) {}
+// -->
+</script>
+	
+	
+	<div class="float_left">
+		<!-- start: multipage -->
+<div class="pagination">
+<span class="pages">Pages (6):</span>
+<!-- start: multipage_prevpage -->
+<a href="Thread-Operating-systems-How-to-make-an-OS-A-tutorial-series?page=2" class="pagination_previous">&laquo; Previous</a>
+<!-- end: multipage_prevpage --><!-- start: multipage_page -->
+<a href="Thread-Operating-systems-How-to-make-an-OS-A-tutorial-series?page=1" class="pagination_page">1</a>
+<!-- end: multipage_page --><!-- start: multipage_page -->
+<a href="Thread-Operating-systems-How-to-make-an-OS-A-tutorial-series?page=2" class="pagination_page">2</a>
+<!-- end: multipage_page --><!-- start: multipage_page_current -->
+ <span class="pagination_current">3</span>
+<!-- end: multipage_page_current --><!-- start: multipage_page -->
+<a href="Thread-Operating-systems-How-to-make-an-OS-A-tutorial-series?page=4" class="pagination_page">4</a>
+<!-- end: multipage_page --><!-- start: multipage_page -->
+<a href="Thread-Operating-systems-How-to-make-an-OS-A-tutorial-series?page=5" class="pagination_page">5</a>
+<!-- end: multipage_page --><!-- start: multipage_end -->
+ <a href="Thread-Operating-systems-How-to-make-an-OS-A-tutorial-series?page=6" class="pagination_last">6</a>
+<!-- end: multipage_end --><!-- start: multipage_nextpage -->
+<a href="Thread-Operating-systems-How-to-make-an-OS-A-tutorial-series?page=4" class="pagination_next">Next &raquo;</a>
+<!-- end: multipage_nextpage -->
+</div>
+<!-- end: multipage -->
+	</div>
+	<div class="float_right">
+		
+	</div>
+	
+	<table border="0" cellspacing="0" cellpadding="5" class="tborder tfixed clear">
+		<tr>
+			<td class="thead">
+				<div class="float_right">
+					<span class="smalltext"><strong><a href="javascript:;" id="thread_modes">Thread Modes</a></strong></span>
+				</div>
+				<div>
+					<strong>Operating systems&nbsp;: How to make an OS, A tutorial series</strong>
+				</div>
+			</td>
+		</tr>
+<tr><td id="posts_container">
+	<div id="posts">
+		<!-- start: postbit_classic -->
+
+<a name="pid48834" id="pid48834"></a>
+<div class="post classic " style="" id="post_48834">
+<div class="post_author scaleimages">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="User-esc1010"><img src="https://talk.raytron.org/images/default_avatar.png" alt="" width="104" height="120" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://talk.raytron.org/User-esc1010"><span style="color: blue;"><img src="images/vipstar.png"  title="VIP"/> <strong>esc1010</strong></span></a></span></strong> <!-- start: postbit_offline -->
+<img src="https://talk.raytron.org/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				VIP<br />
+				
+				<!-- start: postbit_groupimage -->
+<img src="images/vip.png" alt="VIP" title="VIP" />
+<!-- end: postbit_groupimage --><br />
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,109<br />
+	Threads: 87<br />
+	Joined: Apr 2014
+	<!-- start: postbit_reputation -->
+<br />Reputation: <!-- start: postbit_reputation_formatted_link -->
+<a href="reputation.php?uid=1569"><strong class="reputation_positive">11</strong></a>
+<!-- end: postbit_reputation_formatted_link -->
+<!-- end: postbit_reputation -->
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="Thread-Operating-systems-How-to-make-an-OS-A-tutorial-series?pid=48834#pid48834" title="Re: How to make an OS, A tutorial series">#21</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">07-06-2014, 06:27 AM <span class="post_edit" id="edited_by_48834"></span></span>
+	
+	</div>
+	<div class="post_body scaleimages" id="pid_48834">
+		When will the next part come out?
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_48834">
+		
+	</div>
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: returntotop -->
+<a href="#top" title="Return to top" class="postbit_top">Return to top</a>
+<!-- end: returntotop -->
+	</div>
+</div>
+</div>
+<!-- end: postbit_classic --><!-- start: postbit_classic -->
+
+<a name="pid48847" id="pid48847"></a>
+<div class="post classic " style="" id="post_48847">
+<div class="post_author scaleimages">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="User-Member1221"><img src="https://talk.raytron.org/images/default_avatar.png" alt="" width="96" height="96" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://talk.raytron.org/User-Member1221">Member1221</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://talk.raytron.org/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				User<br />
+				
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 26<br />
+	Threads: 3<br />
+	Joined: Feb 2014
+	<!-- start: postbit_reputation -->
+<br />Reputation: <!-- start: postbit_reputation_formatted_link -->
+<a href="reputation.php?uid=1482"><strong class="reputation_neutral">0</strong></a>
+<!-- end: postbit_reputation_formatted_link -->
+<!-- end: postbit_reputation -->
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="Thread-Operating-systems-How-to-make-an-OS-A-tutorial-series?pid=48847#pid48847" title="Re: How to make an OS, A tutorial series">#22</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">07-06-2014, 09:01 PM <span class="post_edit" id="edited_by_48847"></span></span>
+	
+	</div>
+	<div class="post_body scaleimages" id="pid_48847">
+		<blockquote class="mycode_quote"><cite>esc1010 Wrote:</cite>When will the next part come out?</blockquote>asap
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_48847">
+		
+	</div>
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: returntotop -->
+<a href="#top" title="Return to top" class="postbit_top">Return to top</a>
+<!-- end: returntotop -->
+	</div>
+</div>
+</div>
+<!-- end: postbit_classic --><!-- start: postbit_classic -->
+
+<a name="pid48851" id="pid48851"></a>
+<div class="post classic " style="" id="post_48851">
+<div class="post_author scaleimages">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="User-esc1010"><img src="https://talk.raytron.org/images/default_avatar.png" alt="" width="104" height="120" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://talk.raytron.org/User-esc1010"><span style="color: blue;"><img src="images/vipstar.png"  title="VIP"/> <strong>esc1010</strong></span></a></span></strong> <!-- start: postbit_offline -->
+<img src="https://talk.raytron.org/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				VIP<br />
+				
+				<!-- start: postbit_groupimage -->
+<img src="images/vip.png" alt="VIP" title="VIP" />
+<!-- end: postbit_groupimage --><br />
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,109<br />
+	Threads: 87<br />
+	Joined: Apr 2014
+	<!-- start: postbit_reputation -->
+<br />Reputation: <!-- start: postbit_reputation_formatted_link -->
+<a href="reputation.php?uid=1569"><strong class="reputation_positive">11</strong></a>
+<!-- end: postbit_reputation_formatted_link -->
+<!-- end: postbit_reputation -->
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="Thread-Operating-systems-How-to-make-an-OS-A-tutorial-series?pid=48851#pid48851" title="Re: How to make an OS, A tutorial series">#23</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">07-07-2014, 01:35 AM <span class="post_edit" id="edited_by_48851"></span></span>
+	
+	</div>
+	<div class="post_body scaleimages" id="pid_48851">
+		Got it!<br />
+Do you know of any other things that can replace Notepad++, I use Linux and don't know of any other replacements.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_48851">
+		
+	</div>
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: returntotop -->
+<a href="#top" title="Return to top" class="postbit_top">Return to top</a>
+<!-- end: returntotop -->
+	</div>
+</div>
+</div>
+<!-- end: postbit_classic --><!-- start: postbit_classic -->
+
+<a name="pid48855" id="pid48855"></a>
+<div class="post classic " style="" id="post_48855">
+<div class="post_author scaleimages">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="User-lordfundarbyrd"><img src="http://cdn.pieria.co.uk/new_live/dr/thumb/1178.jpg?dateline=1478307373" alt="" width="125" height="125" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://talk.raytron.org/User-lordfundarbyrd">lordfundarbyrd</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://talk.raytron.org/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				User<br />
+				<img src="https://talk.raytron.org/images/star.png" border="0" alt="*" /><img src="https://talk.raytron.org/images/star.png" border="0" alt="*" /><img src="https://talk.raytron.org/images/star.png" border="0" alt="*" /><img src="https://talk.raytron.org/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 929<br />
+	Threads: 67<br />
+	Joined: May 2014
+	<!-- start: postbit_reputation -->
+<br />Reputation: <!-- start: postbit_reputation_formatted_link -->
+<a href="reputation.php?uid=1687"><strong class="reputation_neutral">0</strong></a>
+<!-- end: postbit_reputation_formatted_link -->
+<!-- end: postbit_reputation -->
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="Thread-Operating-systems-How-to-make-an-OS-A-tutorial-series?pid=48855#pid48855" title="Re: How to make an OS, A tutorial series">#24</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">07-07-2014, 03:56 AM <span class="post_edit" id="edited_by_48855"></span></span>
+	
+	</div>
+	<div class="post_body scaleimages" id="pid_48855">
+		<blockquote class="mycode_quote"><cite>esc1010 Wrote:</cite>Got it!<br />
+Do you know of any other things that can replace Notepad++, I use Linux and don't know of any other replacements.</blockquote><br />
+Check out this link: <a href="http://alternativeto.net/software/notepad-plus-plus/?platform=linux" target="_blank" class="mycode_url">http://alternativeto.net/software/notepa...form=linux</a><br />
+<br />
+It includes regular text editors like gedit and leafpad, along with Kate, jEdit, UltraEdit, and others.
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<div style="text-align: center;" class="mycode_align"><span style="font-weight: bold;" class="mycode_b">lordfundarbyrd- rular of dem all, but then went a little krazy. Now I'm somewhat normal.</span></div>
+<br />
+<div style="text-align: center;" class="mycode_align"><span style="font-weight: bold;" class="mycode_b">My world of text, please contribute: <a href="http://www.yourworldoftext.com/~lordfundarbyrd/" target="_blank" class="mycode_url">http://www.yourworldoftext.com/~lordfundarbyrd/</a></span></div>
+<br />
+<div style="text-align: center;" class="mycode_align"><span style="font-weight: bold;" class="mycode_b">My Discord, please join for free VIP and/or Mod:Â <a href="https://discord.gg/HfUZSwF" target="_blank" class="mycode_url">https://discord.gg/HfUZSwF</a></span></div>
+
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_48855">
+		
+	</div>
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: returntotop -->
+<a href="#top" title="Return to top" class="postbit_top">Return to top</a>
+<!-- end: returntotop -->
+	</div>
+</div>
+</div>
+<!-- end: postbit_classic --><!-- start: postbit_classic -->
+
+<a name="pid48867" id="pid48867"></a>
+<div class="post classic " style="" id="post_48867">
+<div class="post_author scaleimages">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="User-esc1010"><img src="https://talk.raytron.org/images/default_avatar.png" alt="" width="104" height="120" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://talk.raytron.org/User-esc1010"><span style="color: blue;"><img src="images/vipstar.png"  title="VIP"/> <strong>esc1010</strong></span></a></span></strong> <!-- start: postbit_offline -->
+<img src="https://talk.raytron.org/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				VIP<br />
+				
+				<!-- start: postbit_groupimage -->
+<img src="images/vip.png" alt="VIP" title="VIP" />
+<!-- end: postbit_groupimage --><br />
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,109<br />
+	Threads: 87<br />
+	Joined: Apr 2014
+	<!-- start: postbit_reputation -->
+<br />Reputation: <!-- start: postbit_reputation_formatted_link -->
+<a href="reputation.php?uid=1569"><strong class="reputation_positive">11</strong></a>
+<!-- end: postbit_reputation_formatted_link -->
+<!-- end: postbit_reputation -->
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="Thread-Operating-systems-How-to-make-an-OS-A-tutorial-series?pid=48867#pid48867" title="Re: How to make an OS, A tutorial series">#25</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">07-07-2014, 02:35 PM <span class="post_edit" id="edited_by_48867"></span></span>
+	
+	</div>
+	<div class="post_body scaleimages" id="pid_48867">
+		I got a 503 error when loading the page.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_48867">
+		
+	</div>
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: returntotop -->
+<a href="#top" title="Return to top" class="postbit_top">Return to top</a>
+<!-- end: returntotop -->
+	</div>
+</div>
+</div>
+<!-- end: postbit_classic --><!-- start: postbit_classic -->
+
+<a name="pid48878" id="pid48878"></a>
+<div class="post classic " style="" id="post_48878">
+<div class="post_author scaleimages">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="User-lordfundarbyrd"><img src="http://cdn.pieria.co.uk/new_live/dr/thumb/1178.jpg?dateline=1478307373" alt="" width="125" height="125" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://talk.raytron.org/User-lordfundarbyrd">lordfundarbyrd</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://talk.raytron.org/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				User<br />
+				<img src="https://talk.raytron.org/images/star.png" border="0" alt="*" /><img src="https://talk.raytron.org/images/star.png" border="0" alt="*" /><img src="https://talk.raytron.org/images/star.png" border="0" alt="*" /><img src="https://talk.raytron.org/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 929<br />
+	Threads: 67<br />
+	Joined: May 2014
+	<!-- start: postbit_reputation -->
+<br />Reputation: <!-- start: postbit_reputation_formatted_link -->
+<a href="reputation.php?uid=1687"><strong class="reputation_neutral">0</strong></a>
+<!-- end: postbit_reputation_formatted_link -->
+<!-- end: postbit_reputation -->
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="Thread-Operating-systems-How-to-make-an-OS-A-tutorial-series?pid=48878#pid48878" title="Re: How to make an OS, A tutorial series">#26</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">07-07-2014, 10:29 PM <span class="post_edit" id="edited_by_48878"></span></span>
+	
+	</div>
+	<div class="post_body scaleimages" id="pid_48878">
+		<blockquote class="mycode_quote"><cite>esc1010 Wrote:</cite>I got a 503 error when loading the page.</blockquote><br />
+Huh, that's weird, because I can load the page just fine.<br />
+I copied/pasted what it said so you can look at it. it's in a spoiler because it's kind of long. Some of them, like I said, are just basic text editors while others are actual programs meant for coding.<br />
+<br />
+[spoiler=Notepad++ alternatives]Sublime Text<br />
+Commercial by Jon Skinner | Mac, Windows, Linux<br />
+Sublime Text is a sophisticated text editor for code, html and prose - any kind of text file. You'll love the slick user interface and extraordinary features.<br />
+<br />
+Vim<br />
+Open Source by Bram Moolenaar | Mac, Windows, Linux, Haiku<br />
+Vim ("Vi IMproved") is an advanced text editor that allows syntax highlighting, word completion and has a huge amount of contributed content. Vim offers several â€œmodesâ€ for editing with...<br />
+<br />
+gedit<br />
+Open Source by The GNOME Project | Mac, Windows, Linux<br />
+Official text editor of the GNOME desktop environment. Has syntax highlighting and is suitable for programming, with support for several languages. It is extensible with plugins. Currently it features: ...<br />
+ <br />
+Geany<br />
+Open Source by Enrico TrÃ¶ger, Frank Lanitz, Nick Trelea... | Windows, Linux<br />
+Geany is a small and lightweight Integrated Development Environment. It was developed to provide a small and fast IDE, which has only a few dependencies from other packages. Another goal was to be as...<br />
+ <br />
+Aptana Studio<br />
+Open Source by Aptana | Mac, Windows, Linux<br />
+Aptana Studio is a complete web development environment that combines powerful authoring tools with a collection of online hosting and collaboration services that help you and your team do more. Includes...<br />
+<br />
+GNU Emacs<br />
+Open Source by The Free Software Foundation | Mac, Windows, Linux<br />
+GNU Emacs is an extensible, customizable text editorâ€”and more. At its core is an interpreter for Emacs Lisp, a dialect of the Lisp programming language with extensions to support text editing. The features of...<br />
+<br />
+Komodo Edit<br />
+Open Source by ActiveState | Mac, Windows, Linux<br />
+Komodo Edit is a fast, smart, free and open-source code editor. Switching your trusty code editor is hard, but give Komodo Edit (or its big brother Komodo IDE) a try: it'll be worth your while. Windows...<br />
+ <br />
+SciTE<br />
+Open Source by scintilla.org | Windows, Linux<br />
+SciTE is a SCIntilla based Text Editor. Originally built to demonstrate Scintilla, it has grown to be a generally useful editor with facilities for building and running programs. It is best used for jobs with...<br />
+ <br />
+Kate<br />
+Open Source by Christoph Cullmann | Windows, Linux<br />
+Text editor for the KDE desktop environment with support for multiple languages and syntax highlighting. It is extensible with plugins. Features a MDI interface. Kate is a multi document editor, based on a...<br />
+<br />
+GNU nano<br />
+Open Source | Mac, Windows, Linux, Haiku<br />
+GNU nano is a small and friendly text editor. Besides basic text editing, nano offers many extra features like an interactive search and replace, go to line and column number, auto-indentation, feature...<br />
+<br />
+Bluefish Editor<br />
+Open Source by Olivier Sessink, Daniel Leidert | Mac, Windows, Linux<br />
+Bluefish is a powerful editor targeted towards programmers and webdesigners, with many options to write websites, scripts and programming code. Bluefish supports many programming and markup languages, and it...<br />
+<br />
+UltraEdit<br />
+Commercial by IDM Computer Solutions | Mac, Windows, Linux<br />
+UltraEdit is the ideal text, HTML and HEX editor, and an advanced PHP, Perl, Java and JavaScript editor for programmers. An industry-award winner, UltraEdit supports disk-based 64-bit file handling (standard)...<br />
+<br />
+jEdit<br />
+Open Source | Mac, Windows, Linux<br />
+jEdit is a mature programmer's text editor with hundreds (counting the time developing plugins) of person-years of development behind it. While jEdit beats many expensive development tools for features and...<br />
+<br />
+Leafpad<br />
+Open Source | Linux<br />
+Leafpad is a lightweight text editor that emphasizes simplicity. As development focuses on keeping weight down to a minimum, only the most essential features are implemented in the editor. Features: ...<br />
+<br />
+Atom<br />
+Open Source by Github | Mac, Windows, Linux, BSD<br />
+A hackable text editor for the 21st Century. At GitHub, we're building the text editor we've always wanted. A tool you can customize to do anything, but also use productively on the first day...<br />
+<br />
+Komodo IDE<br />
+Commercial by ActiveState | Mac, Windows, Linux<br />
+Code smarter and faster with Komodo IDE, the cross-platform professional development environment for dynamic languages and open technologies. Komodo's award-winning feature set includes standard editor...<br />
+ <br />
+Anjuta<br />
+Open Source by Johannes Schmid and others | Linux<br />
+Anjuta is a versatile Integrated Development Environment (IDE) for C and C++ on GNU/Linux. It has been written for GTK/GNOME and features a number of advanced programming facilities including project...<br />
+<br />
+NINJA-IDE<br />
+Open Source | Mac, Windows, Linux<br />
+NINJA-IDE (from the recursive acronym: "Ninja-IDE Is Not Just Another IDE"), is a cross-platform integrated development environment (IDE). NINJA-IDE runs on Linux/X11, Mac OS X and Windows desktop...<br />
+<br />
+ReText<br />
+Open Source by Mandriver | Mac, Windows, Linux, BSD<br />
+ReText is a simple text editor for Markdown syntax. It is written in Python using Qt libraries, able to run on any platforms (Linux and BSD are officially supported).<br />
+<br />
+medit<br />
+Open Source by Yevgen Muntyan | Mac, Windows, Linux<br />
+medit is a programming and around-programming text editor. Started originally as a simple built-in editor component in GGAP, it grew up to a real text editor.<br />
+<br />
+Scribes<br />
+Open Source | Linux<br />
+A text editor for GNOME that combines simplicity with power. Scribes focuses on streamlining your workflow. It does so by ensuring common and repetitive operations are intelligently automated. And also by...<br />
+  Development, Office &amp; Productivity   text-editor, python, word-processing, gnome, gtk, full-screen-text-editor<br />
+<br />
+Editra<br />
+Open Source | Mac, Windows, Linux<br />
+Editra is a multi-platform text editor with an implementation that focuses on creating an easy to use interface and features that aid in code development. Currently it supports syntax highlighting and variety...<br />
+<br />
+Enki<br />
+Open Source by Andrei Kopats | Linux<br />
+Enki is a text editor for programmers. It is: â€“User friendly. Intuitive interface. Works out of the box. You donâ€<span class="emoji emoji2122"></span>t have to read a lot of docs -Hacker friendly. Code as quickly as possible. Without mouse. ...<br />
+ <br />
+Skywriter<br />
+This application has been discontinued. No more info was provided.<br />
+<br />
+slap<br />
+Open Source | Mac, Windows, Node.JS, Linux<br />
+slap is a Sublime-like editor that strives to make editing from the terminal easier. It has first-class mouse support, GUI editor-like keybindings, copy/paste support, syntax highlighting for many languages...<br />
+<br />
+MadEdit<br />
+This application has been discontinued. More info: The site is down but it is still downloadable from SourceForge.<br />
+<br />
+Textadept<br />
+Open Source by Mitchell | Mac, Windows, Linux<br />
+Textadept is a fast, minimalist, and ridiculously extensible cross-platform text editor for programmers. Written in a combination of C and Lua and relentlessly optimized for speed and minimalism over the...<br />
+<br />
+Light Table<br />
+Open Source by Chris Granger | Mac, Windows, Linux<br />
+Light Table is a new interactive IDE that lets you modify running programs and embed anything from websites to games. It provides the real time feedback we need to not only answer questions about our code, but...<br />
+ <br />
+Open Source by Pablo Novara | Mac, Windows, Linux<br />
+ZinjaI is an IDE (integrated development environment) for C + + developed in the context of a Starter Grant from the Scientific Research at the Universidad Nacional del Litoral, Argentina, designed for use by...<br />
+ <br />
+Traditional Ex - Vi editor<br />
+Free | Linux<br />
+The vi editor is one of the most common text editors on Unix. It was developed starting around 1976 by Bill Joy at UCB, who was tired of the ed editor. But since he used ed as a code base, access to the...<br />
+ <br />
+Notepadqq<br />
+Open Source by Daniele DS | Linux<br />
+Notepadqq is a linux clone (identical application) of Notepad++<br />
+ <br />
+Beaver Editor<br />
+Open Source | Linux<br />
+Beaver is an Early AdVanced EditoR. Beaver is a GTK+2 editor designed to be Light-Weight, Modular and Stylish<br />
+<br />
+Mousepad<br />
+Open Source | Linux, BSD<br />
+A simple text editor for the Xfce desktop environment. Mousepad aims to be an easy-to-use and fast editor for quickly editing text files, not a development environment or an editor with a huge bunch of...<br />
+ <br />
+SourceKit<br />
+Free by Kenneth Chau | Mac, Windows, Chrome, Linux<br />
+A Textmate like lightweight programmer's text editor right inside of Chrome. It saves files directly to Dropbox, so if you have the Dropbox sync software installed, the changes will appear locally as if...<br />
+<br />
+TEA<br />
+Open Source by Peter Semiletov | Mac, Windows, Linux<br />
+TEA is a fast, pure C++ text editor for UNIX, Mac, OS/2 and Windows. TEA provides you hundreds of functions: Small size Built-in MC-like file manager Spellchecker (using the aspell or/and...<br />
+<br />
+Elementary Studio<br />
+Open Source by Chris Timberlake | Linux<br />
+Elementary Studio (eStudio) is a Integrated Development Environment with a focus based upon the Vala Language and Web Technologies. However, eStudio is designed and developed with the main focus being...<br />
+ <br />
+Scratch<br />
+Open Source by elementary project | Linux<br />
+Scratch is the text editor that works for you. It auto-saves your files, meaning they're always up-to-date. Plus it remembers your tabs so you never lose your spot, even in between sessions. Make it...<br />
+<br />
+Openldev<br />
+Free | Linux<br />
+OpenLDev is a graphical front-end to Linux development tools such as gcc, GNU autotools and make. OpenLDev strives to provide an easy-to-use interface that is both productive for experts and simple for...<br />
+<br />
+SlickEdit<br />
+Commercial by SlickEdit Inc | Mac, Windows, Linux<br />
+SlickEdit is a cross-platform, multi-language code editor that gives programmers the ability to code in over 40 languages on 7 platforms.<br />
+<br />
+Eddie<br />
+Free by Pavel CÃ­sler | Mac, Linux<br />
+Eddie is a programmers editor for Mac OSX and Gnome Linux. Inspired by the Macintosh Programmer's Workshop, Eddie brings some of it's powerful features into a modern lightweight and capable...<br />
+<br />
+gEcrit<br />
+Open Source by Groza Cristian | Mac, Windows, Linux<br />
+gEcrit is a Python IDE. Its focus is on simplicity and ease of use. It is fast and lightweight. It features Python indentation, line numbers, code folding, syntax highlighting, shell access, code completion, a...<br />
+<br />
+EditiX<br />
+Commercial by Japisoft | Mac, Windows, Linux<br />
+EditiX is a powerful and easy to use XML editor, Visual Schema Editor, XQuery Editor and XSLT debugger for Windows, Linux and Mac OS X designed to help web authors and application programmers take advantage of...<br />
+<br />
+JMTech 121 HTML Editor<br />
+Open Source by JMTech 121 / Justin Campbell | Mac, Windows, NetBeans, Linux<br />
+This HTML editor is a just a simple program, but with powerful features. It's based off of Small NetBeans iconNetBeans and it's UI. With support for CSS, HTML1-5, and XML it is very useful and plans are made to include...<br />
+  Development   portable, wine, web-development, syntax-highlighting, html-editor, html5-support, javascript-support<br />
+<br />
+Pluma<br />
+Free by MATE Desktop Environment | Linux<br />
+Pluma, fork of Small gedit icongedit , is a text editor part of Small MATE iconMATE Desktop Environment. It supports most standard editor features, extending this basic functionality with other features not usually found in simple text...<br />
+<br />
+Lime Text<br />
+Open Source by Fredrik Ehnbom | Mac, Windows, Linux<br />
+Experimental Sublime Text clone. The Backend is written in go. If you are fluent in go, go ahead fork the projekt. This project is at an early stage. It is a chance and a challenge. We hope you are up to it. ...<br />
+<br />
+Kineticwing IDE<br />
+Open Source by KineticWing | Mac, Windows, Linux<br />
+Smart, Lightweight and Portable IDE for faster and easier web development.<br />
+<br />
+Textpad Editor<br />
+Open Source by Alex-97 | Mac, Windows, Linux<br />
+Textpad is a simple, general-purpose and cross-platform text editor written in C++ using the Qt libraries. Textpad aims to be faster and more lightweight than most text editors, but as useful as them....[/spoiler]
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<div style="text-align: center;" class="mycode_align"><span style="font-weight: bold;" class="mycode_b">lordfundarbyrd- rular of dem all, but then went a little krazy. Now I'm somewhat normal.</span></div>
+<br />
+<div style="text-align: center;" class="mycode_align"><span style="font-weight: bold;" class="mycode_b">My world of text, please contribute: <a href="http://www.yourworldoftext.com/~lordfundarbyrd/" target="_blank" class="mycode_url">http://www.yourworldoftext.com/~lordfundarbyrd/</a></span></div>
+<br />
+<div style="text-align: center;" class="mycode_align"><span style="font-weight: bold;" class="mycode_b">My Discord, please join for free VIP and/or Mod:Â <a href="https://discord.gg/HfUZSwF" target="_blank" class="mycode_url">https://discord.gg/HfUZSwF</a></span></div>
+
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_48878">
+		
+	</div>
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: returntotop -->
+<a href="#top" title="Return to top" class="postbit_top">Return to top</a>
+<!-- end: returntotop -->
+	</div>
+</div>
+</div>
+<!-- end: postbit_classic --><!-- start: postbit_classic -->
+
+<a name="pid48884" id="pid48884"></a>
+<div class="post classic " style="" id="post_48884">
+<div class="post_author scaleimages">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="User-esc1010"><img src="https://talk.raytron.org/images/default_avatar.png" alt="" width="104" height="120" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://talk.raytron.org/User-esc1010"><span style="color: blue;"><img src="images/vipstar.png"  title="VIP"/> <strong>esc1010</strong></span></a></span></strong> <!-- start: postbit_offline -->
+<img src="https://talk.raytron.org/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				VIP<br />
+				
+				<!-- start: postbit_groupimage -->
+<img src="images/vip.png" alt="VIP" title="VIP" />
+<!-- end: postbit_groupimage --><br />
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,109<br />
+	Threads: 87<br />
+	Joined: Apr 2014
+	<!-- start: postbit_reputation -->
+<br />Reputation: <!-- start: postbit_reputation_formatted_link -->
+<a href="reputation.php?uid=1569"><strong class="reputation_positive">11</strong></a>
+<!-- end: postbit_reputation_formatted_link -->
+<!-- end: postbit_reputation -->
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="Thread-Operating-systems-How-to-make-an-OS-A-tutorial-series?pid=48884#pid48884" title="Re: How to make an OS, A tutorial series">#27</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">07-07-2014, 10:51 PM <span class="post_edit" id="edited_by_48884"></span></span>
+	
+	</div>
+	<div class="post_body scaleimages" id="pid_48884">
+		Something must have broke this morning, but now it works fine.<br />
+Yeah, I have used Sublime Text but never knew it had a Linux download. <img src="https://talk.raytron.org/images/smilies/confused.png" alt="Confused" title="Confused" class="smilie smilie_13" />hock:<br />
+<br />
+EDIT: Do you have an alternative to Cygwin? It is only for Windows...... dammit nothing is for Linux......<br />
+EDIT V2.0: Member1221  will it work in Wine?
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_48884">
+		
+	</div>
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: returntotop -->
+<a href="#top" title="Return to top" class="postbit_top">Return to top</a>
+<!-- end: returntotop -->
+	</div>
+</div>
+</div>
+<!-- end: postbit_classic --><!-- start: postbit_classic -->
+
+<a name="pid48892" id="pid48892"></a>
+<div class="post classic " style="" id="post_48892">
+<div class="post_author scaleimages">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="User-lordfundarbyrd"><img src="http://cdn.pieria.co.uk/new_live/dr/thumb/1178.jpg?dateline=1478307373" alt="" width="125" height="125" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://talk.raytron.org/User-lordfundarbyrd">lordfundarbyrd</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://talk.raytron.org/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				User<br />
+				<img src="https://talk.raytron.org/images/star.png" border="0" alt="*" /><img src="https://talk.raytron.org/images/star.png" border="0" alt="*" /><img src="https://talk.raytron.org/images/star.png" border="0" alt="*" /><img src="https://talk.raytron.org/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 929<br />
+	Threads: 67<br />
+	Joined: May 2014
+	<!-- start: postbit_reputation -->
+<br />Reputation: <!-- start: postbit_reputation_formatted_link -->
+<a href="reputation.php?uid=1687"><strong class="reputation_neutral">0</strong></a>
+<!-- end: postbit_reputation_formatted_link -->
+<!-- end: postbit_reputation -->
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="Thread-Operating-systems-How-to-make-an-OS-A-tutorial-series?pid=48892#pid48892" title="Re: How to make an OS, A tutorial series">#28</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">07-08-2014, 12:40 AM <span class="post_edit" id="edited_by_48892"></span></span>
+	
+	</div>
+	<div class="post_body scaleimages" id="pid_48892">
+		<blockquote class="mycode_quote"><cite>esc1010 Wrote:</cite>Something must have broke this morning, but now it works fine.<br />
+Yeah, I have used Sublime Text but never knew it had a Linux download. <img src="https://talk.raytron.org/images/smilies/confused.png" alt="Confused" title="Confused" class="smilie smilie_13" />hock:<br />
+<br />
+EDIT: Do you have an alternative to Cygwin? It is only for Windows...... dammit nothing is for Linux......<br />
+EDIT V2.0: Member1221 will it work in Wine?</blockquote><br />
+Here: <a href="http://alternativeto.net/software/cygwin/" target="_blank" class="mycode_url">http://alternativeto.net/software/cygwin/</a><br />
+<br />
+If it doesn't open let me know and I'll copy the contents of it.
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<div style="text-align: center;" class="mycode_align"><span style="font-weight: bold;" class="mycode_b">lordfundarbyrd- rular of dem all, but then went a little krazy. Now I'm somewhat normal.</span></div>
+<br />
+<div style="text-align: center;" class="mycode_align"><span style="font-weight: bold;" class="mycode_b">My world of text, please contribute: <a href="http://www.yourworldoftext.com/~lordfundarbyrd/" target="_blank" class="mycode_url">http://www.yourworldoftext.com/~lordfundarbyrd/</a></span></div>
+<br />
+<div style="text-align: center;" class="mycode_align"><span style="font-weight: bold;" class="mycode_b">My Discord, please join for free VIP and/or Mod:Â <a href="https://discord.gg/HfUZSwF" target="_blank" class="mycode_url">https://discord.gg/HfUZSwF</a></span></div>
+
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_48892">
+		
+	</div>
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: returntotop -->
+<a href="#top" title="Return to top" class="postbit_top">Return to top</a>
+<!-- end: returntotop -->
+	</div>
+</div>
+</div>
+<!-- end: postbit_classic --><!-- start: postbit_classic -->
+
+<a name="pid48898" id="pid48898"></a>
+<div class="post classic " style="" id="post_48898">
+<div class="post_author scaleimages">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="User-esc1010"><img src="https://talk.raytron.org/images/default_avatar.png" alt="" width="104" height="120" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://talk.raytron.org/User-esc1010"><span style="color: blue;"><img src="images/vipstar.png"  title="VIP"/> <strong>esc1010</strong></span></a></span></strong> <!-- start: postbit_offline -->
+<img src="https://talk.raytron.org/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				VIP<br />
+				
+				<!-- start: postbit_groupimage -->
+<img src="images/vip.png" alt="VIP" title="VIP" />
+<!-- end: postbit_groupimage --><br />
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,109<br />
+	Threads: 87<br />
+	Joined: Apr 2014
+	<!-- start: postbit_reputation -->
+<br />Reputation: <!-- start: postbit_reputation_formatted_link -->
+<a href="reputation.php?uid=1569"><strong class="reputation_positive">11</strong></a>
+<!-- end: postbit_reputation_formatted_link -->
+<!-- end: postbit_reputation -->
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="Thread-Operating-systems-How-to-make-an-OS-A-tutorial-series?pid=48898#pid48898" title="Re: How to make an OS, A tutorial series">#29</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">07-08-2014, 01:37 AM <span class="post_edit" id="edited_by_48898"></span></span>
+	
+	</div>
+	<div class="post_body scaleimages" id="pid_48898">
+		I'll just wait for the Linux frendly tutrorial. Or get Windows XP and install everything on that.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_48898">
+		
+	</div>
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: returntotop -->
+<a href="#top" title="Return to top" class="postbit_top">Return to top</a>
+<!-- end: returntotop -->
+	</div>
+</div>
+</div>
+<!-- end: postbit_classic --><!-- start: postbit_classic -->
+
+<a name="pid48905" id="pid48905"></a>
+<div class="post classic " style="" id="post_48905">
+<div class="post_author scaleimages">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="User-lordfundarbyrd"><img src="http://cdn.pieria.co.uk/new_live/dr/thumb/1178.jpg?dateline=1478307373" alt="" width="125" height="125" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://talk.raytron.org/User-lordfundarbyrd">lordfundarbyrd</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://talk.raytron.org/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				User<br />
+				<img src="https://talk.raytron.org/images/star.png" border="0" alt="*" /><img src="https://talk.raytron.org/images/star.png" border="0" alt="*" /><img src="https://talk.raytron.org/images/star.png" border="0" alt="*" /><img src="https://talk.raytron.org/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 929<br />
+	Threads: 67<br />
+	Joined: May 2014
+	<!-- start: postbit_reputation -->
+<br />Reputation: <!-- start: postbit_reputation_formatted_link -->
+<a href="reputation.php?uid=1687"><strong class="reputation_neutral">0</strong></a>
+<!-- end: postbit_reputation_formatted_link -->
+<!-- end: postbit_reputation -->
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="Thread-Operating-systems-How-to-make-an-OS-A-tutorial-series?pid=48905#pid48905" title="Re: How to make an OS, A tutorial series">#30</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">07-08-2014, 01:59 AM <span class="post_edit" id="edited_by_48905"></span></span>
+	
+	</div>
+	<div class="post_body scaleimages" id="pid_48905">
+		<blockquote class="mycode_quote"><cite>esc1010 Wrote:</cite>I'll just wait for the Linux frendly tutrorial. Or get Windows XP and install everything on that.</blockquote><br />
+Lol I'm just getting random links off the internet and giving them to you.
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<div style="text-align: center;" class="mycode_align"><span style="font-weight: bold;" class="mycode_b">lordfundarbyrd- rular of dem all, but then went a little krazy. Now I'm somewhat normal.</span></div>
+<br />
+<div style="text-align: center;" class="mycode_align"><span style="font-weight: bold;" class="mycode_b">My world of text, please contribute: <a href="http://www.yourworldoftext.com/~lordfundarbyrd/" target="_blank" class="mycode_url">http://www.yourworldoftext.com/~lordfundarbyrd/</a></span></div>
+<br />
+<div style="text-align: center;" class="mycode_align"><span style="font-weight: bold;" class="mycode_b">My Discord, please join for free VIP and/or Mod:Â <a href="https://discord.gg/HfUZSwF" target="_blank" class="mycode_url">https://discord.gg/HfUZSwF</a></span></div>
+
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_48905">
+		
+	</div>
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: returntotop -->
+<a href="#top" title="Return to top" class="postbit_top">Return to top</a>
+<!-- end: returntotop -->
+	</div>
+</div>
+</div>
+<!-- end: postbit_classic -->
+	</div>
+</td></tr>
+		<tr>
+			<td class="tfoot">
+				
+				<div>
+					<strong>&laquo; <a href="Thread-Operating-systems-How-to-make-an-OS-A-tutorial-series?action=nextoldest">Next Oldest</a> | <a href="Thread-Operating-systems-How-to-make-an-OS-A-tutorial-series?action=nextnewest">Next Newest</a> &raquo;</strong>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<div class="float_left">
+		<!-- start: multipage -->
+<div class="pagination">
+<span class="pages">Pages (6):</span>
+<!-- start: multipage_prevpage -->
+<a href="Thread-Operating-systems-How-to-make-an-OS-A-tutorial-series?page=2" class="pagination_previous">&laquo; Previous</a>
+<!-- end: multipage_prevpage --><!-- start: multipage_page -->
+<a href="Thread-Operating-systems-How-to-make-an-OS-A-tutorial-series?page=1" class="pagination_page">1</a>
+<!-- end: multipage_page --><!-- start: multipage_page -->
+<a href="Thread-Operating-systems-How-to-make-an-OS-A-tutorial-series?page=2" class="pagination_page">2</a>
+<!-- end: multipage_page --><!-- start: multipage_page_current -->
+ <span class="pagination_current">3</span>
+<!-- end: multipage_page_current --><!-- start: multipage_page -->
+<a href="Thread-Operating-systems-How-to-make-an-OS-A-tutorial-series?page=4" class="pagination_page">4</a>
+<!-- end: multipage_page --><!-- start: multipage_page -->
+<a href="Thread-Operating-systems-How-to-make-an-OS-A-tutorial-series?page=5" class="pagination_page">5</a>
+<!-- end: multipage_page --><!-- start: multipage_end -->
+ <a href="Thread-Operating-systems-How-to-make-an-OS-A-tutorial-series?page=6" class="pagination_last">6</a>
+<!-- end: multipage_end --><!-- start: multipage_nextpage -->
+<a href="Thread-Operating-systems-How-to-make-an-OS-A-tutorial-series?page=4" class="pagination_next">Next &raquo;</a>
+<!-- end: multipage_nextpage -->
+</div>
+<!-- end: multipage -->
+	</div>
+	<div style="padding-top: 4px;" class="float_right">
+		
+	</div>
+	<br class="clear" />
+	
+	
+	
+	<br />
+	<div class="float_left">
+		<ul class="thread_tools">
+			<li class="printable"><a href="printthread.php?tid=5881">View a Printable Version</a></li>
+			
+			<li class="subscription_add"><a href="usercp2.php?action=addsubscription&amp;tid=5881&amp;my_post_key=ca7acb9a9c5497e06fa3820172885d56">Subscribe to this thread</a></li>
+			
+		</ul>
+	</div>
+
+	<div class="float_right" style="text-align: right;">
+		
+		<!-- start: forumjump_advanced -->
+<form action="forumdisplay.php" method="get">
+<span class="smalltext"><strong>Forum Jump:</strong></span>
+<select name="fid" class="forumjump">
+<option value="-4">Private Messages</option>
+<option value="-3">User Control Panel</option>
+<option value="-5">Who's Online</option>
+<option value="-2">Search</option>
+<option value="-1">Forum Home</option>
+<!-- start: forumjump_bit -->
+<option value="659" > Main category</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="661" >-- Technology</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="662" >-- Gaming</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="663" >-- Meta</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="664" >-- The Lounge</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="666" selected="selected">-- Archived Topics</option>
+<!-- end: forumjump_bit -->
+</select>
+<!-- start: gobutton -->
+<input type="submit" class="button" value="Go" />
+<!-- end: gobutton -->
+</form>
+<script type="text/javascript">
+$(".forumjump").change(function() {
+	var option = $(this).val();
+
+	if(option < 0)
+	{
+		window.location = 'forumdisplay.php?fid='+option;
+	}
+	else
+	{
+		window.location = 'forum-'+option+'.html';
+	}
+});
+</script>
+<!-- end: forumjump_advanced -->
+	</div>
+	<br class="clear" />
+	<!-- start: showthread_usersbrowsing -->
+<br />
+<span class="smalltext">Users browsing this thread: 1 Guest(s)</span>
+<br />
+<!-- end: showthread_usersbrowsing --><!-- PLUGIN_USERS_BROWSED_TOPIC -->
+	<!-- start: footer -->
+<div onclick="MyAdvertisements.do_click(1);"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Raytron -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8364826840515490"
+     data-ad-slot="4506650765"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+	</div>
+</div>
+<div id="footer">
+	<div class="upper">
+		<div class="wrapper">
+			
+			
+			<ul class="menu bottom_links">
+				<!-- start: footer_contactus -->
+<li><a href="https://talk.raytron.org/contact.php">Contact Us</a></li>
+<!-- end: footer_contactus -->
+				<li><a href="https://talk.raytron.org/">Raytron</a></li>
+				<li><a href="#top">Return to Top</a></li>
+				<li><a href="https://talk.raytron.org/archive/index.php?thread-5881.html">Lite (Archive) Mode</a></li>
+				<li><a href="https://talk.raytron.org/misc.php?action=syndication">RSS Syndication</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="lower">
+		<div class="wrapper">
+			<span id="current_time"><strong>Current time:</strong> 04-23-2017, 09:43 AM</span>
+			<span id="copyright">
+				<!-- MyBB is free software developed and maintained by a volunteer community.
+					It would be much appreciated by the MyBB Group if you left the full copyright and "powered by" notice intact,
+					to show your support for MyBB.  If you choose to remove or modify the copyright below,
+					you may be refused support on the MyBB Community Forums.
+
+					This is free software, support us and we'll support you. -->
+				Powered By <a href="https://mybb.com" target="_blank">MyBB</a>, &copy; 2002-2017 <a href="https://mybb.com" target="_blank">MyBB Group</a>.
+				<!-- End powered by -->
+			</span>
+		</div>
+	</div>
+</div>
+<!-- The following piece of code allows MyBB to run scheduled tasks. DO NOT REMOVE --><!-- start: task_image -->
+<img src="https://talk.raytron.org/task.php" width="1" height="1" alt="" />
+<!-- end: task_image --><!-- End task image code -->
+
+</div>
+<!-- end: footer -->
+	<div id="thread_modes_popup" class="popup_menu" style="display: none;"><div class="popup_item_container"><a href="showthread.php?mode=linear&amp;tid=5881&amp;pid=48834#pid48834" class="popup_item">Linear Mode</a></div><div class="popup_item_container"><a href="showthread.php?mode=threaded&amp;tid=5881&amp;pid=48834#pid48834" class="popup_item">Threaded Mode</a></div></div>
+	<script type="text/javascript">
+	// <!--
+		if(use_xmlhttprequest == "1")
+		{
+			$("#thread_modes").popupMenu();
+		}
+	// -->
+	</script>
+	<script type="text/javascript">
+		$(".author_avatar img").error(function () {
+			$(this).unbind("error").closest('.author_avatar').remove();
+		});
+	</script>
+</body>
+</html>
+<!-- end: showthread -->

@@ -1,0 +1,407 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<title>techTalk &bull; View topic - Some weird linux program game thing I made in C++</title>
+
+<link rel="alternate" type="application/atom+xml" title="Feed - techTalk" href="https://archive.raytron.org/techtalk/feed.php" /><link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="https://archive.raytron.org/techtalk/feed.php?mode=topics" /><link rel="alternate" type="application/atom+xml" title="Feed - Forum - Off Topic" href="https://archive.raytron.org/techtalk/feed.php?f=58" /><link rel="alternate" type="application/atom+xml" title="Feed - Topic - Some weird linux program game thing I made in C++" href="https://archive.raytron.org/techtalk/feed.php?f=58&amp;t=829" />
+
+<!--
+	phpBB style name: MyInvision
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:	  Brad Veryard ( http://www.bradleyv.com/ )
+-->
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Enter the page number you wish to go to:';
+	var on_page = '1';
+	var per_page = '';
+	var base_url = '';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; domain=archive.raytron.org; secure';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript" src="./styles/prosilver/template/styleswitcher.js"></script>
+<script type="text/javascript" src="./styles/prosilver/template/forum_fn.js"></script>
+<script type="text/javascript" src="./styles/tech-talk/template/jquery.min.js"></script>
+<script type="text/javascript" src="./styles/tech-talk/template/jquery.cookie.js"></script>
+
+<link href="./styles/tech-talk/theme/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<link href="./style.php?id=7&amp;lang=en&amp;sid=5562356539983b05482a5fe78d568e47" rel="stylesheet" type="text/css" media="screen, projection" />
+
+</head>
+
+<body id="phpbb" class="section-viewtopic ltr">
+<!--
+
+ Options: Yes | No
+ Options: Yes | No
+ Options: Yes | No
+
+-->
+<div class="above"></div>
+<div id="header">
+	<div class="main_width">
+		<a href="./index.php?sid=5562356539983b05482a5fe78d568e47" title="Board index" id="logo"><img src="./styles/tech-talk/imageset/logo.png" width="358" height="64" alt="" title="" /></a>
+		
+				
+			<div id="search-box" class="searchback">
+				<form action="./search.php?sid=5562356539983b05482a5fe78d568e47" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="text" maxlength="128" title="Search for keywords" class="inputbox search" value="Search…" onclick="if(this.value=='Search…')this.value='';" onblur="if(this.value=='')this.value='Search…';" />
+					<input class="button2" value="Search" type="submit" /><br />
+					<a href="./search.php?sid=5562356539983b05482a5fe78d568e47" title="View the advanced search options">Advanced search</a> <input type="hidden" name="sid" value="5562356539983b05482a5fe78d568e47" />
+
+				</fieldset>
+				</form>
+			</div>
+			
+	</div>
+</div>
+
+<div id="wrap">
+	<div class="navbar clearit">
+		<ul id="nav">
+			<li><a href="./index.php?sid=5562356539983b05482a5fe78d568e47" accesskey="h"><img src="./styles/tech-talk/theme/images/globe.png" class="nicon" alt="Board index" />Board index</a></li>
+			<li><a href="./memberlist.php?sid=5562356539983b05482a5fe78d568e47"><img src="./styles/tech-talk/theme/images/member.png" class="nicon" alt="Members" />Members</a></li>
+			<li><a href="./faq.php?sid=5562356539983b05482a5fe78d568e47"><img src="./styles/tech-talk/theme/images/faq.png" class="nicon" alt="FAQ" />FAQ</a></li>
+			
+		</ul>
+	</div>
+	<a id="top" name="top" accesskey="t"></a>
+<div id="content">
+	<div id="page-header">
+
+		<div class="breadcrumbs">
+			<ul class="linklist navlinks">
+				<li class="icon-home"><a href="./index.php?sid=5562356539983b05482a5fe78d568e47" accesskey="h">Board index</a>  <strong>&#8249;</strong> <a href="./viewforum.php?f=57&amp;sid=5562356539983b05482a5fe78d568e47">Other</a> <strong>&#8249;</strong> <a href="./viewforum.php?f=58&amp;sid=5562356539983b05482a5fe78d568e47">Off Topic</a></li>
+				<li class="rightside"><a href="./viewtopic.php?f=58&amp;t=829&amp;sid=5562356539983b05482a5fe78d568e47&amp;view=print" title="Print view" accesskey="p" class="print">Print view</a></li>
+			</ul>
+
+			
+
+			<ul class="linklist rightside">
+				
+					<li class="icon-logout"><a href="./ucp.php?mode=login&amp;sid=5562356539983b05482a5fe78d568e47" title="Login" accesskey="x">Login</a></li>
+				
+			</ul>
+			<div class="clearit"></div>
+		</div>
+	</div>
+
+	<a name="start_here"></a>
+	<div id="page-body">
+		
+		
+ <div id="announcebar" class="rules">
+        <div class="inner"><span class="corners-top"><span></span></span>
+            This forum is an archive, hosted for reference purposes only. If you want to get involved with our current community, please visit <a href="https://talk.raytron.org" target="_blank">Raytron</a>.
+         <span class="corners-bottom"><span></span></span></div>
+     </div>
+<h2><a href="./viewtopic.php?f=58&amp;t=829&amp;sid=5562356539983b05482a5fe78d568e47">Some weird linux program game thing I made in C++</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body --><div style="display: none !important;">Off Topic Discussion. Posting world news to discuss is encouraged. Posting here no longer counts towards your total post count. Games are banned, but other off topic discussion is allowed.<br /></div>
+
+<div class="topic-actions">
+
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=58&amp;t=829&amp;sid=5562356539983b05482a5fe78d568e47" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php?sid=5562356539983b05482a5fe78d568e47">
+			<fieldset>
+				<input class="inputbox search tiny"  type="text" name="keywords" id="search_keywords" size="20" value="Search this topic…" onclick="if(this.value=='Search this topic…')this.value='';" onblur="if(this.value=='')this.value='Search this topic…';" />
+				<input class="button2" type="submit" value="Search" />
+				<input type="hidden" name="t" value="829" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="5562356539983b05482a5fe78d568e47" />
+
+			</fieldset>
+			</form>
+		</div>
+	
+		<div class="pagination">
+			2 posts
+			 &bull; Page <strong>1</strong> of <strong>1</strong>
+		</div>
+	
+
+</div>
+<div class="clear"></div>
+
+
+	<div class="pannels clearit">
+	<div id="p6350"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=58&amp;p=6350&amp;sid=5562356539983b05482a5fe78d568e47" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 class="first"><a href="#p6350">Some weird linux program game thing I made in C++</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=6350&amp;sid=5562356539983b05482a5fe78d568e47#p6350"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=55&amp;sid=5562356539983b05482a5fe78d568e47">maxell</a></strong> &raquo; Mon Sep 08, 2014 4:39 am </p>
+
+			
+
+			<div class="content">I am going to turn this into something interesting but in the meantime here's the &quot;engine&quot;. The Zs are walls, the player is an X, and the playfield consists of # and @. You can't do anything yet except move around, and I'm not revealing the source code yet because it's uglier than xterm's. (Maybe that's an understatement.)<br /><br />It's not a big source code and the only headers I have that are not mine are &lt;iostream&gt; and some obscure blogger's header named &quot;BufferToggle&quot;. I don't even need &lt;string&gt; since I can just use a char array for my application. So obviously the program's source isn't BIG it's just really ugly. We've got hardcoded objects, arrays never being used up to the full limit, and general code unelegance. I think the application could use much less memory if I didn't do these things and I'm going to work on optimizing it tommorow. As of now, here's a really crappy program that I call &quot;KGame&quot; due to it's unnecessary anti-optimization. (I was coding at like 3 AM, okay?)<br /><br />I learned that I can't make an array with a size defined at runtime. I tried vectors but for some reason I got a segfault. I'll have to work on that.<br /><br />Anyways the good stuff is what I'll keep so remember that the next release of this program (whatever it's called) will act pretty much the same but it will take up way less memory.</div>
+
+			
+				<dl class="attachbox">
+					<dt>Attachments</dt>
+					
+						<dd>
+		<dl class="file">
+			<dt><img src="./styles/tech-talk/imageset/icon_topic_attach.gif" width="7" height="10" alt="" title="" /> <a class="postlink" href="./download/file.php?id=27&amp;sid=5562356539983b05482a5fe78d568e47">kgame.tar.gz</a></dt>
+			<dd><em>The archive.</em></dd>
+			<dd>(4.09 KiB) Downloaded 7 times</dd>
+		</dl>
+		</dd>
+					
+				</dl>
+			<div id="sig6350" class="signature"><a href="http://maxell.ml" class="postlink">Check out my website!</a><br /><span style="font-size: 150%; line-height: 116%;">I've moved to <a href="https://bbs.techdom.ml" class="postlink">techdom</a></span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile6350">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=55&amp;sid=5562356539983b05482a5fe78d568e47"><img src="./download/file.php?avatar=55_1443076984.png" width="60" height="34" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=55&amp;sid=5562356539983b05482a5fe78d568e47">maxell</a>
+			</dt>
+
+			<dd>Advanced Member<br /><img src="./images/ranks/3.png" alt="Advanced Member" title="Advanced Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 621</dd><dd><strong>Joined:</strong> Fri May 23, 2014 1:06 am</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p6376"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=58&amp;p=6376&amp;sid=5562356539983b05482a5fe78d568e47" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p6376">Re: Some weird linux program game thing I made in C++</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=6376&amp;sid=5562356539983b05482a5fe78d568e47#p6376"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=132&amp;sid=5562356539983b05482a5fe78d568e47">RainfallMuffin</a></strong> &raquo; Tue Sep 09, 2014 1:41 am </p>
+
+			
+
+			<div class="content">We don't care if your source code is worse than windon't. (How is that possible?)<br /><br /><span style="font-size: 50%; line-height: 116%;">Don't ask how I know how messy Winblows source code is... *gulp*</span></div>
+
+			<div id="sig6376" class="signature"><span style="font-size: 85%; line-height: 116%;">Tumblr reminds you to <a href="http://i.imgur.com/LDGvxJW.jpg" class="postlink">check your privileges</a></span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile6376">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=132&amp;sid=5562356539983b05482a5fe78d568e47"><img src="./download/file.php?avatar=132_1442950579.png" width="129" height="150" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=132&amp;sid=5562356539983b05482a5fe78d568e47">RainfallMuffin</a>
+			</dt>
+
+			<dd>Ex-Staff<br /><img src="./images/ranks/3.png" alt="Ex-Staff" title="Ex-Staff" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 339</dd><dd><strong>Joined:</strong> Wed May 28, 2014 3:29 pm</dd><dd><strong>Location:</strong> The Multiverse</dd>
+			<dd><strong>Favorite OS:</strong> FreeBSD / Arch Linux</dd>
+		
+			<dd><strong>Favorite Programming Language:</strong> Javascript</dd>
+		
+			<dd><strong>Personal Text:</strong> fiminist revolutoin</dd>
+		
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://rainfallskies.com" title="WWW: http://rainfallskies.com"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?f=58&amp;t=829&amp;sid=5562356539983b05482a5fe78d568e47">
+
+	<fieldset class="display-options" style="margin-top: 0; ">
+		
+		<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select> <input type="submit" name="sort" value="Go" class="button2" /></label>
+		
+	</fieldset>
+
+	</form>
+	<hr />
+
+
+<div class="topic-actions">
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=58&amp;t=829&amp;sid=5562356539983b05482a5fe78d568e47" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="pagination">
+			2 posts
+			 &bull; Page <strong>1</strong> of <strong>1</strong>
+		</div>
+	
+</div>
+
+
+	<p></p><p><a href="./viewforum.php?f=58&amp;sid=5562356539983b05482a5fe78d568e47" class="left-box left" accesskey="r">Return to Off Topic</a></p>
+
+	<form method="post" id="jumpbox" action="./viewforum.php?sid=5562356539983b05482a5fe78d568e47" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Jump to:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+			
+				<option value="-1">Select a forum</option>
+			<option value="-1">------------------</option>
+				<option value="98">Raytron</option>
+			
+				<option value="99">&nbsp; &nbsp;Raytron</option>
+			
+				<option value="3">General Forum Discussion</option>
+			
+				<option value="4">&nbsp; &nbsp;Announcements</option>
+			
+				<option value="6">&nbsp; &nbsp;Introductions</option>
+			
+				<option value="92">&nbsp; &nbsp;Suggestions</option>
+			
+				<option value="90">Technology</option>
+			
+				<option value="10">&nbsp; &nbsp;General Tech Discussion</option>
+			
+				<option value="91">&nbsp; &nbsp;Technology News</option>
+			
+				<option value="18">&nbsp; &nbsp;Software / Operating Systems</option>
+			
+				<option value="11">&nbsp; &nbsp;Hardware</option>
+			
+				<option value="28">&nbsp; &nbsp;Programming</option>
+			
+				<option value="32">&nbsp; &nbsp;Gaming</option>
+			
+				<option value="57">Other</option>
+			
+				<option value="58" selected="selected">&nbsp; &nbsp;Off Topic</option>
+			
+			</select>
+			<input type="submit" value="Go" class="button2" />
+		</fieldset>
+	</form>
+
+
+	<h3><a href="./viewonline.php?sid=5562356539983b05482a5fe78d568e47">Who is online</a></h3>
+	<p>Users browsing this forum: No registered users and 0 guests</p>
+</div>
+
+<div id="page-footer">
+
+	<div class="breadcrumbs">
+		<ul class="linklist">
+			<li class="icon-home"><a href="./index.php?sid=5562356539983b05482a5fe78d568e47" accesskey="h">Board index</a></li>
+				
+			<li class="rightside"><a href="./memberlist.php?mode=leaders&amp;sid=5562356539983b05482a5fe78d568e47">The team</a> &bull; <a href="./ucp.php?mode=delete_cookies&amp;sid=5562356539983b05482a5fe78d568e47">Delete all board cookies</a> &bull; All times are UTC </li>
+		</ul>
+		<div class="copyright">
+		</div>
+	</div>
+</div>
+
+</div>
+</div>
+<div class="clearit"></div>
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51268407-1', 'tech-talk.ml');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

@@ -1,0 +1,421 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<title>techTalk &bull; View topic - [TUTORIAL]Create an Arch Linux LAMP/LEMP Server!</title>
+
+<link rel="alternate" type="application/atom+xml" title="Feed - techTalk" href="https://archive.raytron.org/techtalk/feed.php" /><link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="https://archive.raytron.org/techtalk/feed.php?mode=topics" /><link rel="alternate" type="application/atom+xml" title="Feed - Forum - Software / Operating Systems" href="https://archive.raytron.org/techtalk/feed.php?f=18" /><link rel="alternate" type="application/atom+xml" title="Feed - Topic - [TUTORIAL]Create an Arch Linux LAMP/LEMP Server!" href="https://archive.raytron.org/techtalk/feed.php?f=18&amp;t=616" />
+
+<!--
+	phpBB style name: MyInvision
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:	  Brad Veryard ( http://www.bradleyv.com/ )
+-->
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Enter the page number you wish to go to:';
+	var on_page = '1';
+	var per_page = '';
+	var base_url = '';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; domain=archive.raytron.org; secure';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript" src="./styles/prosilver/template/styleswitcher.js"></script>
+<script type="text/javascript" src="./styles/prosilver/template/forum_fn.js"></script>
+<script type="text/javascript" src="./styles/tech-talk/template/jquery.min.js"></script>
+<script type="text/javascript" src="./styles/tech-talk/template/jquery.cookie.js"></script>
+
+<link href="./styles/tech-talk/theme/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<link href="./style.php?id=7&amp;lang=en&amp;sid=2d4466be117ae142ad017e7c89e042cf" rel="stylesheet" type="text/css" media="screen, projection" />
+
+</head>
+
+<body id="phpbb" class="section-viewtopic ltr">
+<!--
+
+ Options: Yes | No
+ Options: Yes | No
+ Options: Yes | No
+
+-->
+<div class="above"></div>
+<div id="header">
+	<div class="main_width">
+		<a href="./index.php?sid=2d4466be117ae142ad017e7c89e042cf" title="Board index" id="logo"><img src="./styles/tech-talk/imageset/logo.png" width="358" height="64" alt="" title="" /></a>
+		
+				
+			<div id="search-box" class="searchback">
+				<form action="./search.php?sid=2d4466be117ae142ad017e7c89e042cf" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="text" maxlength="128" title="Search for keywords" class="inputbox search" value="Search…" onclick="if(this.value=='Search…')this.value='';" onblur="if(this.value=='')this.value='Search…';" />
+					<input class="button2" value="Search" type="submit" /><br />
+					<a href="./search.php?sid=2d4466be117ae142ad017e7c89e042cf" title="View the advanced search options">Advanced search</a> <input type="hidden" name="sid" value="2d4466be117ae142ad017e7c89e042cf" />
+
+				</fieldset>
+				</form>
+			</div>
+			
+	</div>
+</div>
+
+<div id="wrap">
+	<div class="navbar clearit">
+		<ul id="nav">
+			<li><a href="./index.php?sid=2d4466be117ae142ad017e7c89e042cf" accesskey="h"><img src="./styles/tech-talk/theme/images/globe.png" class="nicon" alt="Board index" />Board index</a></li>
+			<li><a href="./memberlist.php?sid=2d4466be117ae142ad017e7c89e042cf"><img src="./styles/tech-talk/theme/images/member.png" class="nicon" alt="Members" />Members</a></li>
+			<li><a href="./faq.php?sid=2d4466be117ae142ad017e7c89e042cf"><img src="./styles/tech-talk/theme/images/faq.png" class="nicon" alt="FAQ" />FAQ</a></li>
+			
+		</ul>
+	</div>
+	<a id="top" name="top" accesskey="t"></a>
+<div id="content">
+	<div id="page-header">
+
+		<div class="breadcrumbs">
+			<ul class="linklist navlinks">
+				<li class="icon-home"><a href="./index.php?sid=2d4466be117ae142ad017e7c89e042cf" accesskey="h">Board index</a>  <strong>&#8249;</strong> <a href="./viewforum.php?f=90&amp;sid=2d4466be117ae142ad017e7c89e042cf">Technology</a> <strong>&#8249;</strong> <a href="./viewforum.php?f=18&amp;sid=2d4466be117ae142ad017e7c89e042cf">Software / Operating Systems</a></li>
+				<li class="rightside"><a href="./viewtopic.php?f=18&amp;t=616&amp;sid=2d4466be117ae142ad017e7c89e042cf&amp;view=print" title="Print view" accesskey="p" class="print">Print view</a></li>
+			</ul>
+
+			
+
+			<ul class="linklist rightside">
+				
+					<li class="icon-logout"><a href="./ucp.php?mode=login&amp;sid=2d4466be117ae142ad017e7c89e042cf" title="Login" accesskey="x">Login</a></li>
+				
+			</ul>
+			<div class="clearit"></div>
+		</div>
+	</div>
+
+	<a name="start_here"></a>
+	<div id="page-body">
+		
+		
+ <div id="announcebar" class="rules">
+        <div class="inner"><span class="corners-top"><span></span></span>
+            This forum is an archive, hosted for reference purposes only. If you want to get involved with our current community, please visit <a href="https://talk.raytron.org" target="_blank">Raytron</a>.
+         <span class="corners-bottom"><span></span></span></div>
+     </div>
+<h2><a href="./viewtopic.php?f=18&amp;t=616&amp;sid=2d4466be117ae142ad017e7c89e042cf">[TUTORIAL]Create an Arch Linux LAMP/LEMP Server!</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body --><div style="display: none !important;">Talk about Software and Operating Systems here.<br /></div>
+
+<div class="topic-actions">
+
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=18&amp;t=616&amp;sid=2d4466be117ae142ad017e7c89e042cf" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php?sid=2d4466be117ae142ad017e7c89e042cf">
+			<fieldset>
+				<input class="inputbox search tiny"  type="text" name="keywords" id="search_keywords" size="20" value="Search this topic…" onclick="if(this.value=='Search this topic…')this.value='';" onblur="if(this.value=='')this.value='Search this topic…';" />
+				<input class="button2" type="submit" value="Search" />
+				<input type="hidden" name="t" value="616" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="2d4466be117ae142ad017e7c89e042cf" />
+
+			</fieldset>
+			</form>
+		</div>
+	
+		<div class="pagination">
+			2 posts
+			 &bull; Page <strong>1</strong> of <strong>1</strong>
+		</div>
+	
+
+</div>
+<div class="clear"></div>
+
+
+	<div class="pannels clearit">
+	<div id="p3813"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=18&amp;p=3813&amp;sid=2d4466be117ae142ad017e7c89e042cf" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 class="first"><a href="#p3813">[TUTORIAL]Create an Arch Linux LAMP/LEMP Server!</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=3813&amp;sid=2d4466be117ae142ad017e7c89e042cf#p3813"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=132&amp;sid=2d4466be117ae142ad017e7c89e042cf">RainfallMuffin</a></strong> &raquo; Fri Jul 18, 2014 6:56 am </p>
+
+			
+
+			<div class="content">I just wanted to get this out real quickly. Might help some people.<br /><br /><span style="font-weight: bold">This guide is not complete. There is more to come in the future.</span><br /><br />Chapter One: The Basics<br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="text-transform: uppercase; border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>show</a>'; }" /><b>Spoiler: </b><a href="#" onClick="return false;">show</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;">What is LAMP or LEMP? They are software bundles for Linux that helps you make a web server.<br />LAMP is an acronym for Linux Apache MySQL/MariaDB PHP/Perl/Python.<br />LEMP is an acronym for Linux nginx MySQL/MariaDB PHP/Perl/Python.<br /><br />LAMP/LEMP servers can help you host blogs, forums, downloadable files, etc.<br /><br />For this tutorial I will be using MariaDB and PHP.</div>
+    </div>
+</div><br /><br />Chaper Two: Installing Software<br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="text-transform: uppercase; border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>show</a>'; }" /><b>Spoiler: </b><a href="#" onClick="return false;">show</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;">First you will need to install Arch Linux. &#40;<a href="https://wiki.archlinux.org/index.php/beginners&#39;_guide" class="postlink">Guide</a>&#41; Feel free to use Manjaro, XYZ Linux &#40;#shamelessplug&#41;, Arch Bang, or other Arch-based distros as it is 100% compatible with this tutorial.<br /><br />Now, we install some stuff.<br /><br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code># pacman -Syu</code></dd></dl><br />Let&#39;s update our system first.<br /><br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code># pacman -S apache</code></dd></dl><br />Install Apache for a LAMP server or<br /><br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code># pacman -S nginx</code></dd></dl><br />to install nginx for a LEMP server.<br /><br />Let&#39;s install more stuff!<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code># pacman -S mysql php php-gd</code></dd></dl><br />This will install MariaDB, &#40;replaced mysql in arch repos, original mysql is in AUR&#41; PHP, and a PHP module that will help with image files.</div>
+    </div>
+</div><br /><br />Chapter 3: Configuration (Apache)<br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="text-transform: uppercase; border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>show</a>'; }" /><b>Spoiler: </b><a href="#" onClick="return false;">show</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;">Now we must configure some things.<br /><br />Open port 80. I assume you already know how to port forward. If not, Google is your friend.<br /><br />APACHE:<br /><br />Edit the apache config using:<br /><br /># nano /etc/httpd/conf/httpd.conf<br /><br />And uncoment the following line like so:<br />#LoadModule unique_id_module modules/mod_unique_id.so<br />LoadModule unique_id_module modules/mod_unique_id.so<br /><br />And now restart apache:<br /><br /># systemctl restart httpd<br /><br />And then enable it:<br /><br /># systemctl enable httpd<br /> <br /><br />Start MariaDB and the secure installation<br /><br /># systemctl start mysqld &amp;&amp; mysql_secure_installation<br /><br />You will be able to enter a root password. This is the output you should get:<br /><br />Enter current password for root &#40;enter for none&#41;:<br />OK, successfully used password, moving on…<br /><br />Setting the root password ensures that nobody can log into the MariaDB<br />root user without the proper authorization.<br /><br />Set root password? [Y/n] y<br />New password:<br />Re-enter new password:<br />Password updated successfully!<br />Reloading privilege tables..<br />… Success!<br /><br />By default, a MariaDB installation has an anonymous user, allowing anyone<br />to log into MariaDB without having to have a user account created for<br />them. This is intended only for testing, and to make the installation<br />go a bit smoother. You should remove them before moving into a<br />production environment.<br /><br />Remove anonymous users? [Y/n] y<br />… Success!<br /><br />Normally, root should only be allowed to connect from ‘localhost’. This<br />ensures that someone cannot guess at the root password from the network.<br /><br />Disallow root login remotely? [Y/n] y<br />… Success!<br /><br />By default, MariaDB comes with a database named ‘test’ that anyone can<br />access. This is also intended only for testing, and should be removed<br />before moving into a production environment.<br /><br />Remove test database and access to it? [Y/n] y<br />– Dropping test database…<br />… Success!<br />– Removing privileges on test database…<br />… Success!<br /><br />Reloading the privilege tables will ensure that all changes made so far<br />will take effect immediately.<br /><br />Reload privilege tables now? [Y/n] y<br />… Success!<br /><br />Cleaning up…<br /><br />All done! If you’ve completed all of the above steps, your MySQL<br />installation should now be secure.<br /><br />Thanks for using MariaDB!<br /><br />Now open up your apache config again and paste this in<br /><br /># Use for PHP 5.x:<br />LoadModule php5_module modules/libphp5.so<br />AddHandler php5-script php<br />Include conf/extra/php5_module.conf<br /><br />Now open up /etc/php/php.ini using nano and uncomment these lines:<br /><br />extension=gd.so<br />extension=mysql.so<br />extension=pdo_mysql.so<br /><br />Now you have configured your web server. To see if it html works, paste this into /srv/http/index.html<br /><br />&lt;html&gt;<br />&lt;title&gt;It Works!&lt;/title&gt;<br />&lt;body&gt;<br />&lt;h2&gt;The server is working&lt;/h2&gt;<br />&lt;/body&gt;<br />&lt;/html&gt;<br /><br />And then go to your IP address in your web browser. If it says &#39;It Works!&#39; your web server is working.<br /><br />Now paste this in /srv/http/info.php<br />&lt;?php<br />phpinfo&#40;&#41;;<br />?&gt;<br /><br />And then go to &lt;YOURIPADDRESS&gt;/info.php If you see a bunch of confusing words and your PHP version number, your php is working.<br /><br />You are done! Now in Chapter 4 we are going to install WordPress and in Chapter 5 phpBB</div>
+    </div>
+</div></div>
+
+			<div id="sig3813" class="signature"><span style="font-size: 85%; line-height: 116%;">Tumblr reminds you to <a href="http://i.imgur.com/LDGvxJW.jpg" class="postlink">check your privileges</a></span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile3813">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=132&amp;sid=2d4466be117ae142ad017e7c89e042cf"><img src="./download/file.php?avatar=132_1442950579.png" width="129" height="150" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=132&amp;sid=2d4466be117ae142ad017e7c89e042cf">RainfallMuffin</a>
+			</dt>
+
+			<dd>Ex-Staff<br /><img src="./images/ranks/3.png" alt="Ex-Staff" title="Ex-Staff" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 339</dd><dd><strong>Joined:</strong> Wed May 28, 2014 3:29 pm</dd><dd><strong>Location:</strong> The Multiverse</dd>
+			<dd><strong>Favorite OS:</strong> FreeBSD / Arch Linux</dd>
+		
+			<dd><strong>Favorite Programming Language:</strong> Javascript</dd>
+		
+			<dd><strong>Personal Text:</strong> fiminist revolutoin</dd>
+		
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://rainfallskies.com" title="WWW: http://rainfallskies.com"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p4080"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=18&amp;p=4080&amp;sid=2d4466be117ae142ad017e7c89e042cf" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p4080">Re: [TUTORIAL]Create an Arch Linux LAMP/LEMP Server!</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=4080&amp;sid=2d4466be117ae142ad017e7c89e042cf#p4080"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=132&amp;sid=2d4466be117ae142ad017e7c89e042cf">RainfallMuffin</a></strong> &raquo; Tue Jul 22, 2014 9:06 pm </p>
+
+			
+
+			<div class="content">Chapter 3 is out!</div>
+
+			<div id="sig4080" class="signature"><span style="font-size: 85%; line-height: 116%;">Tumblr reminds you to <a href="http://i.imgur.com/LDGvxJW.jpg" class="postlink">check your privileges</a></span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile4080">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=132&amp;sid=2d4466be117ae142ad017e7c89e042cf"><img src="./download/file.php?avatar=132_1442950579.png" width="129" height="150" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=132&amp;sid=2d4466be117ae142ad017e7c89e042cf">RainfallMuffin</a>
+			</dt>
+
+			<dd>Ex-Staff<br /><img src="./images/ranks/3.png" alt="Ex-Staff" title="Ex-Staff" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 339</dd><dd><strong>Joined:</strong> Wed May 28, 2014 3:29 pm</dd><dd><strong>Location:</strong> The Multiverse</dd>
+			<dd><strong>Favorite OS:</strong> FreeBSD / Arch Linux</dd>
+		
+			<dd><strong>Favorite Programming Language:</strong> Javascript</dd>
+		
+			<dd><strong>Personal Text:</strong> fiminist revolutoin</dd>
+		
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://rainfallskies.com" title="WWW: http://rainfallskies.com"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?f=18&amp;t=616&amp;sid=2d4466be117ae142ad017e7c89e042cf">
+
+	<fieldset class="display-options" style="margin-top: 0; ">
+		
+		<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select> <input type="submit" name="sort" value="Go" class="button2" /></label>
+		
+	</fieldset>
+
+	</form>
+	<hr />
+
+
+<div class="topic-actions">
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=18&amp;t=616&amp;sid=2d4466be117ae142ad017e7c89e042cf" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="pagination">
+			2 posts
+			 &bull; Page <strong>1</strong> of <strong>1</strong>
+		</div>
+	
+</div>
+
+
+	<p></p><p><a href="./viewforum.php?f=18&amp;sid=2d4466be117ae142ad017e7c89e042cf" class="left-box left" accesskey="r">Return to Software / Operating Systems</a></p>
+
+	<form method="post" id="jumpbox" action="./viewforum.php?sid=2d4466be117ae142ad017e7c89e042cf" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Jump to:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+			
+				<option value="-1">Select a forum</option>
+			<option value="-1">------------------</option>
+				<option value="98">Raytron</option>
+			
+				<option value="99">&nbsp; &nbsp;Raytron</option>
+			
+				<option value="3">General Forum Discussion</option>
+			
+				<option value="4">&nbsp; &nbsp;Announcements</option>
+			
+				<option value="6">&nbsp; &nbsp;Introductions</option>
+			
+				<option value="92">&nbsp; &nbsp;Suggestions</option>
+			
+				<option value="90">Technology</option>
+			
+				<option value="10">&nbsp; &nbsp;General Tech Discussion</option>
+			
+				<option value="91">&nbsp; &nbsp;Technology News</option>
+			
+				<option value="18" selected="selected">&nbsp; &nbsp;Software / Operating Systems</option>
+			
+				<option value="11">&nbsp; &nbsp;Hardware</option>
+			
+				<option value="28">&nbsp; &nbsp;Programming</option>
+			
+				<option value="32">&nbsp; &nbsp;Gaming</option>
+			
+				<option value="57">Other</option>
+			
+				<option value="58">&nbsp; &nbsp;Off Topic</option>
+			
+			</select>
+			<input type="submit" value="Go" class="button2" />
+		</fieldset>
+	</form>
+
+
+	<h3><a href="./viewonline.php?sid=2d4466be117ae142ad017e7c89e042cf">Who is online</a></h3>
+	<p>Users browsing this forum: No registered users and 0 guests</p>
+</div>
+
+<div id="page-footer">
+
+	<div class="breadcrumbs">
+		<ul class="linklist">
+			<li class="icon-home"><a href="./index.php?sid=2d4466be117ae142ad017e7c89e042cf" accesskey="h">Board index</a></li>
+				
+			<li class="rightside"><a href="./memberlist.php?mode=leaders&amp;sid=2d4466be117ae142ad017e7c89e042cf">The team</a> &bull; <a href="./ucp.php?mode=delete_cookies&amp;sid=2d4466be117ae142ad017e7c89e042cf">Delete all board cookies</a> &bull; All times are UTC </li>
+		</ul>
+		<div class="copyright">
+		</div>
+	</div>
+</div>
+
+</div>
+</div>
+<div class="clearit"></div>
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51268407-1', 'tech-talk.ml');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

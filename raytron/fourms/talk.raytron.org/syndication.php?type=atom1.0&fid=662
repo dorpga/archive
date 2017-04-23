@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<title type="html"><![CDATA[Raytron - Gaming]]></title>
+	<subtitle type="html"><![CDATA[Raytron - https://talk.raytron.org]]></subtitle>
+	<link rel="self" href="https://talk.raytron.org/syndication.php"/>
+	<id>https://talk.raytron.org/</id>
+	<link rel="alternate" type="text/html" href="https://talk.raytron.org/"/>
+	<updated>2017-04-23T06:34:43Z</updated>
+	<generator uri="https://mybb.com">MyBB</generator>
+	<entry xmlns="http://www.w3.org/2005/Atom">
+		<published>2016-10-29T02:22:42Z</published>
+		<updated>2016-10-29T02:22:42Z</updated>
+		<link rel="alternate" type="text/html" href="https://talk.raytron.org/Thread-Gaming-General-Games-you-re-currently-playing" />
+		<id>https://talk.raytron.org/Thread-Gaming-General-Games-you-re-currently-playing</id>
+		<title type="html" xml:space="preserve"><![CDATA[Games you're currently playing?]]></title>
+		<content type="html" xml:space="preserve" xml:base="https://talk.raytron.org/Thread-Gaming-General-Games-you-re-currently-playing"><![CDATA[Share which games you're currently playing.]]></content>
+		<draft xmlns="http://purl.org/atom-blog/ns#">false</draft>
+	</entry>
+	<entry xmlns="http://www.w3.org/2005/Atom">
+		<published>2016-10-29T02:16:10Z</published>
+		<updated>2016-10-29T02:16:10Z</updated>
+		<link rel="alternate" type="text/html" href="https://talk.raytron.org/Thread-Gaming-General-Your-favorite-gaming-platform" />
+		<id>https://talk.raytron.org/Thread-Gaming-General-Your-favorite-gaming-platform</id>
+		<title type="html" xml:space="preserve"><![CDATA[Your favorite gaming platform?]]></title>
+		<content type="html" xml:space="preserve" xml:base="https://talk.raytron.org/Thread-Gaming-General-Your-favorite-gaming-platform"><![CDATA[What is your favorite gaming platform?]]></content>
+		<draft xmlns="http://purl.org/atom-blog/ns#">false</draft>
+	</entry>
+	<entry xmlns="http://www.w3.org/2005/Atom">
+		<published>2016-10-29T02:00:41Z</published>
+		<updated>2016-10-29T02:00:41Z</updated>
+		<link rel="alternate" type="text/html" href="https://talk.raytron.org/Thread-Gaming-General-Your-favorite-games" />
+		<id>https://talk.raytron.org/Thread-Gaming-General-Your-favorite-games</id>
+		<title type="html" xml:space="preserve"><![CDATA[Your favorite games?]]></title>
+		<content type="html" xml:space="preserve" xml:base="https://talk.raytron.org/Thread-Gaming-General-Your-favorite-games"><![CDATA[Share your favorite games. Platform doesn't matter.]]></content>
+		<draft xmlns="http://purl.org/atom-blog/ns#">false</draft>
+	</entry>
+</feed>

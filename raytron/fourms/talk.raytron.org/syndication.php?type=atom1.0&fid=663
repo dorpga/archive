@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<title type="html"><![CDATA[Raytron - Meta]]></title>
+	<subtitle type="html"><![CDATA[Raytron - https://talk.raytron.org]]></subtitle>
+	<link rel="self" href="https://talk.raytron.org/syndication.php"/>
+	<id>https://talk.raytron.org/</id>
+	<link rel="alternate" type="text/html" href="https://talk.raytron.org/"/>
+	<updated>2017-04-23T06:34:54Z</updated>
+	<generator uri="https://mybb.com">MyBB</generator>
+	<entry xmlns="http://www.w3.org/2005/Atom">
+		<published>2017-03-16T21:55:12Z</published>
+		<updated>2017-03-16T21:56:37Z</updated>
+		<link rel="alternate" type="text/html" href="https://talk.raytron.org/Thread-Pinned-Requests-to-moderators" />
+		<id>https://talk.raytron.org/Thread-Pinned-Requests-to-moderators</id>
+		<title type="html" xml:space="preserve"><![CDATA[Requests to moderators]]></title>
+		<content type="html" xml:space="preserve" xml:base="https://talk.raytron.org/Thread-Pinned-Requests-to-moderators"><![CDATA[In this topic you can request thread unlocks, thread ownership transfers, thread clean-ups. For bad posts/topics, please use the report system. If you want to report a moderator, send a private message to V0rTeX. Do not fight!]]></content>
+		<draft xmlns="http://purl.org/atom-blog/ns#">false</draft>
+	</entry>
+	<entry xmlns="http://www.w3.org/2005/Atom">
+		<published>2017-03-09T07:33:50Z</published>
+		<updated>2017-03-09T07:33:50Z</updated>
+		<link rel="alternate" type="text/html" href="https://talk.raytron.org/Thread-Pinned-Changelog" />
+		<id>https://talk.raytron.org/Thread-Pinned-Changelog</id>
+		<title type="html" xml:space="preserve"><![CDATA[Changelog]]></title>
+		<content type="html" xml:space="preserve" xml:base="https://talk.raytron.org/Thread-Pinned-Changelog"><![CDATA[Official changelog topic.]]></content>
+		<draft xmlns="http://purl.org/atom-blog/ns#">false</draft>
+	</entry>
+	<entry xmlns="http://www.w3.org/2005/Atom">
+		<published>2017-01-19T11:50:15Z</published>
+		<updated>2017-01-19T11:50:15Z</updated>
+		<link rel="alternate" type="text/html" href="https://talk.raytron.org/Thread-Announcement-techTalk-Archive-is-back" />
+		<id>https://talk.raytron.org/Thread-Announcement-techTalk-Archive-is-back</id>
+		<title type="html" xml:space="preserve"><![CDATA[techTalk Archive is back!]]></title>
+		<content type="html" xml:space="preserve" xml:base="https://talk.raytron.org/Thread-Announcement-techTalk-Archive-is-back"><![CDATA[The techTalk archive is finally back online.Â <br />
+<a href="https://archive.raytron.org/techtalk/" target="_blank" class="mycode_url">https://archive.raytron.org/techtalk/</a>]]></content>
+		<draft xmlns="http://purl.org/atom-blog/ns#">false</draft>
+	</entry>
+	<entry xmlns="http://www.w3.org/2005/Atom">
+		<published>2016-12-18T03:59:30Z</published>
+		<updated>2016-12-18T04:00:15Z</updated>
+		<link rel="alternate" type="text/html" href="https://talk.raytron.org/Thread-Pinned-Username-change-and-custom-rank-requests" />
+		<id>https://talk.raytron.org/Thread-Pinned-Username-change-and-custom-rank-requests</id>
+		<title type="html" xml:space="preserve"><![CDATA[Username change and custom rank requests]]></title>
+		<content type="html" xml:space="preserve" xml:base="https://talk.raytron.org/Thread-Pinned-Username-change-and-custom-rank-requests"><![CDATA[In this topic you can a username change, or request a custom rank <span style="font-weight: bold;" class="mycode_b">once per 6 months</span>.<br />
+<br />
+Requirements:<br />
+* Registered for 3+ months<br />
+* At least 100 posts]]></content>
+		<draft xmlns="http://purl.org/atom-blog/ns#">false</draft>
+	</entry>
+	<entry xmlns="http://www.w3.org/2005/Atom">
+		<published>2016-11-09T04:40:16Z</published>
+		<updated>2016-11-16T03:56:15Z</updated>
+		<link rel="alternate" type="text/html" href="https://talk.raytron.org/Thread-Announcement-New-BB-codes" />
+		<id>https://talk.raytron.org/Thread-Announcement-New-BB-codes</id>
+		<title type="html" xml:space="preserve"><![CDATA[New BB codes]]></title>
+		<content type="html" xml:space="preserve" xml:base="https://talk.raytron.org/Thread-Announcement-New-BB-codes"><![CDATA[Hello. I added some new bb codes - [youtube], [facebook], [instagram], [twitter] and [spotify]. You can now easily embed content from these platforms. Enjoy.]]></content>
+		<draft xmlns="http://purl.org/atom-blog/ns#">false</draft>
+	</entry>
+	<entry xmlns="http://www.w3.org/2005/Atom">
+		<published>2016-11-04T03:25:46Z</published>
+		<updated>2016-11-04T03:26:35Z</updated>
+		<link rel="alternate" type="text/html" href="https://talk.raytron.org/Thread-Announcement-Raytron-available-on-Tapatalk-network-again" />
+		<id>https://talk.raytron.org/Thread-Announcement-Raytron-available-on-Tapatalk-network-again</id>
+		<title type="html" xml:space="preserve"><![CDATA[Raytron available on Tapatalk network again]]></title>
+		<content type="html" xml:space="preserve" xml:base="https://talk.raytron.org/Thread-Announcement-Raytron-available-on-Tapatalk-network-again"><![CDATA[After nearly a year of absence, Raytron isÂ available on Tapatalk network again. For these who don't know what Tapatalk is - basicially it's app which simplifies using forums on mobile devices.]]></content>
+		<draft xmlns="http://purl.org/atom-blog/ns#">false</draft>
+	</entry>
+	<entry xmlns="http://www.w3.org/2005/Atom">
+		<published>2016-10-31T01:33:59Z</published>
+		<updated>2016-10-31T01:34:58Z</updated>
+		<link rel="alternate" type="text/html" href="https://talk.raytron.org/Thread-Announcement-New-staff-additions-KomputerKid-and-esc1010" />
+		<id>https://talk.raytron.org/Thread-Announcement-New-staff-additions-KomputerKid-and-esc1010</id>
+		<title type="html" xml:space="preserve"><![CDATA[New staff additions - KomputerKid and esc1010]]></title>
+		<content type="html" xml:space="preserve" xml:base="https://talk.raytron.org/Thread-Announcement-New-staff-additions-KomputerKid-and-esc1010"><![CDATA[KomputerKid, a previous co-owner/administrator and esc1010 have been promoted to Global Moderators. I'm wishing them best luck with their new duties.]]></content>
+		<draft xmlns="http://purl.org/atom-blog/ns#">false</draft>
+	</entry>
+	<entry xmlns="http://www.w3.org/2005/Atom">
+		<published>2016-10-29T01:45:30Z</published>
+		<updated>2017-02-01T12:20:36Z</updated>
+		<link rel="alternate" type="text/html" href="https://talk.raytron.org/Thread-Announcement-We-re-starting-fresh" />
+		<id>https://talk.raytron.org/Thread-Announcement-We-re-starting-fresh</id>
+		<title type="html" xml:space="preserve"><![CDATA[We're starting fresh!]]></title>
+		<content type="html" xml:space="preserve" xml:base="https://talk.raytron.org/Thread-Announcement-We-re-starting-fresh"><![CDATA[Yes, you heard it right.Â We're starting fresh, with a new platform and new features. Last week i wanted to re-install Discourse because our currentÂ instance was buggy, but toÂ my disappointment it failed due to random error. I tried so many ways to fix it, but they all failed. It's not the first time i'm having bad experiences with Discourse. As you know Raytron is hosted in the cloud. When something like this happens i just start a new server and re-configure it to our needs. The thing is, is autumnÂ and i don't have as much time as i used to do in the summer, thus i can't do that right now. So instead of keeping the forum dead till Christmas, i decided to install the latest version ofÂ MyBB, and use their merge system to combine OSTalk, techTalk and ShiftOS. If you had accounts in any of these you can login with your old login details. Private messages from techTalk and ShiftOS are preserved. Old posts and topics are still in the database.Â This is probably the best decision I've ever taken in the 3 yearsÂ history of Raytron, and i should have done it a long time ago. Switching to Discourse in December 2015 was a huge mistake. While is pretty and fast, it barely works especially for a forum like ours, and i always had some kind of issues with it doing my day-to-day administrative tasks. MyBB on other hand is heaven. For a few days, i made the forum exactly how i always wanted it to be, although there's still a lot of job that needs to be done. Let's talk about what's new. I added a simple shoutbox in the homepage, accessible to registered users only, notifications functionality, likes (As in Discourse) and enhanced profiles with comments, friend system and last visitors. There is also a new group called - "Recognized users" for high quality users that contributed a lot to our forum. They have a yellow star before their usernames, ability to rate threads and delete their posts and bigger inbox. Recognized users will be chosen by staff.Â Ex-staff members gets the same features as recognized users plus even bigger inbox, ability to change their username and delete their threads. They're also given the authority to moderate the shoutbox. Another feature, which replaces tags in Discourse is prefixes. The whole forum is prefix-based right now. You can't start a thread on any category without a prefix. I'm enforcing this for better thread organization. There's more to come, so stay tuned. If you have any questions and suggestions feel free to post them.]]></content>
+		<draft xmlns="http://purl.org/atom-blog/ns#">false</draft>
+	</entry>
+	<entry xmlns="http://www.w3.org/2005/Atom">
+		<published>2016-10-29T00:28:58Z</published>
+		<updated>2016-11-16T03:56:28Z</updated>
+		<link rel="alternate" type="text/html" href="https://talk.raytron.org/Thread-Pinned-Official-Discord-Room" />
+		<id>https://talk.raytron.org/Thread-Pinned-Official-Discord-Room</id>
+		<title type="html" xml:space="preserve"><![CDATA[Official Discord Room]]></title>
+		<content type="html" xml:space="preserve" xml:base="https://talk.raytron.org/Thread-Pinned-Official-Discord-Room"><![CDATA[We have our own Discord room, where you can talk with our members and ask for help if needed.<br />
+<br />
+<span style="font-weight: bold;" class="mycode_b"><a href="https://discord.gg/eCAu8QH" target="_blank" class="mycode_url">Permanent invite - Feel free to join anytime.</a></span>]]></content>
+		<draft xmlns="http://purl.org/atom-blog/ns#">false</draft>
+	</entry>
+	<entry xmlns="http://www.w3.org/2005/Atom">
+		<published>2016-10-29T00:24:05Z</published>
+		<updated>2016-11-16T03:44:14Z</updated>
+		<link rel="alternate" type="text/html" href="https://talk.raytron.org/Thread-Pinned-Introduce-yourselves" />
+		<id>https://talk.raytron.org/Thread-Pinned-Introduce-yourselves</id>
+		<title type="html" xml:space="preserve"><![CDATA[Introduce yourselves]]></title>
+		<content type="html" xml:space="preserve" xml:base="https://talk.raytron.org/Thread-Pinned-Introduce-yourselves"><![CDATA[You just joined Raytron? Don't hesitateÂ to say hi. We won't bite you, promise!]]></content>
+		<draft xmlns="http://purl.org/atom-blog/ns#">false</draft>
+	</entry>
+</feed>

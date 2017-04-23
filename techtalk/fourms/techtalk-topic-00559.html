@@ -1,0 +1,767 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<title>techTalk &bull; View topic - BeudOS: Trying to intrepret an OS in VB.NET code</title>
+
+<link rel="alternate" type="application/atom+xml" title="Feed - techTalk" href="https://archive.raytron.org/techtalk/feed.php" /><link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="https://archive.raytron.org/techtalk/feed.php?mode=topics" /><link rel="alternate" type="application/atom+xml" title="Feed - Forum - Off Topic" href="https://archive.raytron.org/techtalk/feed.php?f=58" /><link rel="alternate" type="application/atom+xml" title="Feed - Topic - BeudOS: Trying to intrepret an OS in VB.NET code" href="https://archive.raytron.org/techtalk/feed.php?f=58&amp;t=559" />
+
+<!--
+	phpBB style name: MyInvision
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:	  Brad Veryard ( http://www.bradleyv.com/ )
+-->
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Enter the page number you wish to go to:';
+	var on_page = '1';
+	var per_page = '10';
+	var base_url = './viewtopic.php?f=58&amp;t=559&amp;sid=65a03b9ebcfd2a20784277c26780ef4d';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; domain=archive.raytron.org; secure';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript" src="./styles/prosilver/template/styleswitcher.js"></script>
+<script type="text/javascript" src="./styles/prosilver/template/forum_fn.js"></script>
+<script type="text/javascript" src="./styles/tech-talk/template/jquery.min.js"></script>
+<script type="text/javascript" src="./styles/tech-talk/template/jquery.cookie.js"></script>
+
+<link href="./styles/tech-talk/theme/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<link href="./style.php?id=7&amp;lang=en&amp;sid=65a03b9ebcfd2a20784277c26780ef4d" rel="stylesheet" type="text/css" media="screen, projection" />
+
+</head>
+
+<body id="phpbb" class="section-viewtopic ltr">
+<!--
+
+ Options: Yes | No
+ Options: Yes | No
+ Options: Yes | No
+
+-->
+<div class="above"></div>
+<div id="header">
+	<div class="main_width">
+		<a href="./index.php?sid=65a03b9ebcfd2a20784277c26780ef4d" title="Board index" id="logo"><img src="./styles/tech-talk/imageset/logo.png" width="358" height="64" alt="" title="" /></a>
+		
+				
+			<div id="search-box" class="searchback">
+				<form action="./search.php?sid=65a03b9ebcfd2a20784277c26780ef4d" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="text" maxlength="128" title="Search for keywords" class="inputbox search" value="Search…" onclick="if(this.value=='Search…')this.value='';" onblur="if(this.value=='')this.value='Search…';" />
+					<input class="button2" value="Search" type="submit" /><br />
+					<a href="./search.php?sid=65a03b9ebcfd2a20784277c26780ef4d" title="View the advanced search options">Advanced search</a> <input type="hidden" name="sid" value="65a03b9ebcfd2a20784277c26780ef4d" />
+
+				</fieldset>
+				</form>
+			</div>
+			
+	</div>
+</div>
+
+<div id="wrap">
+	<div class="navbar clearit">
+		<ul id="nav">
+			<li><a href="./index.php?sid=65a03b9ebcfd2a20784277c26780ef4d" accesskey="h"><img src="./styles/tech-talk/theme/images/globe.png" class="nicon" alt="Board index" />Board index</a></li>
+			<li><a href="./memberlist.php?sid=65a03b9ebcfd2a20784277c26780ef4d"><img src="./styles/tech-talk/theme/images/member.png" class="nicon" alt="Members" />Members</a></li>
+			<li><a href="./faq.php?sid=65a03b9ebcfd2a20784277c26780ef4d"><img src="./styles/tech-talk/theme/images/faq.png" class="nicon" alt="FAQ" />FAQ</a></li>
+			
+		</ul>
+	</div>
+	<a id="top" name="top" accesskey="t"></a>
+<div id="content">
+	<div id="page-header">
+
+		<div class="breadcrumbs">
+			<ul class="linklist navlinks">
+				<li class="icon-home"><a href="./index.php?sid=65a03b9ebcfd2a20784277c26780ef4d" accesskey="h">Board index</a>  <strong>&#8249;</strong> <a href="./viewforum.php?f=57&amp;sid=65a03b9ebcfd2a20784277c26780ef4d">Other</a> <strong>&#8249;</strong> <a href="./viewforum.php?f=58&amp;sid=65a03b9ebcfd2a20784277c26780ef4d">Off Topic</a></li>
+				<li class="rightside"><a href="./viewtopic.php?f=58&amp;t=559&amp;sid=65a03b9ebcfd2a20784277c26780ef4d&amp;view=print" title="Print view" accesskey="p" class="print">Print view</a></li>
+			</ul>
+
+			
+
+			<ul class="linklist rightside">
+				
+					<li class="icon-logout"><a href="./ucp.php?mode=login&amp;sid=65a03b9ebcfd2a20784277c26780ef4d" title="Login" accesskey="x">Login</a></li>
+				
+			</ul>
+			<div class="clearit"></div>
+		</div>
+	</div>
+
+	<a name="start_here"></a>
+	<div id="page-body">
+		
+		
+ <div id="announcebar" class="rules">
+        <div class="inner"><span class="corners-top"><span></span></span>
+            This forum is an archive, hosted for reference purposes only. If you want to get involved with our current community, please visit <a href="https://talk.raytron.org" target="_blank">Raytron</a>.
+         <span class="corners-bottom"><span></span></span></div>
+     </div>
+<h2><a href="./viewtopic.php?f=58&amp;t=559&amp;sid=65a03b9ebcfd2a20784277c26780ef4d">BeudOS: Trying to intrepret an OS in VB.NET code</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body --><div style="display: none !important;">Off Topic Discussion. Posting world news to discuss is encouraged. Posting here no longer counts towards your total post count. Games are banned, but other off topic discussion is allowed.<br /></div>
+
+<div class="topic-actions">
+
+	<div class="buttons">
+	
+		<div class="locked-icon"><a href="./posting.php?mode=reply&amp;f=58&amp;t=559&amp;sid=65a03b9ebcfd2a20784277c26780ef4d" title="This topic is locked, you cannot edit posts or make further replies."><span></span>Topic locked</a></div>
+	
+	</div>
+
+	
+		<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php?sid=65a03b9ebcfd2a20784277c26780ef4d">
+			<fieldset>
+				<input class="inputbox search tiny"  type="text" name="keywords" id="search_keywords" size="20" value="Search this topic…" onclick="if(this.value=='Search this topic…')this.value='';" onblur="if(this.value=='')this.value='Search this topic…';" />
+				<input class="button2" type="submit" value="Search" />
+				<input type="hidden" name="t" value="559" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="65a03b9ebcfd2a20784277c26780ef4d" />
+
+			</fieldset>
+			</form>
+		</div>
+	
+		<div class="pagination">
+			33 posts
+			 &bull; <a href="#" onclick="jumpto(); return false;" title="Click to jump to page…">Page <strong>1</strong> of <strong>4</strong></a> &bull; <span><strong>1</strong><span class="page-sep">, </span><a href="./viewtopic.php?f=58&amp;t=559&amp;sid=65a03b9ebcfd2a20784277c26780ef4d&amp;start=10">2</a><span class="page-sep">, </span><a href="./viewtopic.php?f=58&amp;t=559&amp;sid=65a03b9ebcfd2a20784277c26780ef4d&amp;start=20">3</a><span class="page-sep">, </span><a href="./viewtopic.php?f=58&amp;t=559&amp;sid=65a03b9ebcfd2a20784277c26780ef4d&amp;start=30">4</a></span>
+		</div>
+	
+
+</div>
+<div class="clear"></div>
+
+
+	<div class="pannels clearit">
+	<div id="p3054"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+
+			<h3 class="first"><a href="#p3054">BeudOS: Trying to intrepret an OS in VB.NET code</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=3054&amp;sid=65a03b9ebcfd2a20784277c26780ef4d#p3054"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=207&amp;sid=65a03b9ebcfd2a20784277c26780ef4d">WindowsAstro6369</a></strong> &raquo; Fri Jul 04, 2014 10:32 pm </p>
+
+			
+
+			<div class="content">Hey.<br />I'm trying to interpret an OS in VB.NET code.<br /><br />Build 181 link: <!-- m --><a class="postlink" href="https://www.sendspace.com/file/4fvq7b">https://www.sendspace.com/file/4fvq7b</a><!-- m --><br />Made in Visual Basic 2010 Express<br /><br />Plz bring feedback  <img src="./images/smilies/icon_e_biggrin.gif" alt=":D" title="Very Happy" /></div>
+
+			<div id="sig3054" class="signature"><div align="center"><span style="font-weight: bold"><span style="font-size: 200%; line-height: 116%;"><span style="color: #0000FF">b</span><span style="color: #0000BF">a</span><span style="color: #400080">n</span><span style="color: #800040">d</span><span style="color: #800000">i</span><span style="color: #800040">c</span><span style="color: #400080">o</span><span style="color: #0000BF">o</span><span style="color: #0000FF">t</span><span style="color: #4000FF">_</span></span></span><br />with a signature that is <span style="font-style: italic">clean</span> and <span style="font-style: italic">uncluttered</span>. Now a reminiscent of <a href="https://en.wikipedia.org/wiki/2012%E2%80%9313_FC_Barcelona_season" class="postlink">FC Barcelona&#39;s 2012-13</a> home kit.</div><br />An anonymous biography:<br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="text-transform: uppercase; border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Spoiler: </b><a href=\'#\' onClick=\'return false;\'>show</a>'; }" /><b>Spoiler: </b><a href="#" onClick="return false;">show</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;">Hello, I&#39;m bandicoot_, and I am a person. I use a laptop clocked at 1 GHz &#40;dual-core&#41;, and has 2GB of ram. I have succesfully failed to attempt installing Arch Linux on my 512MB RAM VBox machine.<br /><br />Projects:<br /><br />OSwiki &#40;being infinitely delayed&#41;<br />BeudOS &#40;not an OS&#41;<br />My blog &#40;which I won&#39;t link to&#41;<br />Getting subscribers on YouTube<br />Getting addicted to FIFA 14<br />Avoiding malware &#40;which is super-easy for me&#41;<br /><br />Find me on:<br />The Simple English Wikipedia &#40;as Bandicoot&#41;<br />Reddit &#40;as bandicute_&#41;</div>
+    </div>
+</div></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile3054">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=207&amp;sid=65a03b9ebcfd2a20784277c26780ef4d"><img src="http://i.picasion.com/pic78/f5890b61ba76984accc30a466f73a476.gif" width="94" height="119" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=207&amp;sid=65a03b9ebcfd2a20784277c26780ef4d">WindowsAstro6369</a>
+			</dt>
+
+			<dd>Member<br /><img src="./images/ranks/1.png" alt="Member" title="Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 28</dd><dd><strong>Joined:</strong> Sat Jun 07, 2014 11:34 pm</dd><dd><strong>Location:</strong> The internet</dd>
+			<dd><strong>Favorite OS:</strong> Windows 10</dd>
+		
+			<dd><strong>Favorite Programming Language:</strong> Batch</dd>
+		
+			<dd><strong>Personal Text:</strong> Also known as bandicoot_</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p3056"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p3056">Re: BeudOS: Trying to intrepret an OS in VB.NET code</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=3056&amp;sid=65a03b9ebcfd2a20784277c26780ef4d#p3056"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=97&amp;sid=65a03b9ebcfd2a20784277c26780ef4d">esc1010</a></strong> &raquo; Fri Jul 04, 2014 10:40 pm </p>
+
+			
+
+			<div class="content">I wont use this........</div>
+
+			<div id="sig3056" class="signature"><span style="font-size: 150%; line-height: 116%;">In soviet Russia... hardware fix you!</span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile3056">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=97&amp;sid=65a03b9ebcfd2a20784277c26780ef4d"><img src="./download/file.php?avatar=97_1408539000.jpg" width="120" height="104" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=97&amp;sid=65a03b9ebcfd2a20784277c26780ef4d">esc1010</a>
+			</dt>
+
+			<dd>Advanced Member<br /><img src="./images/ranks/3.png" alt="Advanced Member" title="Advanced Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 531</dd><dd><strong>Joined:</strong> Fri May 23, 2014 9:43 pm</dd>
+			<dd><strong>Favorite OS:</strong> elementary OS Luna</dd>
+		
+			<dd><strong>Favorite Programming Language:</strong> HTML 5, C++</dd>
+		
+			<dd><strong>Personal Text:</strong> AMD Is Inside!</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p3058"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p3058">Re: BeudOS: Trying to intrepret an OS in VB.NET code</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=3058&amp;sid=65a03b9ebcfd2a20784277c26780ef4d#p3058"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=114&amp;sid=65a03b9ebcfd2a20784277c26780ef4d">ubre</a></strong> &raquo; Fri Jul 04, 2014 11:23 pm </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>WindowsAstro6369 wrote:</cite>Hey.<br />I'm trying to interpret an OS in VB.NET code.<br /><br />Build 181 link: <!-- m --><a class="postlink" href="https://www.sendspace.com/file/4fvq7b">https://www.sendspace.com/file/4fvq7b</a><!-- m --><br />Made in Visual Basic 2010 Express<br /><br />Plz bring feedback  <img src="./images/smilies/icon_e_biggrin.gif" alt=":D" title="Very Happy" /></div></blockquote><br />I assume you are using COSMOS, let me check. Nevermind, this is a mysterious .exe file.<br />I won't run this.<br />This product is WAY too shady.<br /><del><span style="font-size: 150%; line-height: 116%;">I encourage members to not use this on a main machine, use a virtual pc, as this user &#40;who is not even trusted to begin with&#41; has included no screenshots or footage of the product.<br />And an operating system isn&#39;t a .exe file. An operating system is a much more.</span></del><br />Update: Running a virus scan on it.<br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;">
+    <div style="border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.8em; font-weight: bold; display: block;"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Results: </b><a href=\'#\' onClick=\'return false;\'>hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Results: </b><a href=\'#\' onClick=\'return false;\'>SHOW</a>'; }" /><b>Results: </b><a href="#" onClick="return false;">SHOW</a></span></div>
+    <div class="quotecontent">
+        <div style="display: none;">Malwarebytes Anti-Malware<br /><!-- m --><a class="postlink" href="http://www.malwarebytes.org">http://www.malwarebytes.org</a><!-- m --><br /><br />Scan Date: 7/4/2014<br />Scan Time: 7:27:46 PM<br />Logfile: log.txt<br />Administrator: Yes<br /><br />Version: 2.00.2.1012<br />Malware Database: v2014.03.04.09<br />Rootkit Database: v2014.07.01.01<br />License: Free<br />Malware Protection: Disabled<br />Malicious Website Protection: Disabled<br />Self-protection: Disabled<br /><br />OS: Windows 7 Service Pack 1<br />CPU: x64<br />File System: NTFS<br />User: T400160W64UL<br /><br />Scan Type: Threat Scan<br />Result: Completed<br />Objects Scanned: 1<br />Time Elapsed: 0 min, 55 sec<br /><br />Memory: Disabled<br />Startup: Disabled<br />Filesystem: Enabled<br />Archives: Enabled<br />Rootkits: Disabled<br />Heuristics: Enabled<br />PUP: Warn<br />PUM: Enabled<br /><br />Processes: 0<br />&#40;No malicious items detected&#41;<br /><br />Modules: 0<br />&#40;No malicious items detected&#41;<br /><br />Registry Keys: 0<br />&#40;No malicious items detected&#41;<br /><br />Registry Values: 0<br />&#40;No malicious items detected&#41;<br /><br />Registry Data: 0<br />&#40;No malicious items detected&#41;<br /><br />Folders: 0<br />&#40;No malicious items detected&#41;<br /><br />Files: 0<br />&#40;No malicious items detected&#41;<br /><br />Physical Sectors: 0<br />&#40;No malicious items detected&#41;<br /><br /><br />&#40;end&#41;</div>
+    </div>
+</div><br />Running program in sandboxie.<br /><span style="font-size: 150%; line-height: 116%;">This program is safe</span></div>
+
+			
+				<div class="notice">Last edited by <a href="./memberlist.php?mode=viewprofile&amp;u=114&amp;sid=65a03b9ebcfd2a20784277c26780ef4d">ubre</a> on Sat Jul 05, 2014 8:38 pm, edited 4 times in total.
+					
+				</div>
+			<div id="sig3058" class="signature"><span style="&quot;border 5px solid #efefef"><div align="center"><img src="http://i.imgur.com/bgc7HlG.png" alt="Image" /></div><br /><div align="center">Donate BTC! 15F2hEpCkT4omv8KyEjDFYQjMzRJkjuP3G</div></span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile3058">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=114&amp;sid=65a03b9ebcfd2a20784277c26780ef4d"><img src="./download/file.php?avatar=114_1422637756.png" width="146" height="185" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=114&amp;sid=65a03b9ebcfd2a20784277c26780ef4d">ubre</a>
+			</dt>
+
+			<dd>Ex-Staff<br /><img src="./images/ranks/3.png" alt="Ex-Staff" title="Ex-Staff" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 343</dd><dd><strong>Joined:</strong> Sun May 25, 2014 10:23 pm</dd><dd><strong>Location:</strong> Virginia</dd>
+			<dd><strong>Favorite OS:</strong> Manjaro</dd>
+		
+			<dd><strong>Favorite Programming Language:</strong> Ruby</dd>
+		
+			<dd><strong>Personal Text:</strong> This text is personal sorry.</dd>
+		
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://codeuniversal.ml" title="WWW: http://codeuniversal.ml"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p3059"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p3059">Re: BeudOS: Trying to intrepret an OS in VB.NET code</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=3059&amp;sid=65a03b9ebcfd2a20784277c26780ef4d#p3059"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=97&amp;sid=65a03b9ebcfd2a20784277c26780ef4d">esc1010</a></strong> &raquo; Fri Jul 04, 2014 11:29 pm </p>
+
+			
+
+			<div class="content">I run Linux. I can't run it or want b/c of what Uber said.</div>
+
+			<div id="sig3059" class="signature"><span style="font-size: 150%; line-height: 116%;">In soviet Russia... hardware fix you!</span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile3059">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=97&amp;sid=65a03b9ebcfd2a20784277c26780ef4d"><img src="./download/file.php?avatar=97_1408539000.jpg" width="120" height="104" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=97&amp;sid=65a03b9ebcfd2a20784277c26780ef4d">esc1010</a>
+			</dt>
+
+			<dd>Advanced Member<br /><img src="./images/ranks/3.png" alt="Advanced Member" title="Advanced Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 531</dd><dd><strong>Joined:</strong> Fri May 23, 2014 9:43 pm</dd>
+			<dd><strong>Favorite OS:</strong> elementary OS Luna</dd>
+		
+			<dd><strong>Favorite Programming Language:</strong> HTML 5, C++</dd>
+		
+			<dd><strong>Personal Text:</strong> AMD Is Inside!</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p3064"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p3064">Re: BeudOS: Trying to intrepret an OS in VB.NET code</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=3064&amp;sid=65a03b9ebcfd2a20784277c26780ef4d#p3064"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=2&amp;sid=65a03b9ebcfd2a20784277c26780ef4d">phillips1012</a></strong> &raquo; Sat Jul 05, 2014 12:35 am </p>
+
+			
+
+			<div class="content">Looked at the file in ghex and tested it in a virtual machine; it's safe.<br /><br /><img src="http://i.imgur.com/dQd8bfI.png" alt="Image" /></div>
+
+			<div id="sig3064" class="signature"><img src="https://i.imgur.com/wpiSc1g.png" alt="Image" /></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile3064">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=2&amp;sid=65a03b9ebcfd2a20784277c26780ef4d"><img src="./download/file.php?avatar=2_1415672334.png" width="200" height="200" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=2&amp;sid=65a03b9ebcfd2a20784277c26780ef4d">phillips1012</a>
+			</dt>
+
+			<dd>Ex-Staff<br /><img src="./images/ranks/3.png" alt="Ex-Staff" title="Ex-Staff" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 114</dd><dd><strong>Joined:</strong> Wed May 21, 2014 12:19 am</dd><dd><strong>Location:</strong> 'MURICA</dd>
+			<dd><strong>Favorite OS:</strong> Archlinux</dd>
+		
+			<dd><strong>Favorite Programming Language:</strong> Javascript and Scala</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p3066"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p3066">Re: BeudOS: Trying to intrepret an OS in VB.NET code</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=3066&amp;sid=65a03b9ebcfd2a20784277c26780ef4d#p3066"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=97&amp;sid=65a03b9ebcfd2a20784277c26780ef4d">esc1010</a></strong> &raquo; Sat Jul 05, 2014 12:45 am </p>
+
+			
+
+			<div class="content">In VB.NET all programs are in .exe format, I don't think you can make it in an .iso or even .img format. They are intended to be Windows programs, not whole OSes.</div>
+
+			<div id="sig3066" class="signature"><span style="font-size: 150%; line-height: 116%;">In soviet Russia... hardware fix you!</span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile3066">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=97&amp;sid=65a03b9ebcfd2a20784277c26780ef4d"><img src="./download/file.php?avatar=97_1408539000.jpg" width="120" height="104" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=97&amp;sid=65a03b9ebcfd2a20784277c26780ef4d">esc1010</a>
+			</dt>
+
+			<dd>Advanced Member<br /><img src="./images/ranks/3.png" alt="Advanced Member" title="Advanced Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 531</dd><dd><strong>Joined:</strong> Fri May 23, 2014 9:43 pm</dd>
+			<dd><strong>Favorite OS:</strong> elementary OS Luna</dd>
+		
+			<dd><strong>Favorite Programming Language:</strong> HTML 5, C++</dd>
+		
+			<dd><strong>Personal Text:</strong> AMD Is Inside!</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p3085"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p3085">Re: BeudOS: Trying to intrepret an OS in VB.NET code</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=3085&amp;sid=65a03b9ebcfd2a20784277c26780ef4d#p3085"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=54&amp;sid=65a03b9ebcfd2a20784277c26780ef4d">Baltic</a></strong> &raquo; Sat Jul 05, 2014 4:43 pm </p>
+
+			
+
+			<div class="content">Lemme sum this up. It's safe, Chrome and Chromium think it's malicious because of it's download count.<br /><br />You'll be fiiiinnnneee</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile3085">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=54&amp;sid=65a03b9ebcfd2a20784277c26780ef4d">Baltic</a>
+			</dt>
+
+			<dd>Advanced Member<br /><img src="./images/ranks/3.png" alt="Advanced Member" title="Advanced Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 377</dd><dd><strong>Joined:</strong> Fri May 23, 2014 12:55 am</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p3104"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p3104">Re: BeudOS: Trying to intrepret an OS in VB.NET code</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=3104&amp;sid=65a03b9ebcfd2a20784277c26780ef4d#p3104"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=55&amp;sid=65a03b9ebcfd2a20784277c26780ef4d">maxell</a></strong> &raquo; Sat Jul 05, 2014 7:16 pm </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>stig772 wrote:</cite><blockquote><div><cite>Cameron2001 wrote:</cite>Lemme sum this up. It's safe, Chrome and Chromium think it's malicious because of it's download count.<br /><br />You'll be fiiiinnnneee</div></blockquote><br /><br />That's why you use Firefox.</div></blockquote><br /><br />Or seamonkey.</div>
+
+			<div id="sig3104" class="signature"><a href="http://maxell.ml" class="postlink">Check out my website!</a><br /><span style="font-size: 150%; line-height: 116%;">I've moved to <a href="https://bbs.techdom.ml" class="postlink">techdom</a></span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile3104">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=55&amp;sid=65a03b9ebcfd2a20784277c26780ef4d"><img src="./download/file.php?avatar=55_1443076984.png" width="60" height="34" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=55&amp;sid=65a03b9ebcfd2a20784277c26780ef4d">maxell</a>
+			</dt>
+
+			<dd>Advanced Member<br /><img src="./images/ranks/3.png" alt="Advanced Member" title="Advanced Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 621</dd><dd><strong>Joined:</strong> Fri May 23, 2014 1:06 am</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p3106"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p3106">Re: BeudOS: Trying to intrepret an OS in VB.NET code</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=3106&amp;sid=65a03b9ebcfd2a20784277c26780ef4d#p3106"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=52&amp;sid=65a03b9ebcfd2a20784277c26780ef4d">ntnick</a></strong> &raquo; Sat Jul 05, 2014 7:25 pm </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>JacobGuy7800 wrote:</cite><blockquote><div><cite>stig772 wrote:</cite><blockquote><div><cite>Cameron2001 wrote:</cite>Lemme sum this up. It's safe, Chrome and Chromium think it's malicious because of it's download count.<br /><br />You'll be fiiiinnnneee</div></blockquote><br /><br />That's why you use Firefox.</div></blockquote><br /><br />Or seamonkey.</div></blockquote><br /><br />Or Midori.</div>
+
+			<div id="sig3106" class="signature">If I go silent for a long long time again, I may or may not be gone...<br /><span style="font-weight: bold">#BringBackClarkson</span> - we want our orangutan back! BBC, give him another chance...<br /><br />Find me: ntnick on IRC<br /><br />[spoiler=GTA Online status updates!]<br /><span style="font-weight: bold">Sep 9 or 10 or 11, I forgot</span> - Bought some new cars (including a T20!) <img src="./images/smilies/icon_e_biggrin.gif" alt=":D" title="Very Happy" /><br />[/spoiler]</div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile3106">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=52&amp;sid=65a03b9ebcfd2a20784277c26780ef4d"><img src="./download/file.php?avatar=52_1407998321.png" width="75" height="75" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=52&amp;sid=65a03b9ebcfd2a20784277c26780ef4d">ntnick</a>
+			</dt>
+
+			<dd>Member<br /><img src="./images/ranks/2.png" alt="Member" title="Member" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 67</dd><dd><strong>Joined:</strong> Fri May 23, 2014 12:54 am</dd><dd><strong>Location:</strong> Del Perro Heights, Los Santos</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<div class="pannels clearit">
+	<div id="p3112"></div>
+		<div class="inner">
+
+		<div class="postbody">
+			
+
+			<h3 ><a href="#p3112">Re: BeudOS: Trying to intrepret an OS in VB.NET code</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=3112&amp;sid=65a03b9ebcfd2a20784277c26780ef4d#p3112"><img src="./styles/tech-talk/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=132&amp;sid=65a03b9ebcfd2a20784277c26780ef4d">RainfallMuffin</a></strong> &raquo; Sat Jul 05, 2014 7:48 pm </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>computer_12 wrote:</cite><blockquote><div><cite>JacobGuy7800 wrote:</cite><blockquote><div><cite>stig772 wrote:</cite><blockquote><div><cite>Cameron2001 wrote:</cite>Lemme sum this up. It's safe, Chrome and Chromium think it's malicious because of it's download count.<br /><br />You'll be fiiiinnnneee</div></blockquote><br /><br />That's why you use Firefox.</div></blockquote><br /><br />Or seamonkey.</div></blockquote><br /><br />Or Midori.</div></blockquote><br />Or Links. I'm acually using Links right now.</div>
+
+			<div id="sig3112" class="signature"><span style="font-size: 85%; line-height: 116%;">Tumblr reminds you to <a href="http://i.imgur.com/LDGvxJW.jpg" class="postlink">check your privileges</a></span></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile3112">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=132&amp;sid=65a03b9ebcfd2a20784277c26780ef4d"><img src="./download/file.php?avatar=132_1442950579.png" width="129" height="150" alt="User avatar" /></a><br />
+				<a href="./memberlist.php?mode=viewprofile&amp;u=132&amp;sid=65a03b9ebcfd2a20784277c26780ef4d">RainfallMuffin</a>
+			</dt>
+
+			<dd>Ex-Staff<br /><img src="./images/ranks/3.png" alt="Ex-Staff" title="Ex-Staff" /></dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 339</dd><dd><strong>Joined:</strong> Wed May 28, 2014 3:29 pm</dd><dd><strong>Location:</strong> The Multiverse</dd>
+			<dd><strong>Favorite OS:</strong> FreeBSD / Arch Linux</dd>
+		
+			<dd><strong>Favorite Programming Language:</strong> Javascript</dd>
+		
+			<dd><strong>Personal Text:</strong> fiminist revolutoin</dd>
+		
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://rainfallskies.com" title="WWW: http://rainfallskies.com"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider" />
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?f=58&amp;t=559&amp;sid=65a03b9ebcfd2a20784277c26780ef4d">
+
+	<fieldset class="display-options" style="margin-top: 0; ">
+		<a href="./viewtopic.php?f=58&amp;t=559&amp;sid=65a03b9ebcfd2a20784277c26780ef4d&amp;start=10" class="right-box right">Next</a>
+		<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select> <input type="submit" name="sort" value="Go" class="button2" /></label>
+		
+	</fieldset>
+
+	</form>
+	<hr />
+
+
+<div class="topic-actions">
+	<div class="buttons">
+	
+		<div class="locked-icon"><a href="./posting.php?mode=reply&amp;f=58&amp;t=559&amp;sid=65a03b9ebcfd2a20784277c26780ef4d" title="This topic is locked, you cannot edit posts or make further replies."><span></span>Topic locked</a></div>
+	
+	</div>
+
+	
+		<div class="pagination">
+			33 posts
+			 &bull; <a href="#" onclick="jumpto(); return false;" title="Click to jump to page…">Page <strong>1</strong> of <strong>4</strong></a> &bull; <span><strong>1</strong><span class="page-sep">, </span><a href="./viewtopic.php?f=58&amp;t=559&amp;sid=65a03b9ebcfd2a20784277c26780ef4d&amp;start=10">2</a><span class="page-sep">, </span><a href="./viewtopic.php?f=58&amp;t=559&amp;sid=65a03b9ebcfd2a20784277c26780ef4d&amp;start=20">3</a><span class="page-sep">, </span><a href="./viewtopic.php?f=58&amp;t=559&amp;sid=65a03b9ebcfd2a20784277c26780ef4d&amp;start=30">4</a></span>
+		</div>
+	
+</div>
+
+
+	<p></p><p><a href="./viewforum.php?f=58&amp;sid=65a03b9ebcfd2a20784277c26780ef4d" class="left-box left" accesskey="r">Return to Off Topic</a></p>
+
+	<form method="post" id="jumpbox" action="./viewforum.php?sid=65a03b9ebcfd2a20784277c26780ef4d" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Jump to:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+			
+				<option value="-1">Select a forum</option>
+			<option value="-1">------------------</option>
+				<option value="98">Raytron</option>
+			
+				<option value="99">&nbsp; &nbsp;Raytron</option>
+			
+				<option value="3">General Forum Discussion</option>
+			
+				<option value="4">&nbsp; &nbsp;Announcements</option>
+			
+				<option value="6">&nbsp; &nbsp;Introductions</option>
+			
+				<option value="92">&nbsp; &nbsp;Suggestions</option>
+			
+				<option value="90">Technology</option>
+			
+				<option value="10">&nbsp; &nbsp;General Tech Discussion</option>
+			
+				<option value="91">&nbsp; &nbsp;Technology News</option>
+			
+				<option value="18">&nbsp; &nbsp;Software / Operating Systems</option>
+			
+				<option value="11">&nbsp; &nbsp;Hardware</option>
+			
+				<option value="28">&nbsp; &nbsp;Programming</option>
+			
+				<option value="32">&nbsp; &nbsp;Gaming</option>
+			
+				<option value="57">Other</option>
+			
+				<option value="58" selected="selected">&nbsp; &nbsp;Off Topic</option>
+			
+			</select>
+			<input type="submit" value="Go" class="button2" />
+		</fieldset>
+	</form>
+
+
+	<h3><a href="./viewonline.php?sid=65a03b9ebcfd2a20784277c26780ef4d">Who is online</a></h3>
+	<p>Users browsing this forum: No registered users and 0 guests</p>
+</div>
+
+<div id="page-footer">
+
+	<div class="breadcrumbs">
+		<ul class="linklist">
+			<li class="icon-home"><a href="./index.php?sid=65a03b9ebcfd2a20784277c26780ef4d" accesskey="h">Board index</a></li>
+				
+			<li class="rightside"><a href="./memberlist.php?mode=leaders&amp;sid=65a03b9ebcfd2a20784277c26780ef4d">The team</a> &bull; <a href="./ucp.php?mode=delete_cookies&amp;sid=65a03b9ebcfd2a20784277c26780ef4d">Delete all board cookies</a> &bull; All times are UTC </li>
+		</ul>
+		<div class="copyright">
+		</div>
+	</div>
+</div>
+
+</div>
+</div>
+<div class="clearit"></div>
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51268407-1', 'tech-talk.ml');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
