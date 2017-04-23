@@ -5,4 +5,5 @@ Make sure to read the [FAQ](faq) before submitting anything to this repo!
 * [ShiftOS](shiftos)
 * [Techtalk](techtalk)
 * [Raytron](raytron)
+* [Lolwut](lulwut)
 * [TTSC](ttsc)
