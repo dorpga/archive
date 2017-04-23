@@ -1,4 +1,4 @@
-(index)[Go Back]
+[Go Back](index)
 # KomputerKid facts
 
 *revision 12/8/16*

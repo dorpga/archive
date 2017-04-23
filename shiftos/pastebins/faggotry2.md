@@ -1,4 +1,4 @@
-(index)[Go Back]
+[Go Back](index)
 ```
 [4:04 PM] blimpy: fair enough
 [4:04 PM] blimpy: v- especially is uh
@@ -91,8 +91,8 @@
 [4:44 PM] blimpy: a whole bunch of shit happened and william was zlined
 ```
 
-Learn what a "faggotry" log is (/shiftos/info/faggotry-log)[here].
+Learn what a "faggotry" log is [here](/shiftos/info/faggotry-log).
 
-See the first "faggotry" log (faggotry1)[here].
+See the first "faggotry" log [here](faggotry1).
 
-Learn about the drama (/shiftos/history/marchdrama)[here].
+Learn about the drama [here](/shiftos/history/marchdrama).

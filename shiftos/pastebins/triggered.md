@@ -1,4 +1,4 @@
-(index)[Go Back]
+[Go Back](index)
 ```
 **** BEGIN LOGGING AT Tue Aug 16 14:00:14 2016
 
@@ -925,4 +925,4 @@ Aug 17 21:07:02 *	Disconnected ()
 **** ENDING LOGGING AT Wed Aug 17 21:07:02 2016
 ```
 
-Find out about what happened around August 17th (/shiftos/history/blimpydrama.md)[here].
+Find out about what happened around August 17th [here](/shiftos/history/blimpydrama.md).
