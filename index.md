@@ -8,3 +8,4 @@ Make sure to read the [FAQ](faq) before submitting anything to this repo!
 * [Lolwut](lulwut)
 * [TTSC](ttsc)
 * [Sharkathan](sharkathan)
+* [Rainiskies](rainiskies)
