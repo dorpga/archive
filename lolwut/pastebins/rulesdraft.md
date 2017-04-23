@@ -1,5 +1,6 @@
 [Go Back](index)
 
+```
 # lolwut rules
  
 1. Please keep the general retardedness of #lolwut to a minimum, this is not #lounge.
@@ -20,6 +21,4 @@
 Please Note: These rules are subject to change; there’s no excuse for not keeping up to date with the rules.
  
 Also Note: You are grandfathered if you break an amended rule granted you broke it before the rule was amended.
-
------------------------
-Note that this paste was in markdown so this page is displayed in markdown because of that.
+```
