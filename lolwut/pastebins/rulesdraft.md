@@ -1,7 +1,7 @@
 [Go Back](index)
 
 ```
-# lolwut rules
+# olwut rules
  
 1. Please keep the general retardedness of #lolwut to a minimum, this is not #lounge.
  
