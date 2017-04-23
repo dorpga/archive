@@ -1,4 +1,4 @@
-(index)[Go Back]
+[Go Back](index)
 ```
 [6:27 PM] Michael VanOverbeek: dude
 [6:27 PM] Michael VanOverbeek: I've got my own spies on their servers
@@ -99,8 +99,8 @@
 [6:52 PM] blimpy: fair enuf
 ```
 
-Learn what a "faggotry" log is (/shiftos/info/faggotry-log)[here].
+Learn what a "faggotry" log is [here](/shiftos/info/faggotry-log).
 
-See the first "faggotry" log (faggotry1)[here].
+See the first "faggotry" log [here](faggotry1).
 
-Learn about the drama (/shiftos/history/marchdrama)[here].
+Learn about the drama [here](/shiftos/history/marchdrama).
