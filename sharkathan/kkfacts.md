@@ -1,3 +1,4 @@
+(index)[Go Back]
 # KomputerKid facts
 
 *revision 12/8/16*
