@@ -7,3 +7,4 @@ Make sure to read the [FAQ](faq) before submitting anything to this repo!
 * [Raytron](raytron)
 * [Lolwut](lulwut)
 * [TTSC](ttsc)
+* [Sharkathan](sharkathan)
