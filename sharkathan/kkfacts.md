@@ -17,6 +17,6 @@
 12. KomputerKid once bought a whole set of My Little Pony toys, believing that if you left them in a glass of water for long enough, they would turn into real horses.
 13. KomputerKid frequently talks about his wife's son. He doesn't have a wife.
 14. KomputerKid refers to his right index finger as his "wife's son".
-KomputerKid thought that bathing in Coca-Cola would make you cleaner than if you bathed in water, because Coca-Cola is more expensive.
+15. KomputerKid thought that bathing in Coca-Cola would make you cleaner than if you bathed in water, because Coca-Cola is more expensive.
 15. KomputerKid once went to a wedding party. The DJ was black. Throughout the course of the party, KomputerKid kept referring to the DJ as "DJ Deedahx".
 16. KomputerKid thinks "Croatian" and "Haitian Creole" are the same language. When asked to say the word "Hello" in those languages, he responded with "Shalom".
